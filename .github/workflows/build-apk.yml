@@ -1,0 +1,38 @@
+# App Sonos — compila la APK debug en GitHub Actions (gratis).
+# Cada push a main, o al pulsar "Run workflow", compila y deja la APK
+# como artefacto para descargar. No compila en el teléfono ni en el chat.
+name: Build APK (debug)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Java 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Configurar Gradle 8.7
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: "8.7"
+
+      - name: Compilar APK debug
+        run: gradle assembleDebug --no-daemon
+
+      - name: Subir la APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-sonos-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30
