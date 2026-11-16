@@ -163,7 +163,7 @@ fun HomeScreen(viewModel: PlayerViewModel) {
             Icon(Icons.Filled.VolumeUp, contentDescription = "Volumen")
             Slider(
                 value = viewModel.volume.toFloat(),
-                onValueChange = { viewModel.setVolume(it.toInt()) },
+                onValueChange = { viewModel.updateVolume(it.toInt()) },
                 valueRange = 0f..100f,
                 modifier = Modifier.weight(1f),
             )

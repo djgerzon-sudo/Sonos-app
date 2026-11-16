@@ -27,7 +27,7 @@ fun LibraryScreen(viewModel: PlayerViewModel) {
     Column(modifier = Modifier.fillMaxSize()) {
         OutlinedTextField(
             value = viewModel.searchQuery,
-            onValueChange = { viewModel.setSearchQuery(it) },
+            onValueChange = { viewModel.updateSearchQuery(it) },
             label = { Text("Buscar canción, artista o álbum") },
             leadingIcon = { Icon(Icons.Filled.Search, contentDescription = "Buscar") },
             singleLine = true,
@@ -39,18 +39,18 @@ fun LibraryScreen(viewModel: PlayerViewModel) {
         Row(modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
             FilterChip(
                 selected = viewModel.sortOrder == SortOrder.TITLE,
-                onClick = { viewModel.setSortOrder(SortOrder.TITLE) },
+                onClick = { viewModel.updateSortOrder(SortOrder.TITLE) },
                 label = { Text("Título") },
             )
             FilterChip(
                 selected = viewModel.sortOrder == SortOrder.ARTIST,
-                onClick = { viewModel.setSortOrder(SortOrder.ARTIST) },
+                onClick = { viewModel.updateSortOrder(SortOrder.ARTIST) },
                 label = { Text("Artista") },
                 modifier = Modifier.padding(start = 8.dp),
             )
             FilterChip(
                 selected = viewModel.sortOrder == SortOrder.DURATION,
-                onClick = { viewModel.setSortOrder(SortOrder.DURATION) },
+                onClick = { viewModel.updateSortOrder(SortOrder.DURATION) },
                 label = { Text("Duración") },
                 modifier = Modifier.padding(start = 8.dp),
             )

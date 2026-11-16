@@ -102,11 +102,11 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     val recentTracks: List<Track>
         get() = allTracks.filter { it.addedDaysAgo <= 7 }.sortedBy { it.addedDaysAgo }
 
-    fun setSearchQuery(query: String) {
+    fun updateSearchQuery(query: String) {
         searchQuery = query
     }
 
-    fun setSortOrder(order: SortOrder) {
+    fun updateSortOrder(order: SortOrder) {
         sortOrder = order
     }
 
@@ -157,14 +157,14 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         viewModelScope.launch { sonos.previous() }
     }
 
-    fun setVolume(value: Int) {
+    fun updateVolume(value: Int) {
         volume = value.coerceIn(0, 100)
         // El volumen que se manda a Sonos es el efectivo, sin pasar de 100.
         val toSonos = effectiveVolume.coerceIn(0, 100)
         viewModelScope.launch { sonos.setVolume(toSonos) }
     }
 
-    fun setVolumeX2(on: Boolean) {
+    fun updateVolumeX2(on: Boolean) {
         volumeX2 = on
         val toSonos = effectiveVolume.coerceIn(0, 100)
         viewModelScope.launch { sonos.setVolume(toSonos) }
@@ -191,7 +191,7 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         reverbOn = on
     }
 
-    fun setReverbLevel(level: Float) {
+    fun updateReverbLevel(level: Float) {
         reverbLevel = level.coerceIn(0f, 1f)
     }
 

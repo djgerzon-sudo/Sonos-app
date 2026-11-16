@@ -85,7 +85,7 @@ fun EqScreen(viewModel: PlayerViewModel) {
             )
             Switch(
                 checked = viewModel.volumeX2,
-                onCheckedChange = { viewModel.setVolumeX2(it) },
+                onCheckedChange = { viewModel.updateVolumeX2(it) },
             )
         }
         Text(
@@ -128,7 +128,7 @@ fun EqScreen(viewModel: PlayerViewModel) {
             Text(text = "Nivel de reverb: ${(viewModel.reverbLevel * 100).toInt()}%")
             Slider(
                 value = viewModel.reverbLevel,
-                onValueChange = { viewModel.setReverbLevel(it) },
+                onValueChange = { viewModel.updateReverbLevel(it) },
                 valueRange = 0f..1f,
                 modifier = Modifier.fillMaxWidth(),
             )
