@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.compose")
+    // Sin id("org.jetbrains.kotlin.plugin.compose"): no existe en Kotlin 1.9.24.
 }
 
 android {
