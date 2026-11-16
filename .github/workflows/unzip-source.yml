@@ -1,0 +1,38 @@
+name: Unzip source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Unzip AppSonos-codigo.zip into repo root
+        run: |
+          mkdir -p /tmp/unzipped
+          unzip -o AppSonos-codigo.zip -d /tmp/unzipped
+          if [ -f /tmp/unzipped/settings.gradle.kts ]; then
+            cp -a /tmp/unzipped/. .
+          else
+            SUBDIR=$(find /tmp/unzipped -maxdepth 1 -mindepth 1 -type d | head -n 1)
+            if [ -n "$SUBDIR" ] && [ -f "$SUBDIR/settings.gradle.kts" ]; then
+              cp -a "$SUBDIR"/. .
+            else
+              cp -a /tmp/unzipped/. .
+            fi
+          fi
+          echo "--- settings.gradle.kts ---"
+          head -n 20 settings.gradle.kts
+          ls -la
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Unzip AppSonos-codigo.zip source"
+          git push
