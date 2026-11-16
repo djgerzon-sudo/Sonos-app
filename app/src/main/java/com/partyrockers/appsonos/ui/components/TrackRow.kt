@@ -22,8 +22,8 @@ import androidx.compose.ui.unit.dp
 import com.partyrockers.appsonos.data.Track
 
 /**
- * Una rola en lista. La "portada de disco" en v1 es un cuadro azul con
- * una nota musical; en v2 se cambia por la carátula real del álbum
+ * Una rola en lista. La "portada de disco" es un cuadro azul con
+ * una nota musical; se cambia por la carátula real del álbum
  * cuando el archivo la traiga (MediaStore / etiqueta del mp3).
  */
 @Composable

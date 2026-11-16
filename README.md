@@ -16,8 +16,8 @@ propio, playlists, carpetas, letras en Home, EQ de 12 bandas, compresor y reverb
 - Carpetas: navegar por carpetas y agregar una carpeta completa a una playlist.
 - Playlists: crear, ver importadas (.m3u / .wpl) y reordenar rolas con flechas.
 - EQ: 12 bandas, presets, Volumen x2, compresor y reverb apagados por defecto.
-- Perfil: cuenta de ejemplo, Mi sistema, WiFi, retraso de audio, entrada de
-  línea, LED, botones táctiles, actualizaciones y alarmas (ejemplo en v1).
+- Perfil: Mi sistema (solo bocinas encontradas de verdad) y ajustes del
+  equipo, que aún no están disponibles.
 - Control real de Sonos: descubrimiento SSDP, UPnP/SOAP al puerto 1400,
   AVTransport, RenderingControl y coordinador de grupo, en `sonos/`.
   Servidor HTTP local propio (sin librería externa) para servirle el audio a Sonos.
@@ -81,13 +81,13 @@ propio, playlists, carpetas, letras en Home, EQ de 12 bandas, compresor y reverb
 
 ## Límites conocidos de v1
 
-- Las 12 rolas de la biblioteca son de **ejemplo** (títulos genéricos, sin
-  archivos de audio ni letras reales). La lectura del almacenamiento
-  (MediaStore) es v2.
+- La biblioteca, las carpetas, las playlists y las bocinas empiezan vacías:
+  la app no inventa rolas, títulos, bocinas ni IPs. La lectura del
+  almacenamiento (MediaStore) es trabajo pendiente.
 - El EQ, compresor y reverb en v1 mueven la UI y el volumen; aplicar el
-  efecto al audio antes de mandarlo a Sonos es trabajo de v2.
-- Los ajustes de Perfil (WiFi, retraso, entrada de línea, etc.) son de
-  ejemplo hasta probar el backend con las bocinas reales.
+  efecto al audio antes de mandarlo a Sonos es trabajo pendiente.
+- Los ajustes de Perfil (WiFi, retraso, entrada de línea, etc.) aún no están
+  disponibles: se muestran como "Aún no disponible", sin valores inventados.
 - Los artefactos de GitHub Actions se borran a los 30 días en este workflow:
   descarga la APK cuando se compile.
 
@@ -108,7 +108,7 @@ android/
         ├── res/ (values, drawable, mipmap-anydpi-v26)
         └── java/com/partyrockers/appsonos/
             ├── MainActivity.kt          (5 pestañas + Perfil)
-            ├── data/                    (Modelos, datos de ejemplo, PlaylistParser)
+            ├── data/                    (Modelos, PlaylistParser)
             ├── player/                  (LocalPlayer con ExoPlayer)
             ├── sonos/                   (SoapClient, SsdpDiscovery, SonosController, LocalHttpServer)
             ├── ui/theme/                (modo dark)

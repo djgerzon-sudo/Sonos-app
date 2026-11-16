@@ -55,26 +55,46 @@ fun LibraryScreen(viewModel: PlayerViewModel) {
                 modifier = Modifier.padding(start = 8.dp),
             )
         }
-        LazyColumn(modifier = Modifier.fillMaxSize()) {
-            item {
-                Text(
-                    text = "Recién agregados",
-                    style = MaterialTheme.typography.titleMedium,
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-                )
-            }
-            items(viewModel.recentTracks, key = { it.id }) { track ->
-                TrackRow(track = track, onClick = { viewModel.playTrack(track) })
-            }
-            item {
-                Text(
-                    text = "Todas las rolas (${viewModel.visibleTracks.size})",
-                    style = MaterialTheme.typography.titleMedium,
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-                )
-            }
-            items(viewModel.visibleTracks, key = { it.id }) { track ->
-                TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+        if (viewModel.allTracks.isEmpty()) {
+            Text(
+                text = "No hay música cargada",
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.padding(16.dp),
+            )
+        } else {
+            LazyColumn(modifier = Modifier.fillMaxSize()) {
+                if (viewModel.recentTracks.isNotEmpty()) {
+                    item {
+                        Text(
+                            text = "Recién agregados",
+                            style = MaterialTheme.typography.titleMedium,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                        )
+                    }
+                    items(viewModel.recentTracks, key = { it.id }) { track ->
+                        TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+                    }
+                }
+                item {
+                    Text(
+                        text = "Todas las rolas (${viewModel.visibleTracks.size})",
+                        style = MaterialTheme.typography.titleMedium,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                    )
+                }
+                if (viewModel.visibleTracks.isEmpty()) {
+                    item {
+                        Text(
+                            text = "No se encontró nada con esa búsqueda",
+                            style = MaterialTheme.typography.bodyLarge,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                        )
+                    }
+                } else {
+                    items(viewModel.visibleTracks, key = { it.id }) { track ->
+                        TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+                    }
+                }
             }
         }
     }

@@ -47,6 +47,15 @@ fun FoldersScreen(viewModel: PlayerViewModel) {
                     modifier = Modifier.padding(16.dp),
                 )
             }
+            if (viewModel.folders.isEmpty()) {
+                item {
+                    Text(
+                        text = "Aún no hay carpetas",
+                        style = MaterialTheme.typography.bodyLarge,
+                        modifier = Modifier.padding(16.dp),
+                    )
+                }
+            }
             items(viewModel.folders, key = { it.path }) { folder ->
                 Row(
                     modifier = Modifier
@@ -114,6 +123,9 @@ private fun PlaylistPickerDialog(
         title = { Text("Elige playlist") },
         text = {
             Column {
+                if (viewModel.playlists.isEmpty()) {
+                    Text("Aún no tienes playlists")
+                }
                 for (playlist in viewModel.playlists) {
                     TextButton(
                         onClick = {

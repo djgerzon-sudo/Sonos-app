@@ -9,8 +9,8 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.partyrockers.appsonos.data.EqPreset
+import com.partyrockers.appsonos.data.MusicFolder
 import com.partyrockers.appsonos.data.Playlist
-import com.partyrockers.appsonos.data.SampleData
 import com.partyrockers.appsonos.data.SonosSpeaker
 import com.partyrockers.appsonos.data.Track
 import com.partyrockers.appsonos.player.LocalPlayer
@@ -28,18 +28,21 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     private val httpServer = LocalHttpServer()
 
     // --- Biblioteca y cola ---
-    val allTracks: List<Track> = SampleData.tracks
-    var playlists by mutableStateOf(SampleData.playlists)
+    // Vacías al inicio: nada inventado. Se llenan solo con archivos reales.
+    var allTracks by mutableStateOf<List<Track>>(emptyList())
         private set
-    var folders by mutableStateOf(SampleData.folders)
+    var playlists by mutableStateOf<List<Playlist>>(emptyList())
+        private set
+    var folders by mutableStateOf<List<MusicFolder>>(emptyList())
         private set
 
     // --- Rola actual ---
-    var currentTrack by mutableStateOf<Track>(SampleData.tracks[0])
+    // Null cuando no hay nada cargado: la UI muestra "No hay música cargada".
+    var currentTrack by mutableStateOf<Track?>(null)
         private set
     var isPlaying by mutableStateOf(false)
         private set
-    var queue by mutableStateOf<List<Track>>(SampleData.tracks)
+    var queue by mutableStateOf<List<Track>>(emptyList())
         private set
 
     // --- Volumen ---
@@ -53,13 +56,15 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         get() = (volume * if (volumeX2) 2 else 1).coerceIn(0, 200)
 
     // --- Bocinas ---
-    var speakers by mutableStateOf<List<SonosSpeaker>>(SampleData.speakers)
+    // Vacías al inicio: solo aparecen las que encuentre de verdad
+    // "Buscar bocinas en la WiFi". Null = aún sin bocina.
+    var speakers by mutableStateOf<List<SonosSpeaker>>(emptyList())
         private set
-    var currentSpeaker by mutableStateOf<SonosSpeaker>(SampleData.speakers[0])
+    var currentSpeaker by mutableStateOf<SonosSpeaker?>(null)
         private set
     var sonosConnected by mutableStateOf(false)
         private set
-    var sonosStatus by mutableStateOf("Demo: sin conexión real todavía")
+    var sonosStatus by mutableStateOf("Aún sin bocina. Toca \"Buscar bocinas en la WiFi\".")
         private set
 
     // --- EQ y efectos (apagados por defecto; compresor y reverb pesan más) ---
@@ -121,7 +126,6 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         }
         // 2) Se manda a Sonos por HTTP si hay bocina conectada.
         viewModelScope.launch {
-            val speaker = currentSpeaker
             val path = track.localPath
             if (sonosConnected && path != null) {
                 httpServer.start()
@@ -132,26 +136,39 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     fun togglePlayPause() {
+        val track = currentTrack ?: return
         if (isPlaying) {
             isPlaying = false
             localPlayer.pause()
             viewModelScope.launch { sonos.pause() }
         } else {
             isPlaying = true
-            if (currentTrack.localPath != null) localPlayer.resume()
+            if (track.localPath != null) localPlayer.resume()
             viewModelScope.launch { sonos.play() }
         }
     }
 
     fun nextTrack() {
-        val index = queue.indexOf(currentTrack)
+        if (queue.isEmpty()) return
+        val current = currentTrack
+        if (current == null) {
+            queue.firstOrNull()?.let { playTrack(it) }
+            return
+        }
+        val index = queue.indexOf(current)
         val next = queue.getOrNull(index + 1) ?: queue.firstOrNull() ?: return
         playTrack(next)
         viewModelScope.launch { sonos.next() }
     }
 
     fun previousTrack() {
-        val index = queue.indexOf(currentTrack)
+        if (queue.isEmpty()) return
+        val current = currentTrack
+        if (current == null) {
+            queue.firstOrNull()?.let { playTrack(it) }
+            return
+        }
+        val index = queue.indexOf(current)
         val prev = if (index > 0) queue[index - 1] else queue.lastOrNull() ?: return
         playTrack(prev)
         viewModelScope.launch { sonos.previous() }
@@ -213,8 +230,10 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
                 sonosConnected = true
                 sonosStatus = "Conectado: ${found.size} bocina(s) encontrada(s)"
             } else {
+                speakers = emptyList()
+                currentSpeaker = null
                 sonosConnected = false
-                sonosStatus = "No se encontró ninguna bocina en esta WiFi"
+                sonosStatus = "No se encontró ninguna bocina"
             }
         }
     }

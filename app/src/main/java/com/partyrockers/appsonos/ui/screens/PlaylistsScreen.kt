@@ -61,6 +61,15 @@ fun PlaylistsScreen(viewModel: PlayerViewModel) {
                     }
                 }
             }
+            if (viewModel.playlists.isEmpty()) {
+                item {
+                    Text(
+                        text = "Aún no tienes playlists",
+                        style = MaterialTheme.typography.bodyLarge,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                    )
+                }
+            }
             items(viewModel.playlists, key = { it.id }) { playlist ->
                 Row(
                     modifier = Modifier
@@ -103,6 +112,15 @@ fun PlaylistsScreen(viewModel: PlayerViewModel) {
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
             )
             LazyColumn(modifier = Modifier.fillMaxSize()) {
+                if (tracks.isEmpty()) {
+                    item {
+                        Text(
+                            text = "Aún sin rolas en esta playlist",
+                            style = MaterialTheme.typography.bodyLarge,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                        )
+                    }
+                }
                 itemsIndexed(tracks, key = { _, track -> track.id }) { index, track ->
                     TrackRow(
                         track = track,

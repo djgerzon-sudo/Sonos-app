@@ -40,10 +40,13 @@ import com.partyrockers.appsonos.viewmodel.PlayerViewModel
  * Inicio: portada grande, controles y letra SOLO aquí y SOLO si la rola
  * tiene letra disponible. No hay agrupar bocinas ni cambiar bocina aquí
  * (eso vive en Perfil > Mi sistema).
+ * Sin rola cargada no se inventa título, artista ni letra: se muestra
+ * "No hay música cargada" y "Aún sin archivo".
  */
 @Composable
 fun HomeScreen(viewModel: PlayerViewModel) {
     val track = viewModel.currentTrack
+    val speaker = viewModel.currentSpeaker
     val scrollState = rememberScrollState()
     Column(
         modifier = Modifier
@@ -53,7 +56,11 @@ fun HomeScreen(viewModel: PlayerViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(
-            text = viewModel.currentSpeaker.name + " · " + viewModel.currentSpeaker.model,
+            text = if (speaker != null) {
+                speaker.name + " · " + speaker.model
+            } else {
+                "Aún sin bocina"
+            },
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
@@ -64,7 +71,7 @@ fun HomeScreen(viewModel: PlayerViewModel) {
         )
         Spacer(modifier = Modifier.height(12.dp))
 
-        // Portada grande con la letra proyectada encima, si hay letra.
+        // Portada grande con la letra proyectada encima, solo si hay letra real.
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -75,11 +82,11 @@ fun HomeScreen(viewModel: PlayerViewModel) {
         ) {
             Icon(
                 imageVector = Icons.Filled.MusicNote,
-                contentDescription = "Portada de ${track.album}",
+                contentDescription = if (track != null) "Portada de ${track.album}" else "Sin portada",
                 tint = MaterialTheme.colorScheme.onPrimary,
                 modifier = Modifier.size(96.dp),
             )
-            if (track.hasLyrics && track.lyricsLines.isNotEmpty()) {
+            if (track != null && track.hasLyrics && track.lyricsLines.isNotEmpty()) {
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
@@ -112,7 +119,11 @@ fun HomeScreen(viewModel: PlayerViewModel) {
                     contentAlignment = Alignment.BottomCenter,
                 ) {
                     Text(
-                        text = "Letra no disponible para esta rola",
+                        text = if (track == null) {
+                            "Aún sin archivo"
+                        } else {
+                            "Letra no disponible para esta rola"
+                        },
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onPrimary,
                         textAlign = TextAlign.Center,
@@ -122,15 +133,19 @@ fun HomeScreen(viewModel: PlayerViewModel) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = track.title, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
         Text(
-            text = "${track.artist} · ${track.album}",
+            text = track?.title ?: "No hay música cargada",
+            style = MaterialTheme.typography.headlineSmall,
+            textAlign = TextAlign.Center,
+        )
+        Text(
+            text = if (track != null) "${track.artist} · ${track.album}" else "Aún sin archivo",
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
         )
         Text(
-            text = "${track.kbps} kbps · ${track.durationText}",
+            text = if (track != null) "${track.kbps} kbps · ${track.durationText}" else "Aún sin archivo",
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.primary,
         )

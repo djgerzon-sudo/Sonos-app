@@ -135,7 +135,7 @@ fun EqScreen(viewModel: PlayerViewModel) {
         }
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Nota: el EQ, el compresor y el reverb se aplican en el teléfono antes de mandar el audio a la bocina.",
+            text = "El EQ, el compresor y el reverb aún no se aplican al audio de la bocina.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )

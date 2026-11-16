@@ -1,12 +1,11 @@
 package com.partyrockers.appsonos.data
 
 /**
- * Una rola de la biblioteca.
- * @param localPath ruta del archivo en el teléfono, o null en las rolas de ejemplo.
+ * Una rola de la biblioteca. Solo existe si hay un archivo real.
+ * @param localPath ruta del archivo en el teléfono; null si no hay archivo.
  * @param hasLyrics true solo si hay letra disponible (incrustada, .lrc o descargada).
- * @param lyricsLines líneas de ejemplo de la letra (solo demo, no es letra real de
- *   ninguna canción). En v1 las rolas de ejemplo no traen letra real.
- * @param kbps velocidad a la que se está reproduciendo (ejemplo en v1).
+ * @param lyricsLines líneas de la letra, solo cuando hay letra real.
+ * @param kbps velocidad a la que se está reproduciendo; 0 si aún no suena nada.
  * @param addedDaysAgo hace cuántos días se agregó al almacenamiento (para "Recién agregados").
  * @param folder carpeta donde vive el archivo, tal como está en el teléfono.
  */

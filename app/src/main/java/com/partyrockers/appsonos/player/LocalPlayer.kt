@@ -6,11 +6,8 @@ import androidx.media3.exoplayer.ExoPlayer
 
 /**
  * Reproductor local del teléfono (Media3 / ExoPlayer).
- * En v1 solo suena cuando la rola tiene un archivo local ([localPath]).
- * Las rolas de ejemplo no traen archivo: en ese caso la UI simula
- * la reproducción (play/pausa, siguiente) sin audio, para probar
- * la navegación. Cuando la biblioteca lea el almacenamiento (v2),
- * las rolas reales sonarán aquí y se mandarán a Sonos por HTTP.
+ * Solo suena cuando la rola tiene un archivo local ([localPath]).
+ * Sin archivo no hay audio: la UI no simula reproducción.
  */
 class LocalPlayer(context: Context) {
 
