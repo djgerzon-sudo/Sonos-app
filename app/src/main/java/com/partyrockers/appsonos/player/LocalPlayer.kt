@@ -1,1 +1,57 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnBsYXllcgoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkeC5tZWRpYTMuY29tbW9uLk1lZGlhSXRlbQppbXBvcnQgYW5kcm9pZHgubWVkaWEzLmV4b3BsYXllci5FeG9QbGF5ZXIKCi8qKgogKiBSZXByb2R1Y3RvciBsb2NhbCBkZWwgdGVsw6lmb25vIChNZWRpYTMgLyBFeG9QbGF5ZXIpLgogKiBFbiB2MSBzb2xvIHN1ZW5hIGN1YW5kbyBsYSByb2xhIHRpZW5lIHVuIGFyY2hpdm8gbG9jYWwgKFtsb2NhbFBhdGhdKS4KICogTGFzIHJvbGFzIGRlIGVqZW1wbG8gbm8gdHJhZW4gYXJjaGl2bzogZW4gZXNlIGNhc28gbGEgVUkgc2ltdWxhCiAqIGxhIHJlcHJvZHVjY2nDs24gKHBsYXkvcGF1c2EsIHNpZ3VpZW50ZSkgc2luIGF1ZGlvLCBwYXJhIHByb2JhcgogKiBsYSBuYXZlZ2FjacOzbi4gQ3VhbmRvIGxhIGJpYmxpb3RlY2EgbGVhIGVsIGFsbWFjZW5hbWllbnRvICh2MiksCiAqIGxhcyByb2xhcyByZWFsZXMgc29uYXLDoW4gYXF1w60geSBzZSBtYW5kYXLDoW4gYSBTb25vcyBwb3IgSFRUUC4KICovCmNsYXNzIExvY2FsUGxheWVyKGNvbnRleHQ6IENvbnRleHQpIHsKCiAgICBwcml2YXRlIHZhbCBwbGF5ZXI6IEV4b1BsYXllciA9IEV4b1BsYXllci5CdWlsZGVyKGNvbnRleHQuYXBwbGljYXRpb25Db250ZXh0KS5idWlsZCgpCgogICAgdmFyIGlzUGxheWluZzogQm9vbGVhbiA9IGZhbHNlCiAgICAgICAgcHJpdmF0ZSBzZXQKCiAgICBmdW4gcGxheUxvY2FsRmlsZShsb2NhbFBhdGg6IFN0cmluZyk6IEJvb2xlYW4gewogICAgICAgIHJldHVybiB0cnkgewogICAgICAgICAgICBwbGF5ZXIuc2V0TWVkaWFJdGVtKE1lZGlhSXRlbS5mcm9tVXJpKGxvY2FsUGF0aCkpCiAgICAgICAgICAgIHBsYXllci5wcmVwYXJlKCkKICAgICAgICAgICAgcGxheWVyLnBsYXkoKQogICAgICAgICAgICBpc1BsYXlpbmcgPSB0cnVlCiAgICAgICAgICAgIHRydWUKICAgICAgICB9IGNhdGNoIChfOiBFeGNlcHRpb24pIHsKICAgICAgICAgICAgaXNQbGF5aW5nID0gZmFsc2UKICAgICAgICAgICAgZmFsc2UKICAgICAgICB9CiAgICB9CgogICAgZnVuIHBhdXNlKCkgewogICAgICAgIHBsYXllci5wYXVzZSgpCiAgICAgICAgaXNQbGF5aW5nID0gZmFsc2UKICAgIH0KCiAgICBmdW4gcmVzdW1lKCkgewogICAgICAgIHBsYXllci5wbGF5KCkKICAgICAgICBpc1BsYXlpbmcgPSB0cnVlCiAgICB9CgogICAgZnVuIHN0b3AoKSB7CiAgICAgICAgcGxheWVyLnN0b3AoKQogICAgICAgIGlzUGxheWluZyA9IGZhbHNlCiAgICB9CgogICAgZnVuIHNldFZvbHVtZSh2b2x1bWUwMTogRmxvYXQpIHsKICAgICAgICBwbGF5ZXIudm9sdW1lID0gdm9sdW1lMDEuY29lcmNlSW4oMGYsIDFmKQogICAgfQoKICAgIGZ1biByZWxlYXNlKCkgewogICAgICAgIHBsYXllci5yZWxlYXNlKCkKICAgIH0KfQo=
+package com.partyrockers.appsonos.player
+
+import android.content.Context
+import androidx.media3.common.MediaItem
+import androidx.media3.exoplayer.ExoPlayer
+
+/**
+ * Reproductor local del teléfono (Media3 / ExoPlayer).
+ * En v1 solo suena cuando la rola tiene un archivo local ([localPath]).
+ * Las rolas de ejemplo no traen archivo: en ese caso la UI simula
+ * la reproducción (play/pausa, siguiente) sin audio, para probar
+ * la navegación. Cuando la biblioteca lea el almacenamiento (v2),
+ * las rolas reales sonarán aquí y se mandarán a Sonos por HTTP.
+ */
+class LocalPlayer(context: Context) {
+
+    private val player: ExoPlayer = ExoPlayer.Builder(context.applicationContext).build()
+
+    var isPlaying: Boolean = false
+        private set
+
+    fun playLocalFile(localPath: String): Boolean {
+        return try {
+            player.setMediaItem(MediaItem.fromUri(localPath))
+            player.prepare()
+            player.play()
+            isPlaying = true
+            true
+        } catch (_: Exception) {
+            isPlaying = false
+            false
+        }
+    }
+
+    fun pause() {
+        player.pause()
+        isPlaying = false
+    }
+
+    fun resume() {
+        player.play()
+        isPlaying = true
+    }
+
+    fun stop() {
+        player.stop()
+        isPlaying = false
+    }
+
+    fun setVolume(volume01: Float) {
+        player.volume = volume01.coerceIn(0f, 1f)
+    }
+
+    fun release() {
+        player.release()
+    }
+}

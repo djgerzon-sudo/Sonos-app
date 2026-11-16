@@ -1,1 +1,8 @@
-Ly8gVG9wLWxldmVsIGJ1aWxkIGZpbGUg4oCUIEFwcCBTb25vcwovLyBWZXJzaW9uZXMgZmlqYWRhcyB5IHByb2JhZGFzIGp1bnRhczogQUdQIDguNS4yICsgS290bGluIDEuOS4yNCArIEdyYWRsZSA4LjcgKyBKYXZhIDE3LgovLyBObyBzdWJpciB2ZXJzaW9uZXMgc2luIHByb2JhciBsYSBwYXJlamEgY29tcGxldGEuCnBsdWdpbnMgewogICAgaWQoImNvbS5hbmRyb2lkLmFwcGxpY2F0aW9uIikgdmVyc2lvbiAiOC41LjIiIGFwcGx5IGZhbHNlCiAgICBpZCgib3JnLmpldGJyYWlucy5rb3RsaW4uYW5kcm9pZCIpIHZlcnNpb24gIjEuOS4yNCIgYXBwbHkgZmFsc2UKICAgIGlkKCJvcmcuamV0YnJhaW5zLmtvdGxpbi5wbHVnaW4uY29tcG9zZSIpIHZlcnNpb24gIjEuOS4yNCIgYXBwbHkgZmFsc2UKfQo=
+// Top-level build file — App Sonos
+// Versiones fijadas y probadas juntas: AGP 8.5.2 + Kotlin 1.9.24 + Gradle 8.7 + Java 17.
+// No subir versiones sin probar la pareja completa.
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "1.9.24" apply false
+}

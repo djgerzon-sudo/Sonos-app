@@ -1,1 +1,139 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnNvbm9zCgppbXBvcnQgamF2YS5pby5CdWZmZXJlZElucHV0U3RyZWFtCmltcG9ydCBqYXZhLmlvLkZpbGUKaW1wb3J0IGphdmEuaW8uRmlsZUlucHV0U3RyZWFtCmltcG9ydCBqYXZhLm5ldC5JbmV0NEFkZHJlc3MKaW1wb3J0IGphdmEubmV0Lk5ldHdvcmtJbnRlcmZhY2UKaW1wb3J0IGphdmEubmV0LlNlcnZlclNvY2tldAppbXBvcnQgamF2YS5uZXQuU29ja2V0CmltcG9ydCBrb3RsaW4uY29uY3VycmVudC50aHJlYWQKCi8qKgogKiBTZXJ2aWRvciBIVFRQIGxvY2FsIG3DrW5pbW8sIHNvbG8gY29uIGxhIGJpYmxpb3RlY2EgZXN0w6FuZGFyIGRlIEphdmEuCiAqIFNvbm9zIG5vIGxlZSBhcmNoaXZvcyBkZWwgdGVsw6lmb25vIGRpcmVjdGFtZW50ZTogbGEgYXBwIGxlIHNpcnZlIGVsIGF1ZGlvCiAqIHBvciBIVFRQIHkgbGUgcGFzYSBsYSBVUkwgY29uIFNldEFWVHJhbnNwb3J0VVJJLgogKiB2MSB1c2EgZXN0ZSBzZXJ2aWRvciBwcm9waW8gZW4gdmV6IGRlIE5hbm9IVFRQRCBwYXJhIG5vIHN1bWFyIHVuYQogKiBkZXBlbmRlbmNpYSBleHRlcm5hOyBoYWNlIGxvIG1pc21vIHBhcmEgYXJjaGl2b3MgbXAzL2ZsYWMvd2F2LgogKgogKiBVc286CiAqICAgdmFsIHNlcnZlciA9IExvY2FsSHR0cFNlcnZlcigpCiAqICAgc2VydmVyLnN0YXJ0KCkKICogICB2YWwgdXJsID0gc2VydmVyLnVybEZvcihGaWxlKCIvcnV0YS9jYW5jaW9uLm1wMyIpKSAvLyBodHRwOi8vMTkyLjE2OC4wLng6cHVlcnRvL2YwLm1wMwogKiAgIHNlcnZlci5zdG9wKCkKICovCmNsYXNzIExvY2FsSHR0cFNlcnZlciB7CgogICAgcHJpdmF0ZSB2YXIgc2VydmVyU29ja2V0OiBTZXJ2ZXJTb2NrZXQ/ID0gbnVsbAogICAgcHJpdmF0ZSB2YXIgcnVubmluZyA9IGZhbHNlCiAgICBwcml2YXRlIHZhbCBmaWxlcyA9IG11dGFibGVNYXBPZjxTdHJpbmcsIEZpbGU+KCkKICAgIHByaXZhdGUgdmFyIGNvdW50ZXIgPSAwCgogICAgdmFsIHBvcnQ6IEludAogICAgICAgIGdldCgpID0gc2VydmVyU29ja2V0Py5sb2NhbFBvcnQgPzogMAoKICAgIGZ1biBzdGFydCgpOiBJbnQgewogICAgICAgIGlmIChydW5uaW5nKSByZXR1cm4gcG9ydAogICAgICAgIHZhbCBzb2NrZXQgPSBTZXJ2ZXJTb2NrZXQoMCkKICAgICAgICBzZXJ2ZXJTb2NrZXQgPSBzb2NrZXQKICAgICAgICBydW5uaW5nID0gdHJ1ZQogICAgICAgIHRocmVhZChuYW1lID0gImFwcC1zb25vcy1odHRwIiwgaXNEYWVtb24gPSB0cnVlKSB7IGFjY2VwdExvb3Aoc29ja2V0KSB9CiAgICAgICAgcmV0dXJuIHNvY2tldC5sb2NhbFBvcnQKICAgIH0KCiAgICBmdW4gc3RvcCgpIHsKICAgICAgICBydW5uaW5nID0gZmFsc2UKICAgICAgICB0cnkgewogICAgICAgICAgICBzZXJ2ZXJTb2NrZXQ/LmNsb3NlKCkKICAgICAgICB9IGNhdGNoIChfOiBFeGNlcHRpb24pIHsKICAgICAgICAgICAgLy8gQ2VycmFyIHVuIHNvY2tldCB5YSBjZXJyYWRvIG5vIGVzIHVuIGVycm9yLgogICAgICAgIH0KICAgICAgICBzZXJ2ZXJTb2NrZXQgPSBudWxsCiAgICAgICAgc3luY2hyb25pemVkKGZpbGVzKSB7IGZpbGVzLmNsZWFyKCkgfQogICAgfQoKICAgIC8qKiBSZWdpc3RyYSB1biBhcmNoaXZvIHkgZGV2dWVsdmUgc3UgVVJMIGxvY2FsLiAqLwogICAgZnVuIHVybEZvcihmaWxlOiBGaWxlKTogU3RyaW5nPyB7CiAgICAgICAgaWYgKCFydW5uaW5nKSByZXR1cm4gbnVsbAogICAgICAgIHZhbCBrZXkgPSBzeW5jaHJvbml6ZWQoZmlsZXMpIHsKICAgICAgICAgICAgdmFsIG5hbWUgPSAiZiR7Y291bnRlcisrfS5tcDMiCiAgICAgICAgICAgIGZpbGVzW25hbWVdID0gZmlsZQogICAgICAgICAgICBuYW1lCiAgICAgICAgfQogICAgICAgIHZhbCBpcCA9IGxvY2FsSXBBZGRyZXNzKCkgPzogcmV0dXJuIG51bGwKICAgICAgICByZXR1cm4gImh0dHA6Ly8kaXA6JHtwb3J0fS8ka2V5IgogICAgfQoKICAgIHByaXZhdGUgZnVuIGFjY2VwdExvb3Aoc29ja2V0OiBTZXJ2ZXJTb2NrZXQpIHsKICAgICAgICB3aGlsZSAocnVubmluZykgewogICAgICAgICAgICB2YWwgY2xpZW50OiBTb2NrZXQgPSB0cnkgewogICAgICAgICAgICAgICAgc29ja2V0LmFjY2VwdCgpCiAgICAgICAgICAgIH0gY2F0Y2ggKF86IEV4Y2VwdGlvbikgewogICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgfQogICAgICAgICAgICB0aHJlYWQobmFtZSA9ICJhcHAtc29ub3MtaHR0cC1jbGllbnQiLCBpc0RhZW1vbiA9IHRydWUpIHsKICAgICAgICAgICAgICAgIGhhbmRsZUNsaWVudChjbGllbnQpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gaGFuZGxlQ2xpZW50KGNsaWVudDogU29ja2V0KSB7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY2xpZW50LnVzZSB7IHNvY2tldCAtPgogICAgICAgICAgICAgICAgdmFsIGlucHV0ID0gc29ja2V0LmdldElucHV0U3RyZWFtKCkKICAgICAgICAgICAgICAgIHZhbCBvdXRwdXQgPSBzb2NrZXQuZ2V0T3V0cHV0U3RyZWFtKCkKICAgICAgICAgICAgICAgIHZhbCByZXF1ZXN0TGluZSA9IGlucHV0LmJ1ZmZlcmVkUmVhZGVyKENoYXJzZXRzLlVURl84KS5yZWFkTGluZSgpID86IHJldHVybgogICAgICAgICAgICAgICAgLy8gIkdFVCAvZjAubXAzIEhUVFAvMS4xIgogICAgICAgICAgICAgICAgdmFsIHBhdGggPSByZXF1ZXN0TGluZS5zcGxpdCgiICIpLmdldE9yTnVsbCgxKT8ucmVtb3ZlUHJlZml4KCIvIikgPzogcmV0dXJuCiAgICAgICAgICAgICAgICB2YWwgZmlsZSA9IHN5bmNocm9uaXplZChmaWxlcykgeyBmaWxlc1twYXRoXSB9CiAgICAgICAgICAgICAgICBpZiAoZmlsZSA9PSBudWxsIHx8ICFmaWxlLmV4aXN0cygpKSB7CiAgICAgICAgICAgICAgICAgICAgdmFsIGJvZHkgPSAiTm90IGZvdW5kIi50b0J5dGVBcnJheShDaGFyc2V0cy5VVEZfOCkKICAgICAgICAgICAgICAgICAgICBvdXRwdXQud3JpdGUoCiAgICAgICAgICAgICAgICAgICAgICAgICJIVFRQLzEuMSA0MDQgTm90IEZvdW5kXHJcbkNvbnRlbnQtTGVuZ3RoOiAke2JvZHkuc2l6ZX1cclxuQ29ubmVjdGlvbjogY2xvc2VcclxuXHJcbiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC50b0J5dGVBcnJheShDaGFyc2V0cy5VVEZfOCksCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIG91dHB1dC53cml0ZShib2R5KQogICAgICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgdmFsIGNvbnRlbnRUeXBlID0gd2hlbiAoZmlsZS5leHRlbnNpb24ubG93ZXJjYXNlKCkpIHsKICAgICAgICAgICAgICAgICAgICAiZmxhYyIgLT4gImF1ZGlvL2ZsYWMiCiAgICAgICAgICAgICAgICAgICAgIndhdiIgLT4gImF1ZGlvL3dhdiIKICAgICAgICAgICAgICAgICAgICAib2dnIiAtPiAiYXVkaW8vb2dnIgogICAgICAgICAgICAgICAgICAgIGVsc2UgLT4gImF1ZGlvL21wZWciCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB2YWwgaGVhZGVyID0gIkhUVFAvMS4xIDIwMCBPS1xyXG5Db250ZW50LVR5cGU6ICRjb250ZW50VHlwZVxyXG4iICsKICAgICAgICAgICAgICAgICAgICAiQ29udGVudC1MZW5ndGg6ICR7ZmlsZS5sZW5ndGgoKX1cclxuQ29ubmVjdGlvbjogY2xvc2VcclxuXHJcbiIKICAgICAgICAgICAgICAgIG91dHB1dC53cml0ZShoZWFkZXIudG9CeXRlQXJyYXkoQ2hhcnNldHMuVVRGXzgpKQogICAgICAgICAgICAgICAgQnVmZmVyZWRJbnB1dFN0cmVhbShGaWxlSW5wdXRTdHJlYW0oZmlsZSkpLnVzZSB7IHN0cmVhbSAtPgogICAgICAgICAgICAgICAgICAgIHN0cmVhbS5jb3B5VG8ob3V0cHV0KQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgb3V0cHV0LmZsdXNoKCkKICAgICAgICAgICAgfQogICAgICAgIH0gY2F0Y2ggKF86IEV4Y2VwdGlvbikgewogICAgICAgICAgICAvLyBVbiBjbGllbnRlIHF1ZSBzZSBkZXNjb25lY3RhIGEgbWl0YWQgZGVsIHN0cmVhbSBubyBkZWJlIHR1bWJhciBlbCBzZXJ2aWRvci4KICAgICAgICB9CiAgICB9CgogICAgLyoqIFByaW1lcmEgSVB2NCBsb2NhbCBxdWUgbm8gc2VhIGxvb3BiYWNrIChsYSBkZSBsYSBXaUZpKS4gKi8KICAgIGZ1biBsb2NhbElwQWRkcmVzcygpOiBTdHJpbmc/IHsKICAgICAgICByZXR1cm4gdHJ5IHsKICAgICAgICAgICAgdmFsIGludGVyZmFjZXMgPSBOZXR3b3JrSW50ZXJmYWNlLmdldE5ldHdvcmtJbnRlcmZhY2VzKCkKICAgICAgICAgICAgd2hpbGUgKGludGVyZmFjZXMuaGFzTW9yZUVsZW1lbnRzKCkpIHsKICAgICAgICAgICAgICAgIHZhbCBuZXR3b3JrSW50ZXJmYWNlID0gaW50ZXJmYWNlcy5uZXh0RWxlbWVudCgpCiAgICAgICAgICAgICAgICBpZiAoIW5ldHdvcmtJbnRlcmZhY2UuaXNVcCB8fCBuZXR3b3JrSW50ZXJmYWNlLmlzTG9vcGJhY2spIGNvbnRpbnVlCiAgICAgICAgICAgICAgICB2YWwgYWRkcmVzc2VzID0gbmV0d29ya0ludGVyZmFjZS5pbmV0QWRkcmVzc2VzCiAgICAgICAgICAgICAgICB3aGlsZSAoYWRkcmVzc2VzLmhhc01vcmVFbGVtZW50cygpKSB7CiAgICAgICAgICAgICAgICAgICAgdmFsIGFkZHJlc3MgPSBhZGRyZXNzZXMubmV4dEVsZW1lbnQoKQogICAgICAgICAgICAgICAgICAgIGlmIChhZGRyZXNzIGlzIEluZXQ0QWRkcmVzcyAmJiAhYWRkcmVzcy5pc0xvb3BiYWNrQWRkcmVzcyAmJgogICAgICAgICAgICAgICAgICAgICAgICBhZGRyZXNzLmlzU2l0ZUxvY2FsQWRkcmVzcwogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gYWRkcmVzcy5ob3N0QWRkcmVzcwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBudWxsCiAgICAgICAgfSBjYXRjaCAoXzogRXhjZXB0aW9uKSB7CiAgICAgICAgICAgIG51bGwKICAgICAgICB9CiAgICB9Cn0K
+package com.partyrockers.appsonos.sonos
+
+import java.io.BufferedInputStream
+import java.io.File
+import java.io.FileInputStream
+import java.net.Inet4Address
+import java.net.NetworkInterface
+import java.net.ServerSocket
+import java.net.Socket
+import kotlin.concurrent.thread
+
+/**
+ * Servidor HTTP local mínimo, solo con la biblioteca estándar de Java.
+ * Sonos no lee archivos del teléfono directamente: la app le sirve el audio
+ * por HTTP y le pasa la URL con SetAVTransportURI.
+ * v1 usa este servidor propio en vez de NanoHTTPD para no sumar una
+ * dependencia externa; hace lo mismo para archivos mp3/flac/wav.
+ *
+ * Uso:
+ *   val server = LocalHttpServer()
+ *   server.start()
+ *   val url = server.urlFor(File("/ruta/cancion.mp3")) // http://192.168.0.x:puerto/f0.mp3
+ *   server.stop()
+ */
+class LocalHttpServer {
+
+    private var serverSocket: ServerSocket? = null
+    private var running = false
+    private val files = mutableMapOf<String, File>()
+    private var counter = 0
+
+    val port: Int
+        get() = serverSocket?.localPort ?: 0
+
+    fun start(): Int {
+        if (running) return port
+        val socket = ServerSocket(0)
+        serverSocket = socket
+        running = true
+        thread(name = "app-sonos-http", isDaemon = true) { acceptLoop(socket) }
+        return socket.localPort
+    }
+
+    fun stop() {
+        running = false
+        try {
+            serverSocket?.close()
+        } catch (_: Exception) {
+            // Cerrar un socket ya cerrado no es un error.
+        }
+        serverSocket = null
+        synchronized(files) { files.clear() }
+    }
+
+    /** Registra un archivo y devuelve su URL local. */
+    fun urlFor(file: File): String? {
+        if (!running) return null
+        val key = synchronized(files) {
+            val name = "f${counter++}.mp3"
+            files[name] = file
+            name
+        }
+        val ip = localIpAddress() ?: return null
+        return "http://$ip:${port}/$key"
+    }
+
+    private fun acceptLoop(socket: ServerSocket) {
+        while (running) {
+            val client: Socket = try {
+                socket.accept()
+            } catch (_: Exception) {
+                break
+            }
+            thread(name = "app-sonos-http-client", isDaemon = true) {
+                handleClient(client)
+            }
+        }
+    }
+
+    private fun handleClient(client: Socket) {
+        try {
+            client.use { socket ->
+                val input = socket.getInputStream()
+                val output = socket.getOutputStream()
+                val requestLine = input.bufferedReader(Charsets.UTF_8).readLine() ?: return
+                // "GET /f0.mp3 HTTP/1.1"
+                val path = requestLine.split(" ").getOrNull(1)?.removePrefix("/") ?: return
+                val file = synchronized(files) { files[path] }
+                if (file == null || !file.exists()) {
+                    val body = "Not found".toByteArray(Charsets.UTF_8)
+                    output.write(
+                        "HTTP/1.1 404 Not Found\r\nContent-Length: ${body.size}\r\nConnection: close\r\n\r\n"
+                            .toByteArray(Charsets.UTF_8),
+                    )
+                    output.write(body)
+                    return
+                }
+                val contentType = when (file.extension.lowercase()) {
+                    "flac" -> "audio/flac"
+                    "wav" -> "audio/wav"
+                    "ogg" -> "audio/ogg"
+                    else -> "audio/mpeg"
+                }
+                val header = "HTTP/1.1 200 OK\r\nContent-Type: $contentType\r\n" +
+                    "Content-Length: ${file.length()}\r\nConnection: close\r\n\r\n"
+                output.write(header.toByteArray(Charsets.UTF_8))
+                BufferedInputStream(FileInputStream(file)).use { stream ->
+                    stream.copyTo(output)
+                }
+                output.flush()
+            }
+        } catch (_: Exception) {
+            // Un cliente que se desconecta a mitad del stream no debe tumbar el servidor.
+        }
+    }
+
+    /** Primera IPv4 local que no sea loopback (la de la WiFi). */
+    fun localIpAddress(): String? {
+        return try {
+            val interfaces = NetworkInterface.getNetworkInterfaces()
+            while (interfaces.hasMoreElements()) {
+                val networkInterface = interfaces.nextElement()
+                if (!networkInterface.isUp || networkInterface.isLoopback) continue
+                val addresses = networkInterface.inetAddresses
+                while (addresses.hasMoreElements()) {
+                    val address = addresses.nextElement()
+                    if (address is Inet4Address && !address.isLoopbackAddress &&
+                        address.isSiteLocalAddress
+                    ) {
+                        return address.hostAddress
+                    }
+                }
+            }
+            null
+        } catch (_: Exception) {
+            null
+        }
+    }
+}

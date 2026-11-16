@@ -1,1 +1,290 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnZpZXdtb2RlbAoKaW1wb3J0IGFuZHJvaWQuYXBwLkFwcGxpY2F0aW9uCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuZ2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5tdXRhYmxlRmxvYXRTdGF0ZU9mCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUubXV0YWJsZUludFN0YXRlT2YKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5tdXRhYmxlU3RhdGVPZgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLnNldFZhbHVlCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUuQW5kcm9pZFZpZXdNb2RlbAppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLnZpZXdNb2RlbFNjb3BlCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLmRhdGEuRXFQcmVzZXQKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MuZGF0YS5QbGF5bGlzdAppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlNhbXBsZURhdGEKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MuZGF0YS5Tb25vc1NwZWFrZXIKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MuZGF0YS5UcmFjawppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5wbGF5ZXIuTG9jYWxQbGF5ZXIKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3Muc29ub3MuTG9jYWxIdHRwU2VydmVyCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnNvbm9zLlNvbm9zQ29udHJvbGxlcgppbXBvcnQgamF2YS5pby5GaWxlCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCgplbnVtIGNsYXNzIFNvcnRPcmRlciB7IFRJVExFLCBBUlRJU1QsIERVUkFUSU9OIH0KCmNsYXNzIFBsYXllclZpZXdNb2RlbChhcHBsaWNhdGlvbjogQXBwbGljYXRpb24pIDogQW5kcm9pZFZpZXdNb2RlbChhcHBsaWNhdGlvbikgewoKICAgIHByaXZhdGUgdmFsIGxvY2FsUGxheWVyID0gTG9jYWxQbGF5ZXIoYXBwbGljYXRpb24pCiAgICBwcml2YXRlIHZhbCBzb25vcyA9IFNvbm9zQ29udHJvbGxlcigpCiAgICBwcml2YXRlIHZhbCBodHRwU2VydmVyID0gTG9jYWxIdHRwU2VydmVyKCkKCiAgICAvLyAtLS0gQmlibGlvdGVjYSB5IGNvbGEgLS0tCiAgICB2YWwgYWxsVHJhY2tzOiBMaXN0PFRyYWNrPiA9IFNhbXBsZURhdGEudHJhY2tzCiAgICB2YXIgcGxheWxpc3RzIGJ5IG11dGFibGVTdGF0ZU9mKFNhbXBsZURhdGEucGxheWxpc3RzKQogICAgICAgIHByaXZhdGUgc2V0CiAgICB2YXIgZm9sZGVycyBieSBtdXRhYmxlU3RhdGVPZihTYW1wbGVEYXRhLmZvbGRlcnMpCiAgICAgICAgcHJpdmF0ZSBzZXQKCiAgICAvLyAtLS0gUm9sYSBhY3R1YWwgLS0tCiAgICB2YXIgY3VycmVudFRyYWNrIGJ5IG11dGFibGVTdGF0ZU9mPFRyYWNrPihTYW1wbGVEYXRhLnRyYWNrc1swXSkKICAgICAgICBwcml2YXRlIHNldAogICAgdmFyIGlzUGxheWluZyBieSBtdXRhYmxlU3RhdGVPZihmYWxzZSkKICAgICAgICBwcml2YXRlIHNldAogICAgdmFyIHF1ZXVlIGJ5IG11dGFibGVTdGF0ZU9mPExpc3Q8VHJhY2s+PihTYW1wbGVEYXRhLnRyYWNrcykKICAgICAgICBwcml2YXRlIHNldAoKICAgIC8vIC0tLSBWb2x1bWVuIC0tLQogICAgdmFyIHZvbHVtZSBieSBtdXRhYmxlSW50U3RhdGVPZig1NSkgLy8gMC4uMTAwCiAgICAgICAgcHJpdmF0ZSBzZXQKICAgIHZhciB2b2x1bWVYMiBieSBtdXRhYmxlU3RhdGVPZihmYWxzZSkKICAgICAgICBwcml2YXRlIHNldAoKICAgIC8qKiBWb2x1bWVuIGVmZWN0aXZvIHF1ZSBzYWxlIGEgbGEgYm9jaW5hICgwLi4yMDAgY29uIHgyKS4gKi8KICAgIHZhbCBlZmZlY3RpdmVWb2x1bWU6IEludAogICAgICAgIGdldCgpID0gKHZvbHVtZSAqIGlmICh2b2x1bWVYMikgMiBlbHNlIDEpLmNvZXJjZUluKDAsIDIwMCkKCiAgICAvLyAtLS0gQm9jaW5hcyAtLS0KICAgIHZhciBzcGVha2VycyBieSBtdXRhYmxlU3RhdGVPZjxMaXN0PFNvbm9zU3BlYWtlcj4+KFNhbXBsZURhdGEuc3BlYWtlcnMpCiAgICAgICAgcHJpdmF0ZSBzZXQKICAgIHZhciBjdXJyZW50U3BlYWtlciBieSBtdXRhYmxlU3RhdGVPZjxTb25vc1NwZWFrZXI+KFNhbXBsZURhdGEuc3BlYWtlcnNbMF0pCiAgICAgICAgcHJpdmF0ZSBzZXQKICAgIHZhciBzb25vc0Nvbm5lY3RlZCBieSBtdXRhYmxlU3RhdGVPZihmYWxzZSkKICAgICAgICBwcml2YXRlIHNldAogICAgdmFyIHNvbm9zU3RhdHVzIGJ5IG11dGFibGVTdGF0ZU9mKCJEZW1vOiBzaW4gY29uZXhpw7NuIHJlYWwgdG9kYXbDrWEiKQogICAgICAgIHByaXZhdGUgc2V0CgogICAgLy8gLS0tIEVRIHkgZWZlY3RvcyAoYXBhZ2Fkb3MgcG9yIGRlZmVjdG87IGNvbXByZXNvciB5IHJldmVyYiBwZXNhbiBtw6FzKSAtLS0KICAgIHZhciBlcUdhaW5zIGJ5IG11dGFibGVTdGF0ZU9mPExpc3Q8RmxvYXQ+PihMaXN0KDEyKSB7IDBmIH0pCiAgICAgICAgcHJpdmF0ZSBzZXQKICAgIHZhciBlcVByZXNldE5hbWUgYnkgbXV0YWJsZVN0YXRlT2YoIlBsYW5vIikKICAgICAgICBwcml2YXRlIHNldAogICAgdmFyIGNvbXByZXNzb3JPbiBieSBtdXRhYmxlU3RhdGVPZihmYWxzZSkKICAgICAgICBwcml2YXRlIHNldAogICAgdmFyIHJldmVyYk9uIGJ5IG11dGFibGVTdGF0ZU9mKGZhbHNlKQogICAgICAgIHByaXZhdGUgc2V0CiAgICB2YXIgcmV2ZXJiTGV2ZWwgYnkgbXV0YWJsZUZsb2F0U3RhdGVPZigwLjNmKQogICAgICAgIHByaXZhdGUgc2V0CgogICAgLy8gLS0tIEJpYmxpb3RlY2E6IGLDunNxdWVkYSB5IG9yZGVuIC0tLQogICAgdmFyIHNlYXJjaFF1ZXJ5IGJ5IG11dGFibGVTdGF0ZU9mKCIiKQogICAgICAgIHByaXZhdGUgc2V0CiAgICB2YXIgc29ydE9yZGVyIGJ5IG11dGFibGVTdGF0ZU9mKFNvcnRPcmRlci5USVRMRSkKICAgICAgICBwcml2YXRlIHNldAoKICAgIHZhbCB2aXNpYmxlVHJhY2tzOiBMaXN0PFRyYWNrPgogICAgICAgIGdldCgpIHsKICAgICAgICAgICAgdmFsIGZpbHRlcmVkID0gaWYgKHNlYXJjaFF1ZXJ5LmlzQmxhbmsoKSkgewogICAgICAgICAgICAgICAgYWxsVHJhY2tzCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBhbGxUcmFja3MuZmlsdGVyIHsKICAgICAgICAgICAgICAgICAgICBpdC50aXRsZS5jb250YWlucyhzZWFyY2hRdWVyeSwgaWdub3JlQ2FzZSA9IHRydWUpIHx8CiAgICAgICAgICAgICAgICAgICAgICAgIGl0LmFydGlzdC5jb250YWlucyhzZWFyY2hRdWVyeSwgaWdub3JlQ2FzZSA9IHRydWUpIHx8CiAgICAgICAgICAgICAgICAgICAgICAgIGl0LmFsYnVtLmNvbnRhaW5zKHNlYXJjaFF1ZXJ5LCBpZ25vcmVDYXNlID0gdHJ1ZSkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICByZXR1cm4gd2hlbiAoc29ydE9yZGVyKSB7CiAgICAgICAgICAgICAgICBTb3J0T3JkZXIuVElUTEUgLT4gZmlsdGVyZWQuc29ydGVkQnkgeyBpdC50aXRsZS5sb3dlcmNhc2UoKSB9CiAgICAgICAgICAgICAgICBTb3J0T3JkZXIuQVJUSVNUIC0+IGZpbHRlcmVkLnNvcnRlZEJ5IHsgaXQuYXJ0aXN0Lmxvd2VyY2FzZSgpIH0KICAgICAgICAgICAgICAgIFNvcnRPcmRlci5EVVJBVElPTiAtPiBmaWx0ZXJlZC5zb3J0ZWRCeSB7IGl0LmR1cmF0aW9uU2Vjb25kcyB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgLyoqIFJvbGFzIGFncmVnYWRhcyBoYWNlIDcgZMOtYXMgbyBtZW5vcy4gKi8KICAgIHZhbCByZWNlbnRUcmFja3M6IExpc3Q8VHJhY2s+CiAgICAgICAgZ2V0KCkgPSBhbGxUcmFja3MuZmlsdGVyIHsgaXQuYWRkZWREYXlzQWdvIDw9IDcgfS5zb3J0ZWRCeSB7IGl0LmFkZGVkRGF5c0FnbyB9CgogICAgZnVuIHNldFNlYXJjaFF1ZXJ5KHF1ZXJ5OiBTdHJpbmcpIHsKICAgICAgICBzZWFyY2hRdWVyeSA9IHF1ZXJ5CiAgICB9CgogICAgZnVuIHNldFNvcnRPcmRlcihvcmRlcjogU29ydE9yZGVyKSB7CiAgICAgICAgc29ydE9yZGVyID0gb3JkZXIKICAgIH0KCiAgICAvLyAtLS0gUmVwcm9kdWNjacOzbiAtLS0KCiAgICBmdW4gcGxheVRyYWNrKHRyYWNrOiBUcmFjaykgewogICAgICAgIGN1cnJlbnRUcmFjayA9IHRyYWNrCiAgICAgICAgaXNQbGF5aW5nID0gdHJ1ZQogICAgICAgIC8vIDEpIFN1ZW5hIGVuIGVsIHRlbMOpZm9ubyBzaSBoYXkgYXJjaGl2byBsb2NhbC4KICAgICAgICBpZiAodHJhY2subG9jYWxQYXRoICE9IG51bGwpIHsKICAgICAgICAgICAgbG9jYWxQbGF5ZXIucGxheUxvY2FsRmlsZSh0cmFjay5sb2NhbFBhdGgpCiAgICAgICAgfQogICAgICAgIC8vIDIpIFNlIG1hbmRhIGEgU29ub3MgcG9yIEhUVFAgc2kgaGF5IGJvY2luYSBjb25lY3RhZGEuCiAgICAgICAgdmlld01vZGVsU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgdmFsIHNwZWFrZXIgPSBjdXJyZW50U3BlYWtlcgogICAgICAgICAgICB2YWwgcGF0aCA9IHRyYWNrLmxvY2FsUGF0aAogICAgICAgICAgICBpZiAoc29ub3NDb25uZWN0ZWQgJiYgcGF0aCAhPSBudWxsKSB7CiAgICAgICAgICAgICAgICBodHRwU2VydmVyLnN0YXJ0KCkKICAgICAgICAgICAgICAgIHZhbCB1cmwgPSBodHRwU2VydmVyLnVybEZvcihGaWxlKHBhdGgpKQogICAgICAgICAgICAgICAgaWYgKHVybCAhPSBudWxsKSBzb25vcy5wbGF5VHJhY2sodHJhY2ssIHVybCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBmdW4gdG9nZ2xlUGxheVBhdXNlKCkgewogICAgICAgIGlmIChpc1BsYXlpbmcpIHsKICAgICAgICAgICAgaXNQbGF5aW5nID0gZmFsc2UKICAgICAgICAgICAgbG9jYWxQbGF5ZXIucGF1c2UoKQogICAgICAgICAgICB2aWV3TW9kZWxTY29wZS5sYXVuY2ggeyBzb25vcy5wYXVzZSgpIH0KICAgICAgICB9IGVsc2UgewogICAgICAgICAgICBpc1BsYXlpbmcgPSB0cnVlCiAgICAgICAgICAgIGlmIChjdXJyZW50VHJhY2subG9jYWxQYXRoICE9IG51bGwpIGxvY2FsUGxheWVyLnJlc3VtZSgpCiAgICAgICAgICAgIHZpZXdNb2RlbFNjb3BlLmxhdW5jaCB7IHNvbm9zLnBsYXkoKSB9CiAgICAgICAgfQogICAgfQoKICAgIGZ1biBuZXh0VHJhY2soKSB7CiAgICAgICAgdmFsIGluZGV4ID0gcXVldWUuaW5kZXhPZihjdXJyZW50VHJhY2spCiAgICAgICAgdmFsIG5leHQgPSBxdWV1ZS5nZXRPck51bGwoaW5kZXggKyAxKSA/OiBxdWV1ZS5maXJzdE9yTnVsbCgpID86IHJldHVybgogICAgICAgIHBsYXlUcmFjayhuZXh0KQogICAgICAgIHZpZXdNb2RlbFNjb3BlLmxhdW5jaCB7IHNvbm9zLm5leHQoKSB9CiAgICB9CgogICAgZnVuIHByZXZpb3VzVHJhY2soKSB7CiAgICAgICAgdmFsIGluZGV4ID0gcXVldWUuaW5kZXhPZihjdXJyZW50VHJhY2spCiAgICAgICAgdmFsIHByZXYgPSBpZiAoaW5kZXggPiAwKSBxdWV1ZVtpbmRleCAtIDFdIGVsc2UgcXVldWUubGFzdE9yTnVsbCgpID86IHJldHVybgogICAgICAgIHBsYXlUcmFjayhwcmV2KQogICAgICAgIHZpZXdNb2RlbFNjb3BlLmxhdW5jaCB7IHNvbm9zLnByZXZpb3VzKCkgfQogICAgfQoKICAgIGZ1biBzZXRWb2x1bWUodmFsdWU6IEludCkgewogICAgICAgIHZvbHVtZSA9IHZhbHVlLmNvZXJjZUluKDAsIDEwMCkKICAgICAgICAvLyBFbCB2b2x1bWVuIHF1ZSBzZSBtYW5kYSBhIFNvbm9zIGVzIGVsIGVmZWN0aXZvLCBzaW4gcGFzYXIgZGUgMTAwLgogICAgICAgIHZhbCB0b1Nvbm9zID0gZWZmZWN0aXZlVm9sdW1lLmNvZXJjZUluKDAsIDEwMCkKICAgICAgICB2aWV3TW9kZWxTY29wZS5sYXVuY2ggeyBzb25vcy5zZXRWb2x1bWUodG9Tb25vcykgfQogICAgfQoKICAgIGZ1biBzZXRWb2x1bWVYMihvbjogQm9vbGVhbikgewogICAgICAgIHZvbHVtZVgyID0gb24KICAgICAgICB2YWwgdG9Tb25vcyA9IGVmZmVjdGl2ZVZvbHVtZS5jb2VyY2VJbigwLCAxMDApCiAgICAgICAgdmlld01vZGVsU2NvcGUubGF1bmNoIHsgc29ub3Muc2V0Vm9sdW1lKHRvU29ub3MpIH0KICAgIH0KCiAgICAvLyAtLS0gRVEgeSBlZmVjdG9zIC0tLQoKICAgIGZ1biBhcHBseUVxUHJlc2V0KHByZXNldDogRXFQcmVzZXQpIHsKICAgICAgICBlcVByZXNldE5hbWUgPSBwcmVzZXQubmFtZQogICAgICAgIGVxR2FpbnMgPSBwcmVzZXQuZ2FpbnNEYgogICAgfQoKICAgIGZ1biBzZXRFcUJhbmQoaW5kZXg6IEludCwgZ2FpbkRiOiBGbG9hdCkgewogICAgICAgIGlmIChpbmRleCAhaW4gZXFHYWlucy5pbmRpY2VzKSByZXR1cm4KICAgICAgICBlcVByZXNldE5hbWUgPSAiUGVyc29uYWxpemFkbyIKICAgICAgICBlcUdhaW5zID0gZXFHYWlucy50b011dGFibGVMaXN0KCkuYWxzbyB7IGl0W2luZGV4XSA9IGdhaW5EYi5jb2VyY2VJbigtMTJmLCAxMmYpIH0KICAgIH0KCiAgICBmdW4gc2V0Q29tcHJlc3NvcihvbjogQm9vbGVhbikgewogICAgICAgIGNvbXByZXNzb3JPbiA9IG9uCiAgICB9CgogICAgZnVuIHNldFJldmVyYihvbjogQm9vbGVhbikgewogICAgICAgIHJldmVyYk9uID0gb24KICAgIH0KCiAgICBmdW4gc2V0UmV2ZXJiTGV2ZWwobGV2ZWw6IEZsb2F0KSB7CiAgICAgICAgcmV2ZXJiTGV2ZWwgPSBsZXZlbC5jb2VyY2VJbigwZiwgMWYpCiAgICB9CgogICAgLy8gLS0tIEJvY2luYXMgU29ub3MgLS0tCgogICAgZnVuIHNlbGVjdFNwZWFrZXIoc3BlYWtlcjogU29ub3NTcGVha2VyKSB7CiAgICAgICAgY3VycmVudFNwZWFrZXIgPSBzcGVha2VyCiAgICAgICAgc29ub3Muc2VsZWN0U3BlYWtlcihzcGVha2VyKQogICAgfQoKICAgIGZ1biBkaXNjb3ZlclNwZWFrZXJzKCkgewogICAgICAgIHNvbm9zU3RhdHVzID0gIkJ1c2NhbmRvIGJvY2luYXMgZW4gbGEgV2lGaeKApiIKICAgICAgICB2aWV3TW9kZWxTY29wZS5sYXVuY2ggewogICAgICAgICAgICB2YWwgZm91bmQgPSBzb25vcy5kaXNjb3ZlclNwZWFrZXJzKCkKICAgICAgICAgICAgaWYgKGZvdW5kLmlzTm90RW1wdHkoKSkgewogICAgICAgICAgICAgICAgc3BlYWtlcnMgPSBmb3VuZAogICAgICAgICAgICAgICAgY3VycmVudFNwZWFrZXIgPSBmb3VuZFswXQogICAgICAgICAgICAgICAgc29ub3Muc2VsZWN0U3BlYWtlcihmb3VuZFswXSkKICAgICAgICAgICAgICAgIHNvbm9zQ29ubmVjdGVkID0gdHJ1ZQogICAgICAgICAgICAgICAgc29ub3NTdGF0dXMgPSAiQ29uZWN0YWRvOiAke2ZvdW5kLnNpemV9IGJvY2luYShzKSBlbmNvbnRyYWRhKHMpIgogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgc29ub3NDb25uZWN0ZWQgPSBmYWxzZQogICAgICAgICAgICAgICAgc29ub3NTdGF0dXMgPSAiTm8gc2UgZW5jb250csOzIG5pbmd1bmEgYm9jaW5hIGVuIGVzdGEgV2lGaSIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICAvLyAtLS0gUGxheWxpc3RzIC0tLQoKICAgIGZ1biBjcmVhdGVQbGF5bGlzdChuYW1lOiBTdHJpbmcpIHsKICAgICAgICB2YWwgdHJpbW1lZCA9IG5hbWUudHJpbSgpCiAgICAgICAgaWYgKHRyaW1tZWQuaXNFbXB0eSgpKSByZXR1cm4KICAgICAgICB2YWwgbmV3UGxheWxpc3QgPSBQbGF5bGlzdCgKICAgICAgICAgICAgaWQgPSAicCR7U3lzdGVtLmN1cnJlbnRUaW1lTWlsbGlzKCl9IiwKICAgICAgICAgICAgbmFtZSA9IHRyaW1tZWQsCiAgICAgICAgICAgIHNvdXJjZSA9ICJBcHAgU29ub3MiLAogICAgICAgICAgICB0cmFja0lkcyA9IGVtcHR5TGlzdCgpLAogICAgICAgICkKICAgICAgICBwbGF5bGlzdHMgPSBwbGF5bGlzdHMgKyBuZXdQbGF5bGlzdAogICAgfQoKICAgIGZ1biBkZWxldGVQbGF5bGlzdChwbGF5bGlzdElkOiBTdHJpbmcpIHsKICAgICAgICBwbGF5bGlzdHMgPSBwbGF5bGlzdHMuZmlsdGVyTm90IHsgaXQuaWQgPT0gcGxheWxpc3RJZCB9CiAgICB9CgogICAgZnVuIGFkZEZvbGRlclRvUGxheWxpc3QoZm9sZGVyUGF0aDogU3RyaW5nLCBwbGF5bGlzdElkOiBTdHJpbmcpIHsKICAgICAgICB2YWwgZm9sZGVyVHJhY2tzID0gYWxsVHJhY2tzLmZpbHRlciB7IGl0LmZvbGRlciA9PSBmb2xkZXJQYXRoIH0ubWFwIHsgaXQuaWQgfQogICAgICAgIHBsYXlsaXN0cyA9IHBsYXlsaXN0cy5tYXAgeyBwbGF5bGlzdCAtPgogICAgICAgICAgICBpZiAocGxheWxpc3QuaWQgPT0gcGxheWxpc3RJZCkgewogICAgICAgICAgICAgICAgcGxheWxpc3QuY29weSh0cmFja0lkcyA9IHBsYXlsaXN0LnRyYWNrSWRzICsgZm9sZGVyVHJhY2tzKQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgcGxheWxpc3QKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBmdW4gYWRkVHJhY2tUb1BsYXlsaXN0KHRyYWNrSWQ6IFN0cmluZywgcGxheWxpc3RJZDogU3RyaW5nKSB7CiAgICAgICAgcGxheWxpc3RzID0gcGxheWxpc3RzLm1hcCB7IHBsYXlsaXN0IC0+CiAgICAgICAgICAgIGlmIChwbGF5bGlzdC5pZCA9PSBwbGF5bGlzdElkICYmIHRyYWNrSWQgIWluIHBsYXlsaXN0LnRyYWNrSWRzKSB7CiAgICAgICAgICAgICAgICBwbGF5bGlzdC5jb3B5KHRyYWNrSWRzID0gcGxheWxpc3QudHJhY2tJZHMgKyB0cmFja0lkKQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgcGxheWxpc3QKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBmdW4gbW92ZVRyYWNrSW5QbGF5bGlzdChwbGF5bGlzdElkOiBTdHJpbmcsIGZyb21JbmRleDogSW50LCB0b0luZGV4OiBJbnQpIHsKICAgICAgICBwbGF5bGlzdHMgPSBwbGF5bGlzdHMubWFwIHsgcGxheWxpc3QgLT4KICAgICAgICAgICAgaWYgKHBsYXlsaXN0LmlkICE9IHBsYXlsaXN0SWQpIHJldHVybkBtYXAgcGxheWxpc3QKICAgICAgICAgICAgdmFsIGlkcyA9IHBsYXlsaXN0LnRyYWNrSWRzLnRvTXV0YWJsZUxpc3QoKQogICAgICAgICAgICBpZiAoZnJvbUluZGV4ICFpbiBpZHMuaW5kaWNlcyB8fCB0b0luZGV4ICFpbiBpZHMuaW5kaWNlcykgcmV0dXJuQG1hcCBwbGF5bGlzdAogICAgICAgICAgICB2YWwgbW92ZWQgPSBpZHMucmVtb3ZlQXQoZnJvbUluZGV4KQogICAgICAgICAgICBpZHMuYWRkKHRvSW5kZXgsIG1vdmVkKQogICAgICAgICAgICBwbGF5bGlzdC5jb3B5KHRyYWNrSWRzID0gaWRzKQogICAgICAgIH0KICAgIH0KCiAgICBmdW4gcmVtb3ZlVHJhY2tGcm9tUGxheWxpc3QocGxheWxpc3RJZDogU3RyaW5nLCB0cmFja0lkOiBTdHJpbmcpIHsKICAgICAgICBwbGF5bGlzdHMgPSBwbGF5bGlzdHMubWFwIHsgcGxheWxpc3QgLT4KICAgICAgICAgICAgaWYgKHBsYXlsaXN0LmlkID09IHBsYXlsaXN0SWQpIHsKICAgICAgICAgICAgICAgIHBsYXlsaXN0LmNvcHkodHJhY2tJZHMgPSBwbGF5bGlzdC50cmFja0lkcy5maWx0ZXJOb3QgeyBpdCA9PSB0cmFja0lkIH0pCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBwbGF5bGlzdAogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGZ1biB0cmFja3NPZihwbGF5bGlzdDogUGxheWxpc3QpOiBMaXN0PFRyYWNrPiA9CiAgICAgICAgcGxheWxpc3QudHJhY2tJZHMubWFwTm90TnVsbCB7IGlkIC0+IGFsbFRyYWNrcy5maW5kIHsgaXQuaWQgPT0gaWQgfSB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQ2xlYXJlZCgpIHsKICAgICAgICBsb2NhbFBsYXllci5yZWxlYXNlKCkKICAgICAgICBodHRwU2VydmVyLnN0b3AoKQogICAgICAgIHN1cGVyLm9uQ2xlYXJlZCgpCiAgICB9Cn0K
+package com.partyrockers.appsonos.viewmodel
+
+import android.app.Application
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
+import com.partyrockers.appsonos.data.EqPreset
+import com.partyrockers.appsonos.data.Playlist
+import com.partyrockers.appsonos.data.SampleData
+import com.partyrockers.appsonos.data.SonosSpeaker
+import com.partyrockers.appsonos.data.Track
+import com.partyrockers.appsonos.player.LocalPlayer
+import com.partyrockers.appsonos.sonos.LocalHttpServer
+import com.partyrockers.appsonos.sonos.SonosController
+import java.io.File
+import kotlinx.coroutines.launch
+
+enum class SortOrder { TITLE, ARTIST, DURATION }
+
+class PlayerViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val localPlayer = LocalPlayer(application)
+    private val sonos = SonosController()
+    private val httpServer = LocalHttpServer()
+
+    // --- Biblioteca y cola ---
+    val allTracks: List<Track> = SampleData.tracks
+    var playlists by mutableStateOf(SampleData.playlists)
+        private set
+    var folders by mutableStateOf(SampleData.folders)
+        private set
+
+    // --- Rola actual ---
+    var currentTrack by mutableStateOf<Track>(SampleData.tracks[0])
+        private set
+    var isPlaying by mutableStateOf(false)
+        private set
+    var queue by mutableStateOf<List<Track>>(SampleData.tracks)
+        private set
+
+    // --- Volumen ---
+    var volume by mutableIntStateOf(55) // 0..100
+        private set
+    var volumeX2 by mutableStateOf(false)
+        private set
+
+    /** Volumen efectivo que sale a la bocina (0..200 con x2). */
+    val effectiveVolume: Int
+        get() = (volume * if (volumeX2) 2 else 1).coerceIn(0, 200)
+
+    // --- Bocinas ---
+    var speakers by mutableStateOf<List<SonosSpeaker>>(SampleData.speakers)
+        private set
+    var currentSpeaker by mutableStateOf<SonosSpeaker>(SampleData.speakers[0])
+        private set
+    var sonosConnected by mutableStateOf(false)
+        private set
+    var sonosStatus by mutableStateOf("Demo: sin conexión real todavía")
+        private set
+
+    // --- EQ y efectos (apagados por defecto; compresor y reverb pesan más) ---
+    var eqGains by mutableStateOf<List<Float>>(List(12) { 0f })
+        private set
+    var eqPresetName by mutableStateOf("Plano")
+        private set
+    var compressorOn by mutableStateOf(false)
+        private set
+    var reverbOn by mutableStateOf(false)
+        private set
+    var reverbLevel by mutableFloatStateOf(0.3f)
+        private set
+
+    // --- Biblioteca: búsqueda y orden ---
+    var searchQuery by mutableStateOf("")
+        private set
+    var sortOrder by mutableStateOf(SortOrder.TITLE)
+        private set
+
+    val visibleTracks: List<Track>
+        get() {
+            val filtered = if (searchQuery.isBlank()) {
+                allTracks
+            } else {
+                allTracks.filter {
+                    it.title.contains(searchQuery, ignoreCase = true) ||
+                        it.artist.contains(searchQuery, ignoreCase = true) ||
+                        it.album.contains(searchQuery, ignoreCase = true)
+                }
+            }
+            return when (sortOrder) {
+                SortOrder.TITLE -> filtered.sortedBy { it.title.lowercase() }
+                SortOrder.ARTIST -> filtered.sortedBy { it.artist.lowercase() }
+                SortOrder.DURATION -> filtered.sortedBy { it.durationSeconds }
+            }
+        }
+
+    /** Rolas agregadas hace 7 días o menos. */
+    val recentTracks: List<Track>
+        get() = allTracks.filter { it.addedDaysAgo <= 7 }.sortedBy { it.addedDaysAgo }
+
+    fun setSearchQuery(query: String) {
+        searchQuery = query
+    }
+
+    fun setSortOrder(order: SortOrder) {
+        sortOrder = order
+    }
+
+    // --- Reproducción ---
+
+    fun playTrack(track: Track) {
+        currentTrack = track
+        isPlaying = true
+        // 1) Suena en el teléfono si hay archivo local.
+        if (track.localPath != null) {
+            localPlayer.playLocalFile(track.localPath)
+        }
+        // 2) Se manda a Sonos por HTTP si hay bocina conectada.
+        viewModelScope.launch {
+            val speaker = currentSpeaker
+            val path = track.localPath
+            if (sonosConnected && path != null) {
+                httpServer.start()
+                val url = httpServer.urlFor(File(path))
+                if (url != null) sonos.playTrack(track, url)
+            }
+        }
+    }
+
+    fun togglePlayPause() {
+        if (isPlaying) {
+            isPlaying = false
+            localPlayer.pause()
+            viewModelScope.launch { sonos.pause() }
+        } else {
+            isPlaying = true
+            if (currentTrack.localPath != null) localPlayer.resume()
+            viewModelScope.launch { sonos.play() }
+        }
+    }
+
+    fun nextTrack() {
+        val index = queue.indexOf(currentTrack)
+        val next = queue.getOrNull(index + 1) ?: queue.firstOrNull() ?: return
+        playTrack(next)
+        viewModelScope.launch { sonos.next() }
+    }
+
+    fun previousTrack() {
+        val index = queue.indexOf(currentTrack)
+        val prev = if (index > 0) queue[index - 1] else queue.lastOrNull() ?: return
+        playTrack(prev)
+        viewModelScope.launch { sonos.previous() }
+    }
+
+    fun setVolume(value: Int) {
+        volume = value.coerceIn(0, 100)
+        // El volumen que se manda a Sonos es el efectivo, sin pasar de 100.
+        val toSonos = effectiveVolume.coerceIn(0, 100)
+        viewModelScope.launch { sonos.setVolume(toSonos) }
+    }
+
+    fun setVolumeX2(on: Boolean) {
+        volumeX2 = on
+        val toSonos = effectiveVolume.coerceIn(0, 100)
+        viewModelScope.launch { sonos.setVolume(toSonos) }
+    }
+
+    // --- EQ y efectos ---
+
+    fun applyEqPreset(preset: EqPreset) {
+        eqPresetName = preset.name
+        eqGains = preset.gainsDb
+    }
+
+    fun setEqBand(index: Int, gainDb: Float) {
+        if (index !in eqGains.indices) return
+        eqPresetName = "Personalizado"
+        eqGains = eqGains.toMutableList().also { it[index] = gainDb.coerceIn(-12f, 12f) }
+    }
+
+    fun setCompressor(on: Boolean) {
+        compressorOn = on
+    }
+
+    fun setReverb(on: Boolean) {
+        reverbOn = on
+    }
+
+    fun setReverbLevel(level: Float) {
+        reverbLevel = level.coerceIn(0f, 1f)
+    }
+
+    // --- Bocinas Sonos ---
+
+    fun selectSpeaker(speaker: SonosSpeaker) {
+        currentSpeaker = speaker
+        sonos.selectSpeaker(speaker)
+    }
+
+    fun discoverSpeakers() {
+        sonosStatus = "Buscando bocinas en la WiFi…"
+        viewModelScope.launch {
+            val found = sonos.discoverSpeakers()
+            if (found.isNotEmpty()) {
+                speakers = found
+                currentSpeaker = found[0]
+                sonos.selectSpeaker(found[0])
+                sonosConnected = true
+                sonosStatus = "Conectado: ${found.size} bocina(s) encontrada(s)"
+            } else {
+                sonosConnected = false
+                sonosStatus = "No se encontró ninguna bocina en esta WiFi"
+            }
+        }
+    }
+
+    // --- Playlists ---
+
+    fun createPlaylist(name: String) {
+        val trimmed = name.trim()
+        if (trimmed.isEmpty()) return
+        val newPlaylist = Playlist(
+            id = "p${System.currentTimeMillis()}",
+            name = trimmed,
+            source = "App Sonos",
+            trackIds = emptyList(),
+        )
+        playlists = playlists + newPlaylist
+    }
+
+    fun deletePlaylist(playlistId: String) {
+        playlists = playlists.filterNot { it.id == playlistId }
+    }
+
+    fun addFolderToPlaylist(folderPath: String, playlistId: String) {
+        val folderTracks = allTracks.filter { it.folder == folderPath }.map { it.id }
+        playlists = playlists.map { playlist ->
+            if (playlist.id == playlistId) {
+                playlist.copy(trackIds = playlist.trackIds + folderTracks)
+            } else {
+                playlist
+            }
+        }
+    }
+
+    fun addTrackToPlaylist(trackId: String, playlistId: String) {
+        playlists = playlists.map { playlist ->
+            if (playlist.id == playlistId && trackId !in playlist.trackIds) {
+                playlist.copy(trackIds = playlist.trackIds + trackId)
+            } else {
+                playlist
+            }
+        }
+    }
+
+    fun moveTrackInPlaylist(playlistId: String, fromIndex: Int, toIndex: Int) {
+        playlists = playlists.map { playlist ->
+            if (playlist.id != playlistId) return@map playlist
+            val ids = playlist.trackIds.toMutableList()
+            if (fromIndex !in ids.indices || toIndex !in ids.indices) return@map playlist
+            val moved = ids.removeAt(fromIndex)
+            ids.add(toIndex, moved)
+            playlist.copy(trackIds = ids)
+        }
+    }
+
+    fun removeTrackFromPlaylist(playlistId: String, trackId: String) {
+        playlists = playlists.map { playlist ->
+            if (playlist.id == playlistId) {
+                playlist.copy(trackIds = playlist.trackIds.filterNot { it == trackId })
+            } else {
+                playlist
+            }
+        }
+    }
+
+    fun tracksOf(playlist: Playlist): List<Track> =
+        playlist.trackIds.mapNotNull { id -> allTracks.find { it.id == id } }
+
+    override fun onCleared() {
+        localPlayer.release()
+        httpServer.stop()
+        super.onCleared()
+    }
+}

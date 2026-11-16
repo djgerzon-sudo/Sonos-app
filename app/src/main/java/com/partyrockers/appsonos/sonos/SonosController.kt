@@ -1,1 +1,129 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnNvbm9zCgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlNvbm9zU3BlYWtlcgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlRyYWNrCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuRGlzcGF0Y2hlcnMKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy53aXRoQ29udGV4dAoKLyoqCiAqIENhcGEgZGUgY29udHJvbCBkZSBTb25vcyBwYXJhIGxhIGFwcC4KICogUmVnbGEgaW1wb3J0YW50ZSBkZSBTb25vczogbG9zIGNvbWFuZG9zIGRlIHRyYW5zcG9ydGUgKHBsYXksIHBhdXNhLAogKiBzaWd1aWVudGUsIGNvbGEpIHZhbiBhbCBDT09SRElOQURPUiBkZWwgZ3J1cG8sIG5vIGEgY3VhbHF1aWVyIGJvY2luYS4KICogU2kgbGEgYm9jaW5hIG5vIGVzIGNvb3JkaW5hZG9yYSwgc2UgcmVzdWVsdmUgZWwgY29vcmRpbmFkb3IgY29uCiAqIFpvbmVHcm91cFRvcG9sb2d5LkdldFpvbmVHcm91cFN0YXRlIHkgc2UgbGUgbWFuZGFuIGxvcyBjb21hbmRvcyBhIMOpbC4KICoKICogVG9kYXMgbGFzIGZ1bmNpb25lcyBzdXNwZW5kZW4geSBoYWNlbiByZWQgZW4gRGlzcGF0Y2hlcnMuSU8uCiAqLwpjbGFzcyBTb25vc0NvbnRyb2xsZXIgewoKICAgIHZhciBjdXJyZW50U3BlYWtlcjogU29ub3NTcGVha2VyPyA9IG51bGwKICAgICAgICBwcml2YXRlIHNldAoKICAgIGZ1biBzZWxlY3RTcGVha2VyKHNwZWFrZXI6IFNvbm9zU3BlYWtlcikgewogICAgICAgIGN1cnJlbnRTcGVha2VyID0gc3BlYWtlcgogICAgfQoKICAgIHN1c3BlbmQgZnVuIGRpc2NvdmVyU3BlYWtlcnModGltZW91dE1zOiBJbnQgPSAzXzAwMCk6IExpc3Q8U29ub3NTcGVha2VyPiA9CiAgICAgICAgd2l0aENvbnRleHQoRGlzcGF0Y2hlcnMuSU8pIHsgU3NkcERpc2NvdmVyeS5kaXNjb3Zlcih0aW1lb3V0TXMpIH0KCiAgICAvKioKICAgICAqIFJlc3VlbHZlIGxhIElQIGRlbCBjb29yZGluYWRvciBkZWwgZ3J1cG8gYWwgcXVlIHBlcnRlbmVjZSBbc3BlYWtlcl0uCiAgICAgKiBFbCBYTUwgZGUgR2V0Wm9uZUdyb3VwU3RhdGUgdHJhZSBncnVwb3MgY29uIGNvb3JkaW5hdG9yPSJSSU5DT05fLi4uIi4KICAgICAqIFNpIG5vIHNlIHB1ZWRlIHJlc29sdmVyLCBzZSBkZXZ1ZWx2ZSBsYSBtaXNtYSBib2NpbmEgKGdydXBvcyBkZSB1bmEgc29sYQogICAgICogYm9jaW5hOiBsYSBib2NpbmEgZXMgc3UgcHJvcGlvIGNvb3JkaW5hZG9yKS4KICAgICAqLwogICAgc3VzcGVuZCBmdW4gcmVzb2x2ZUNvb3JkaW5hdG9ySXAoc3BlYWtlcjogU29ub3NTcGVha2VyKTogU3RyaW5nID0KICAgICAgICB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgdmFsIHN0YXRlID0gU29hcENsaWVudC5nZXRab25lR3JvdXBTdGF0ZShzcGVha2VyLmlwKQogICAgICAgICAgICAgICAgLy8gRGVzLWVzY2FwZSBlbiBvcmRlbjogJmFtcDsgU0lFTVBSRSBhbCBmaW5hbCwgbyB1biAiJmFtcDtsdDsiCiAgICAgICAgICAgICAgICAvLyBzZSBkZXMtZXNjYXBhcsOtYSBkb3MgdmVjZXMgeSBjb3Jyb21wZXLDrWEgZWwgWE1MLgogICAgICAgICAgICAgICAgdmFsIHVuZXNjYXBlZCA9IHN0YXRlCiAgICAgICAgICAgICAgICAgICAgLnJlcGxhY2UoIiZsdDsiLCAiPCIpCiAgICAgICAgICAgICAgICAgICAgLnJlcGxhY2UoIiZndDsiLCAiPiIpCiAgICAgICAgICAgICAgICAgICAgLnJlcGxhY2UoIiZxdW90OyIsICJcIiIpCiAgICAgICAgICAgICAgICAgICAgLnJlcGxhY2UoIiZhbXA7IiwgIiYiKQogICAgICAgICAgICAgICAgLy8gPFpvbmVHcm91cCBDb29yZGluYXRvcj0iUklOQ09OX3h4eCIgLi4uPjxab25lR3JvdXBNZW1iZXIgVVVJRD0iUklOQ09OX3l5eSIgLi4uLz4KICAgICAgICAgICAgICAgIHZhbCBncm91cFJlZ2V4ID0gUmVnZXgoCiAgICAgICAgICAgICAgICAgICAgIiIiPFpvbmVHcm91cFxzK0Nvb3JkaW5hdG9yPSIoUklOQ09OX1teIl0rKSJbXj5dKj4oLio/KTwvWm9uZUdyb3VwPiIiIiwKICAgICAgICAgICAgICAgICAgICBSZWdleE9wdGlvbi5ET1RfTUFUQ0hFU19BTEwsCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICBmb3IgKG1hdGNoIGluIGdyb3VwUmVnZXguZmluZEFsbCh1bmVzY2FwZWQpKSB7CiAgICAgICAgICAgICAgICAgICAgdmFsIGNvb3JkaW5hdG9yVXVpZCA9IG1hdGNoLmdyb3VwVmFsdWVzWzFdCiAgICAgICAgICAgICAgICAgICAgdmFsIG1lbWJlcnNYbWwgPSBtYXRjaC5ncm91cFZhbHVlc1syXQogICAgICAgICAgICAgICAgICAgIGlmIChtZW1iZXJzWG1sLmNvbnRhaW5zKHNwZWFrZXIudXVpZCwgaWdub3JlQ2FzZSA9IHRydWUpIHx8CiAgICAgICAgICAgICAgICAgICAgICAgIGNvb3JkaW5hdG9yVXVpZC5lcXVhbHMoc3BlYWtlci51dWlkLCBpZ25vcmVDYXNlID0gdHJ1ZSkKICAgICAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICAgICAgLy8gRWwgY29vcmRpbmFkb3IgZXMgdW5hIGJvY2luYSBkZWwgZ3J1cG86IHN1IElQIHNlIHNhY2EgZGUKICAgICAgICAgICAgICAgICAgICAgICAgLy8gc3UgbWllbWJybywgcXVlIHRyYWUgTG9jYXRpb249Imh0dHA6Ly9pcDoxNDAwLy4uLiIuCiAgICAgICAgICAgICAgICAgICAgICAgIHZhbCBsb2NhdGlvblJlZ2V4ID0gUmVnZXgoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAiIiJVVUlEPSIkY29vcmRpbmF0b3JVdWlkIltePl0qTG9jYXRpb249Imh0dHA6Ly8oW146L10rKSIiIiwKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICB2YWwgaXAgPSBsb2NhdGlvblJlZ2V4LmZpbmQobWVtYmVyc1htbCk/Lmdyb3VwVmFsdWVzPy5nZXRPck51bGwoMSkKICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGlwICE9IG51bGwpIHJldHVybkB3aXRoQ29udGV4dCBpcAogICAgICAgICAgICAgICAgICAgICAgICAvLyBTaSBubyBoYXkgTG9jYXRpb24sIGVsIGNvb3JkaW5hZG9yIGVzIGxhIGJvY2luYSBtaXNtYS4KICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGNvb3JkaW5hdG9yVXVpZC5lcXVhbHMoc3BlYWtlci51dWlkLCBpZ25vcmVDYXNlID0gdHJ1ZSkpIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybkB3aXRoQ29udGV4dCBzcGVha2VyLmlwCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBzcGVha2VyLmlwCiAgICAgICAgICAgIH0gY2F0Y2ggKF86IEV4Y2VwdGlvbikgewogICAgICAgICAgICAgICAgc3BlYWtlci5pcAogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgIHByaXZhdGUgc3VzcGVuZCBmdW4gY29vcmRpbmF0b3JJcCgpOiBTdHJpbmc/IHsKICAgICAgICB2YWwgc3BlYWtlciA9IGN1cnJlbnRTcGVha2VyID86IHJldHVybiBudWxsCiAgICAgICAgcmV0dXJuIHJlc29sdmVDb29yZGluYXRvcklwKHNwZWFrZXIpCiAgICB9CgogICAgc3VzcGVuZCBmdW4gcGxheSgpOiBCb29sZWFuID0gcnVuT25Db29yZGluYXRvciB7IFNvYXBDbGllbnQucGxheShpdCkgfQoKICAgIHN1c3BlbmQgZnVuIHBhdXNlKCk6IEJvb2xlYW4gPSBydW5PbkNvb3JkaW5hdG9yIHsgU29hcENsaWVudC5wYXVzZShpdCkgfQoKICAgIHN1c3BlbmQgZnVuIG5leHQoKTogQm9vbGVhbiA9IHJ1bk9uQ29vcmRpbmF0b3IgeyBTb2FwQ2xpZW50Lm5leHQoaXQpIH0KCiAgICBzdXNwZW5kIGZ1biBwcmV2aW91cygpOiBCb29sZWFuID0gcnVuT25Db29yZGluYXRvciB7IFNvYXBDbGllbnQucHJldmlvdXMoaXQpIH0KCiAgICAvKiogVm9sdW1lbiAwLi4xMDAuIEVsICJWb2x1bWVuIHgyIiBkZSBsYSBVSSBzZSBhcGxpY2EgYW50ZXMgZGUgbGxhbWFyIGFxdcOtLiAqLwogICAgc3VzcGVuZCBmdW4gc2V0Vm9sdW1lKHZvbHVtZTogSW50KTogQm9vbGVhbiB7CiAgICAgICAgdmFsIHNwZWFrZXIgPSBjdXJyZW50U3BlYWtlciA/OiByZXR1cm4gZmFsc2UKICAgICAgICByZXR1cm4gdHJ5IHsKICAgICAgICAgICAgd2l0aENvbnRleHQoRGlzcGF0Y2hlcnMuSU8pIHsgU29hcENsaWVudC5zZXRWb2x1bWUoc3BlYWtlci5pcCwgdm9sdW1lKSB9CiAgICAgICAgICAgIHRydWUKICAgICAgICB9IGNhdGNoIChfOiBFeGNlcHRpb24pIHsKICAgICAgICAgICAgZmFsc2UKICAgICAgICB9CiAgICB9CgogICAgLyoqCiAgICAgKiBNYW5kYSB1bmEgcm9sYSBhIGxhIGJvY2luYTogc2lydmUgZWwgYXJjaGl2byBsb2NhbCBjb24gW3NlcnZlclVybF0KICAgICAqIHkgbGUgZGljZSBhIFNvbm9zIHF1ZSBsbyB0b3F1ZSBjb24gU2V0QVZUcmFuc3BvcnRVUkkgKyBQbGF5LgogICAgICogW3RyYWNrXSBzZSByZWNpYmUgcGFyYSBsYSBBUEkgZGUgdjEgKGxhIFVSTCB5YSBsbGV2YSBlbCBhcmNoaXZvKTsKICAgICAqIGVuIHYyIHNlIHVzYXLDoSBwYXJhIGxvcyBtZXRhZGF0b3MgRElETC1MaXRlLgogICAgICovCiAgICBzdXNwZW5kIGZ1biBwbGF5VHJhY2sodHJhY2s6IFRyYWNrLCBzZXJ2ZXJVcmw6IFN0cmluZyk6IEJvb2xlYW4gewogICAgICAgIHZhbCBpcCA9IGNvb3JkaW5hdG9ySXAoKSA/OiByZXR1cm4gZmFsc2UKICAgICAgICByZXR1cm4gdHJ5IHsKICAgICAgICAgICAgd2l0aENvbnRleHQoRGlzcGF0Y2hlcnMuSU8pIHsKICAgICAgICAgICAgICAgIFNvYXBDbGllbnQuc2V0QXZUcmFuc3BvcnRVcmkoaXAsIHNlcnZlclVybCkKICAgICAgICAgICAgICAgIFNvYXBDbGllbnQucGxheShpcCkKICAgICAgICAgICAgfQogICAgICAgICAgICB0cnVlCiAgICAgICAgfSBjYXRjaCAoXzogRXhjZXB0aW9uKSB7CiAgICAgICAgICAgIGZhbHNlCiAgICAgICAgfQogICAgfQoKICAgIC8qKiBFamVjdXRhIFthY3Rpb25dIGNvbnRyYSBlbCBjb29yZGluYWRvci4gRGV2dWVsdmUgZmFsc2Ugc2kgZmFsbGEgbyBubyBoYXkgYm9jaW5hLiAqLwogICAgcHJpdmF0ZSBzdXNwZW5kIGZ1biBydW5PbkNvb3JkaW5hdG9yKGFjdGlvbjogKFN0cmluZykgLT4gU3RyaW5nKTogQm9vbGVhbiB7CiAgICAgICAgdmFsIGlwID0gY29vcmRpbmF0b3JJcCgpID86IHJldHVybiBmYWxzZQogICAgICAgIHJldHVybiB0cnkgewogICAgICAgICAgICB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgeyBhY3Rpb24oaXApIH0KICAgICAgICAgICAgdHJ1ZQogICAgICAgIH0gY2F0Y2ggKF86IEV4Y2VwdGlvbikgewogICAgICAgICAgICBmYWxzZQogICAgICAgIH0KICAgIH0KfQo=
+package com.partyrockers.appsonos.sonos
+
+import com.partyrockers.appsonos.data.SonosSpeaker
+import com.partyrockers.appsonos.data.Track
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+/**
+ * Capa de control de Sonos para la app.
+ * Regla importante de Sonos: los comandos de transporte (play, pausa,
+ * siguiente, cola) van al COORDINADOR del grupo, no a cualquier bocina.
+ * Si la bocina no es coordinadora, se resuelve el coordinador con
+ * ZoneGroupTopology.GetZoneGroupState y se le mandan los comandos a él.
+ *
+ * Todas las funciones suspenden y hacen red en Dispatchers.IO.
+ */
+class SonosController {
+
+    var currentSpeaker: SonosSpeaker? = null
+        private set
+
+    fun selectSpeaker(speaker: SonosSpeaker) {
+        currentSpeaker = speaker
+    }
+
+    suspend fun discoverSpeakers(timeoutMs: Int = 3_000): List<SonosSpeaker> =
+        withContext(Dispatchers.IO) { SsdpDiscovery.discover(timeoutMs) }
+
+    /**
+     * Resuelve la IP del coordinador del grupo al que pertenece [speaker].
+     * El XML de GetZoneGroupState trae grupos con coordinator="RINCON_...".
+     * Si no se puede resolver, se devuelve la misma bocina (grupos de una sola
+     * bocina: la bocina es su propio coordinador).
+     */
+    suspend fun resolveCoordinatorIp(speaker: SonosSpeaker): String =
+        withContext(Dispatchers.IO) {
+            try {
+                val state = SoapClient.getZoneGroupState(speaker.ip)
+                // Des-escape en orden: &amp; SIEMPRE al final, o un "&amp;lt;"
+                // se des-escaparía dos veces y corrompería el XML.
+                val unescaped = state
+                    .replace("&lt;", "<")
+                    .replace("&gt;", ">")
+                    .replace("&quot;", "\"")
+                    .replace("&amp;", "&")
+                // <ZoneGroup Coordinator="RINCON_xxx" ...><ZoneGroupMember UUID="RINCON_yyy" .../>
+                val groupRegex = Regex(
+                    """<ZoneGroup\s+Coordinator="(RINCON_[^"]+)"[^>]*>(.*?)</ZoneGroup>""",
+                    RegexOption.DOT_MATCHES_ALL,
+                )
+                for (match in groupRegex.findAll(unescaped)) {
+                    val coordinatorUuid = match.groupValues[1]
+                    val membersXml = match.groupValues[2]
+                    if (membersXml.contains(speaker.uuid, ignoreCase = true) ||
+                        coordinatorUuid.equals(speaker.uuid, ignoreCase = true)
+                    ) {
+                        // El coordinador es una bocina del grupo: su IP se saca de
+                        // su miembro, que trae Location="http://ip:1400/...".
+                        val locationRegex = Regex(
+                            """UUID="$coordinatorUuid"[^>]*Location="http://([^:/]+)""",
+                        )
+                        val ip = locationRegex.find(membersXml)?.groupValues?.getOrNull(1)
+                        if (ip != null) return@withContext ip
+                        // Si no hay Location, el coordinador es la bocina misma.
+                        if (coordinatorUuid.equals(speaker.uuid, ignoreCase = true)) {
+                            return@withContext speaker.ip
+                        }
+                    }
+                }
+                speaker.ip
+            } catch (_: Exception) {
+                speaker.ip
+            }
+        }
+
+    private suspend fun coordinatorIp(): String? {
+        val speaker = currentSpeaker ?: return null
+        return resolveCoordinatorIp(speaker)
+    }
+
+    suspend fun play(): Boolean = runOnCoordinator { SoapClient.play(it) }
+
+    suspend fun pause(): Boolean = runOnCoordinator { SoapClient.pause(it) }
+
+    suspend fun next(): Boolean = runOnCoordinator { SoapClient.next(it) }
+
+    suspend fun previous(): Boolean = runOnCoordinator { SoapClient.previous(it) }
+
+    /** Volumen 0..100. El "Volumen x2" de la UI se aplica antes de llamar aquí. */
+    suspend fun setVolume(volume: Int): Boolean {
+        val speaker = currentSpeaker ?: return false
+        return try {
+            withContext(Dispatchers.IO) { SoapClient.setVolume(speaker.ip, volume) }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    /**
+     * Manda una rola a la bocina: sirve el archivo local con [serverUrl]
+     * y le dice a Sonos que lo toque con SetAVTransportURI + Play.
+     * [track] se recibe para la API de v1 (la URL ya lleva el archivo);
+     * en v2 se usará para los metadatos DIDL-Lite.
+     */
+    suspend fun playTrack(track: Track, serverUrl: String): Boolean {
+        val ip = coordinatorIp() ?: return false
+        return try {
+            withContext(Dispatchers.IO) {
+                SoapClient.setAvTransportUri(ip, serverUrl)
+                SoapClient.play(ip)
+            }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    /** Ejecuta [action] contra el coordinador. Devuelve false si falla o no hay bocina. */
+    private suspend fun runOnCoordinator(action: (String) -> String): Boolean {
+        val ip = coordinatorIp() ?: return false
+        return try {
+            withContext(Dispatchers.IO) { action(ip) }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+}

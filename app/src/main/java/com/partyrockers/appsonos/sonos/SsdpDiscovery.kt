@@ -1,1 +1,79 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnNvbm9zCgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlNvbm9zU3BlYWtlcgppbXBvcnQgamF2YS5uZXQuRGF0YWdyYW1QYWNrZXQKaW1wb3J0IGphdmEubmV0LkluZXRBZGRyZXNzCmltcG9ydCBqYXZhLm5ldC5NdWx0aWNhc3RTb2NrZXQKCi8qKgogKiBEZXNjdWJyaW1pZW50byBkZSBib2NpbmFzIFNvbm9zIHBvciBTU0RQIGVuIGxhIHJlZCBsb2NhbC4KICogRW52w61hIE0tU0VBUkNIIGEgMjM5LjI1NS4yNTUuMjUwOjE5MDAgYnVzY2FuZG8gWm9uZVBsYXllciwKICogbGVlIGxhcyByZXNwdWVzdGFzIChjYWJlY2VyYSBMT0NBVElPTikgeSBkZXNjYXJnYSBsYSBkZXNjcmlwY2nDs24KICogZGUgY2FkYSBib2NpbmEgcGFyYSBzYWNhciBzdSBub21icmUsIG1vZGVsbyB5IFVVSUQuCiAqIExsYW1hciBkZXNkZSBEaXNwYXRjaGVycy5JTzogYmxvcXVlYSBoYXN0YSBbdGltZW91dE1zXS4KICovCm9iamVjdCBTc2RwRGlzY292ZXJ5IHsKCiAgICBwcml2YXRlIGNvbnN0IHZhbCBTU0RQX0FERFJFU1MgPSAiMjM5LjI1NS4yNTUuMjUwIgogICAgcHJpdmF0ZSBjb25zdCB2YWwgU1NEUF9QT1JUID0gMTkwMAogICAgcHJpdmF0ZSBjb25zdCB2YWwgU0VBUkNIX1RBUkdFVCA9ICJ1cm46c2NoZW1hcy11cG5wLW9yZzpkZXZpY2U6Wm9uZVBsYXllcjoxIgoKICAgIGZ1biBkaXNjb3Zlcih0aW1lb3V0TXM6IEludCA9IDNfMDAwKTogTGlzdDxTb25vc1NwZWFrZXI+IHsKICAgICAgICB2YWwgZm91bmQgPSBsaW5rZWRNYXBPZjxTdHJpbmcsIFNvbm9zU3BlYWtlcj4oKQogICAgICAgIHZhbCByZXF1ZXN0ID0gKAogICAgICAgICAgICAiTS1TRUFSQ0ggKiBIVFRQLzEuMVxyXG4iICsKICAgICAgICAgICAgICAgICJIT1NUOiAkU1NEUF9BRERSRVNTOiRTU0RQX1BPUlRcclxuIiArCiAgICAgICAgICAgICAgICAiTUFOOiBcIm5zPTAxXCJcclxuIiArCiAgICAgICAgICAgICAgICAiTVg6IDJcclxuIiArCiAgICAgICAgICAgICAgICAiU1Q6ICRTRUFSQ0hfVEFSR0VUXHJcbiIgKwogICAgICAgICAgICAgICAgIlxyXG4iCiAgICAgICAgICAgICkudG9CeXRlQXJyYXkoQ2hhcnNldHMuVVRGXzgpCiAgICAgICAgdmFsIGdyb3VwID0gSW5ldEFkZHJlc3MuZ2V0QnlOYW1lKFNTRFBfQUREUkVTUykKICAgICAgICBNdWx0aWNhc3RTb2NrZXQoU1NEUF9QT1JUKS51c2UgeyBzb2NrZXQgLT4KICAgICAgICAgICAgc29ja2V0LnNvVGltZW91dCA9IHRpbWVvdXRNcwogICAgICAgICAgICBzb2NrZXQuc2VuZChEYXRhZ3JhbVBhY2tldChyZXF1ZXN0LCByZXF1ZXN0LnNpemUsIGdyb3VwLCBTU0RQX1BPUlQpKQogICAgICAgICAgICB2YWwgYnVmZmVyID0gQnl0ZUFycmF5KDQwOTYpCiAgICAgICAgICAgIHZhbCBkZWFkbGluZSA9IFN5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpICsgdGltZW91dE1zCiAgICAgICAgICAgIHdoaWxlIChTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSA8IGRlYWRsaW5lKSB7CiAgICAgICAgICAgICAgICB2YWwgcGFja2V0ID0gRGF0YWdyYW1QYWNrZXQoYnVmZmVyLCBidWZmZXIuc2l6ZSkKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgc29ja2V0LnJlY2VpdmUocGFja2V0KQogICAgICAgICAgICAgICAgfSBjYXRjaCAoXzogamF2YS5uZXQuU29ja2V0VGltZW91dEV4Y2VwdGlvbikgewogICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB2YWwgdGV4dCA9IFN0cmluZyhwYWNrZXQuZGF0YSwgMCwgcGFja2V0Lmxlbmd0aCwgQ2hhcnNldHMuVVRGXzgpCiAgICAgICAgICAgICAgICB2YWwgbG9jYXRpb24gPSB0ZXh0LmxpbmVTZXF1ZW5jZSgpCiAgICAgICAgICAgICAgICAgICAgLmZpcnN0T3JOdWxsIHsgaXQudHJpbSgpLnN0YXJ0c1dpdGgoIkxPQ0FUSU9OOiIsIGlnbm9yZUNhc2UgPSB0cnVlKSB9CiAgICAgICAgICAgICAgICAgICAgPy5zdWJzdHJpbmdBZnRlcigiOiIsICIiKQogICAgICAgICAgICAgICAgICAgID8udHJpbSgpCiAgICAgICAgICAgICAgICAgICAgPzogY29udGludWUKICAgICAgICAgICAgICAgIHZhbCBzcGVha2VyID0gZGVzY3JpYmUobG9jYXRpb24pID86IGNvbnRpbnVlCiAgICAgICAgICAgICAgICBmb3VuZFtzcGVha2VyLnV1aWRdID0gc3BlYWtlcgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIHJldHVybiBmb3VuZC52YWx1ZXMudG9MaXN0KCkKICAgIH0KCiAgICAvKiogRGVzY2FyZ2EgaHR0cDovL2lwOjE0MDAveG1sL2RldmljZV9kZXNjcmlwdGlvbi54bWwgeSBleHRyYWUgbG9zIGRhdG9zLiAqLwogICAgZnVuIGRlc2NyaWJlKGxvY2F0aW9uVXJsOiBTdHJpbmcpOiBTb25vc1NwZWFrZXI/IHsKICAgICAgICByZXR1cm4gdHJ5IHsKICAgICAgICAgICAgdmFsIHhtbCA9IFNvYXBDbGllbnQuZ2V0VGV4dChsb2NhdGlvblVybCkKICAgICAgICAgICAgdmFsIHV1aWQgPSB0YWcoeG1sLCAiVUROIik/LnJlbW92ZVByZWZpeCgidXVpZDoiKSA/OiByZXR1cm4gbnVsbAogICAgICAgICAgICB2YWwgbmFtZSA9IHRhZyh4bWwsICJmcmllbmRseU5hbWUiKSA/OiByZXR1cm4gbnVsbAogICAgICAgICAgICB2YWwgbW9kZWwgPSB0YWcoeG1sLCAibW9kZWxOdW1iZXIiKSA/OiAiU29ub3MiCiAgICAgICAgICAgIC8vIExhIElQIHZpZW5lIGRlIGxhIFVSTCBkZSBkZXNjcmlwY2nDs24sIHAuIGVqLiBodHRwOi8vMTkyLjE2OC4wLjEwMToxNDAwLy4uLgogICAgICAgICAgICB2YWwgaXAgPSBsb2NhdGlvblVybC5yZW1vdmVQcmVmaXgoImh0dHA6Ly8iKQogICAgICAgICAgICAgICAgLnN1YnN0cmluZ0JlZm9yZSgiOiIpCiAgICAgICAgICAgICAgICAuc3Vic3RyaW5nQmVmb3JlKCIvIikKICAgICAgICAgICAgU29ub3NTcGVha2VyKHV1aWQgPSB1dWlkLCBuYW1lID0gbmFtZSwgbW9kZWwgPSBtb2RlbCwgaXAgPSBpcCkKICAgICAgICB9IGNhdGNoIChfOiBFeGNlcHRpb24pIHsKICAgICAgICAgICAgbnVsbAogICAgICAgIH0KICAgIH0KCiAgICAvKiogRXh0cmFlIDx0YWc+dmFsb3I8L3RhZz4gZGUgdW4gWE1MIHNpbXBsZS4gRGV2dWVsdmUgbnVsbCBzaSBubyBlc3TDoS4gKi8KICAgIGZ1biB0YWcoeG1sOiBTdHJpbmcsIG5hbWU6IFN0cmluZyk6IFN0cmluZz8gewogICAgICAgIHZhbCByZWdleCA9IFJlZ2V4KCI8JG5hbWU+KC4qPyk8LyRuYW1lPiIsIFJlZ2V4T3B0aW9uLkRPVF9NQVRDSEVTX0FMTCkKICAgICAgICByZXR1cm4gcmVnZXguZmluZCh4bWwpPy5ncm91cFZhbHVlcz8uZ2V0T3JOdWxsKDEpPy50cmltKCkKICAgIH0KfQo=
+package com.partyrockers.appsonos.sonos
+
+import com.partyrockers.appsonos.data.SonosSpeaker
+import java.net.DatagramPacket
+import java.net.InetAddress
+import java.net.MulticastSocket
+
+/**
+ * Descubrimiento de bocinas Sonos por SSDP en la red local.
+ * Envía M-SEARCH a 239.255.255.250:1900 buscando ZonePlayer,
+ * lee las respuestas (cabecera LOCATION) y descarga la descripción
+ * de cada bocina para sacar su nombre, modelo y UUID.
+ * Llamar desde Dispatchers.IO: bloquea hasta [timeoutMs].
+ */
+object SsdpDiscovery {
+
+    private const val SSDP_ADDRESS = "239.255.255.250"
+    private const val SSDP_PORT = 1900
+    private const val SEARCH_TARGET = "urn:schemas-upnp-org:device:ZonePlayer:1"
+
+    fun discover(timeoutMs: Int = 3_000): List<SonosSpeaker> {
+        val found = linkedMapOf<String, SonosSpeaker>()
+        val request = (
+            "M-SEARCH * HTTP/1.1\r\n" +
+                "HOST: $SSDP_ADDRESS:$SSDP_PORT\r\n" +
+                "MAN: \"ns=01\"\r\n" +
+                "MX: 2\r\n" +
+                "ST: $SEARCH_TARGET\r\n" +
+                "\r\n"
+            ).toByteArray(Charsets.UTF_8)
+        val group = InetAddress.getByName(SSDP_ADDRESS)
+        MulticastSocket(SSDP_PORT).use { socket ->
+            socket.soTimeout = timeoutMs
+            socket.send(DatagramPacket(request, request.size, group, SSDP_PORT))
+            val buffer = ByteArray(4096)
+            val deadline = System.currentTimeMillis() + timeoutMs
+            while (System.currentTimeMillis() < deadline) {
+                val packet = DatagramPacket(buffer, buffer.size)
+                try {
+                    socket.receive(packet)
+                } catch (_: java.net.SocketTimeoutException) {
+                    break
+                }
+                val text = String(packet.data, 0, packet.length, Charsets.UTF_8)
+                val location = text.lineSequence()
+                    .firstOrNull { it.trim().startsWith("LOCATION:", ignoreCase = true) }
+                    ?.substringAfter(":", "")
+                    ?.trim()
+                    ?: continue
+                val speaker = describe(location) ?: continue
+                found[speaker.uuid] = speaker
+            }
+        }
+        return found.values.toList()
+    }
+
+    /** Descarga http://ip:1400/xml/device_description.xml y extrae los datos. */
+    fun describe(locationUrl: String): SonosSpeaker? {
+        return try {
+            val xml = SoapClient.getText(locationUrl)
+            val uuid = tag(xml, "UDN")?.removePrefix("uuid:") ?: return null
+            val name = tag(xml, "friendlyName") ?: return null
+            val model = tag(xml, "modelNumber") ?: "Sonos"
+            // La IP viene de la URL de descripción, p. ej. http://192.168.0.101:1400/...
+            val ip = locationUrl.removePrefix("http://")
+                .substringBefore(":")
+                .substringBefore("/")
+            SonosSpeaker(uuid = uuid, name = name, model = model, ip = ip)
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    /** Extrae <tag>valor</tag> de un XML simple. Devuelve null si no está. */
+    fun tag(xml: String, name: String): String? {
+        val regex = Regex("<$name>(.*?)</$name>", RegexOption.DOT_MATCHES_ALL)
+        return regex.find(xml)?.groupValues?.getOrNull(1)?.trim()
+    }
+}

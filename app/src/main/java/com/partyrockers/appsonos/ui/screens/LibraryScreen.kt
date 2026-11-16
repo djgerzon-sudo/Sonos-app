@@ -1,1 +1,81 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnNjcmVlbnMKCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LkNvbHVtbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5Sb3cKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFNpemUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFdpZHRoCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LnBhZGRpbmcKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5LkxhenlDb2x1bW4KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5Lml0ZW1zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLkljb25zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5TZWFyY2gKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkZpbHRlckNoaXAKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk1hdGVyaWFsVGhlbWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk91dGxpbmVkVGV4dEZpZWxkCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5UZXh0CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuQ29tcG9zYWJsZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS5Nb2RpZmllcgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS51bml0LmRwCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLmNvbXBvbmVudHMuVHJhY2tSb3cKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3Mudmlld21vZGVsLlBsYXllclZpZXdNb2RlbAppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy52aWV3bW9kZWwuU29ydE9yZGVyCgovKiogQmlibGlvdGVjYTogYsO6c3F1ZWRhLCBvcmRlbiBwb3IgdMOtdHVsbyAvIGFydGlzdGEgLyBkdXJhY2nDs24geSBSZWNpw6luIGFncmVnYWRvcy4gKi8KQENvbXBvc2FibGUKZnVuIExpYnJhcnlTY3JlZW4odmlld01vZGVsOiBQbGF5ZXJWaWV3TW9kZWwpIHsKICAgIENvbHVtbihtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCkpIHsKICAgICAgICBPdXRsaW5lZFRleHRGaWVsZCgKICAgICAgICAgICAgdmFsdWUgPSB2aWV3TW9kZWwuc2VhcmNoUXVlcnksCiAgICAgICAgICAgIG9uVmFsdWVDaGFuZ2UgPSB7IHZpZXdNb2RlbC5zZXRTZWFyY2hRdWVyeShpdCkgfSwKICAgICAgICAgICAgbGFiZWwgPSB7IFRleHQoIkJ1c2NhciBjYW5jacOzbiwgYXJ0aXN0YSBvIMOhbGJ1bSIpIH0sCiAgICAgICAgICAgIGxlYWRpbmdJY29uID0geyBJY29uKEljb25zLkZpbGxlZC5TZWFyY2gsIGNvbnRlbnREZXNjcmlwdGlvbiA9ICJCdXNjYXIiKSB9LAogICAgICAgICAgICBzaW5nbGVMaW5lID0gdHJ1ZSwKICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKS5wYWRkaW5nKDE2LmRwKSwKICAgICAgICApCiAgICAgICAgUm93KG1vZGlmaWVyID0gTW9kaWZpZXIucGFkZGluZyhob3Jpem9udGFsID0gMTYuZHApKSB7CiAgICAgICAgICAgIFRleHQodGV4dCA9ICJPcmRlbmFyIHBvcjoiLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TWVkaXVtKQogICAgICAgIH0KICAgICAgICBSb3cobW9kaWZpZXIgPSBNb2RpZmllci5wYWRkaW5nKGhvcml6b250YWwgPSAxNi5kcCwgdmVydGljYWwgPSA4LmRwKSkgewogICAgICAgICAgICBGaWx0ZXJDaGlwKAogICAgICAgICAgICAgICAgc2VsZWN0ZWQgPSB2aWV3TW9kZWwuc29ydE9yZGVyID09IFNvcnRPcmRlci5USVRMRSwKICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7IHZpZXdNb2RlbC5zZXRTb3J0T3JkZXIoU29ydE9yZGVyLlRJVExFKSB9LAogICAgICAgICAgICAgICAgbGFiZWwgPSB7IFRleHQoIlTDrXR1bG8iKSB9LAogICAgICAgICAgICApCiAgICAgICAgICAgIEZpbHRlckNoaXAoCiAgICAgICAgICAgICAgICBzZWxlY3RlZCA9IHZpZXdNb2RlbC5zb3J0T3JkZXIgPT0gU29ydE9yZGVyLkFSVElTVCwKICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7IHZpZXdNb2RlbC5zZXRTb3J0T3JkZXIoU29ydE9yZGVyLkFSVElTVCkgfSwKICAgICAgICAgICAgICAgIGxhYmVsID0geyBUZXh0KCJBcnRpc3RhIikgfSwKICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIucGFkZGluZyhzdGFydCA9IDguZHApLAogICAgICAgICAgICApCiAgICAgICAgICAgIEZpbHRlckNoaXAoCiAgICAgICAgICAgICAgICBzZWxlY3RlZCA9IHZpZXdNb2RlbC5zb3J0T3JkZXIgPT0gU29ydE9yZGVyLkRVUkFUSU9OLAogICAgICAgICAgICAgICAgb25DbGljayA9IHsgdmlld01vZGVsLnNldFNvcnRPcmRlcihTb3J0T3JkZXIuRFVSQVRJT04pIH0sCiAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dCgiRHVyYWNpw7NuIikgfSwKICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIucGFkZGluZyhzdGFydCA9IDguZHApLAogICAgICAgICAgICApCiAgICAgICAgfQogICAgICAgIExhenlDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4U2l6ZSgpKSB7CiAgICAgICAgICAgIGl0ZW0gewogICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gIlJlY2nDqW4gYWdyZWdhZG9zIiwKICAgICAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS50aXRsZU1lZGl1bSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcoaG9yaXpvbnRhbCA9IDE2LmRwLCB2ZXJ0aWNhbCA9IDguZHApLAogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB9CiAgICAgICAgICAgIGl0ZW1zKHZpZXdNb2RlbC5yZWNlbnRUcmFja3MsIGtleSA9IHsgaXQuaWQgfSkgeyB0cmFjayAtPgogICAgICAgICAgICAgICAgVHJhY2tSb3codHJhY2sgPSB0cmFjaywgb25DbGljayA9IHsgdmlld01vZGVsLnBsYXlUcmFjayh0cmFjaykgfSkKICAgICAgICAgICAgfQogICAgICAgICAgICBpdGVtIHsKICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICJUb2RhcyBsYXMgcm9sYXMgKCR7dmlld01vZGVsLnZpc2libGVUcmFja3Muc2l6ZX0pIiwKICAgICAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS50aXRsZU1lZGl1bSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcoaG9yaXpvbnRhbCA9IDE2LmRwLCB2ZXJ0aWNhbCA9IDguZHApLAogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB9CiAgICAgICAgICAgIGl0ZW1zKHZpZXdNb2RlbC52aXNpYmxlVHJhY2tzLCBrZXkgPSB7IGl0LmlkIH0pIHsgdHJhY2sgLT4KICAgICAgICAgICAgICAgIFRyYWNrUm93KHRyYWNrID0gdHJhY2ssIG9uQ2xpY2sgPSB7IHZpZXdNb2RlbC5wbGF5VHJhY2sodHJhY2spIH0pCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0K
+package com.partyrockers.appsonos.ui.screens
+
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.partyrockers.appsonos.ui.components.TrackRow
+import com.partyrockers.appsonos.viewmodel.PlayerViewModel
+import com.partyrockers.appsonos.viewmodel.SortOrder
+
+/** Biblioteca: búsqueda, orden por título / artista / duración y Recién agregados. */
+@Composable
+fun LibraryScreen(viewModel: PlayerViewModel) {
+    Column(modifier = Modifier.fillMaxSize()) {
+        OutlinedTextField(
+            value = viewModel.searchQuery,
+            onValueChange = { viewModel.setSearchQuery(it) },
+            label = { Text("Buscar canción, artista o álbum") },
+            leadingIcon = { Icon(Icons.Filled.Search, contentDescription = "Buscar") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth().padding(16.dp),
+        )
+        Row(modifier = Modifier.padding(horizontal = 16.dp)) {
+            Text(text = "Ordenar por:", style = MaterialTheme.typography.bodyMedium)
+        }
+        Row(modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+            FilterChip(
+                selected = viewModel.sortOrder == SortOrder.TITLE,
+                onClick = { viewModel.setSortOrder(SortOrder.TITLE) },
+                label = { Text("Título") },
+            )
+            FilterChip(
+                selected = viewModel.sortOrder == SortOrder.ARTIST,
+                onClick = { viewModel.setSortOrder(SortOrder.ARTIST) },
+                label = { Text("Artista") },
+                modifier = Modifier.padding(start = 8.dp),
+            )
+            FilterChip(
+                selected = viewModel.sortOrder == SortOrder.DURATION,
+                onClick = { viewModel.setSortOrder(SortOrder.DURATION) },
+                label = { Text("Duración") },
+                modifier = Modifier.padding(start = 8.dp),
+            )
+        }
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            item {
+                Text(
+                    text = "Recién agregados",
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+            }
+            items(viewModel.recentTracks, key = { it.id }) { track ->
+                TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+            }
+            item {
+                Text(
+                    text = "Todas las rolas (${viewModel.visibleTracks.size})",
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+            }
+            items(viewModel.visibleTracks, key = { it.id }) { track ->
+                TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+            }
+        }
+    }
+}

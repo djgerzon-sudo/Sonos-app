@@ -1,1 +1,6 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlcz4KICAgIDxjb2xvciBuYW1lPSJiYWNrZ3JvdW5kX2RhcmsiPiNGRjBCMEUxNDwvY29sb3I+CiAgICA8Y29sb3IgbmFtZT0ic3VyZmFjZV9kYXJrIj4jRkYxNjFBMjI8L2NvbG9yPgogICAgPGNvbG9yIG5hbWU9ImFjY2VudF9ibHVlIj4jRkYzRDdCRkY8L2NvbG9yPgo8L3Jlc291cmNlcz4K
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dark">#FF0B0E14</color>
+    <color name="surface_dark">#FF161A22</color>
+    <color name="accent_blue">#FF3D7BFF</color>
+</resources>

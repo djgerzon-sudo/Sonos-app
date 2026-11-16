@@ -1,1 +1,16 @@
-PHZlY3RvciB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOndpZHRoPSIxMDhkcCIKICAgIGFuZHJvaWQ6aGVpZ2h0PSIxMDhkcCIKICAgIGFuZHJvaWQ6dmlld3BvcnRXaWR0aD0iMTA4IgogICAgYW5kcm9pZDp2aWV3cG9ydEhlaWdodD0iMTA4Ij4KICAgIDwhLS0gTm90YSBtdXNpY2FsIHNpbXBsaWZpY2FkYTogY8OtcmN1bG8gYmxhbmNvIChjYWJlemEgZGUgbGEgbm90YSkgKyB0YWxsby4gLS0+CiAgICA8cGF0aAogICAgICAgIGFuZHJvaWQ6ZmlsbENvbG9yPSIjRkZGRkZGRkYiCiAgICAgICAgYW5kcm9pZDpwYXRoRGF0YT0iTTU0LDU0bS0yNCwwYTI0LDI0IDAsMSwxIDQ4LDBhMjQsMjQgMCwxLDEgLTQ4LDAiIC8+CiAgICA8cGF0aAogICAgICAgIGFuZHJvaWQ6ZmlsbENvbG9yPSIjRkYzRDdCRkYiCiAgICAgICAgYW5kcm9pZDpwYXRoRGF0YT0iTTU0LDU0bS0xMywwYTEzLDEzIDAsMSwxIDI2LDBhMTMsMTMgMCwxLDEgLTI2LDAiIC8+CiAgICA8cGF0aAogICAgICAgIGFuZHJvaWQ6ZmlsbENvbG9yPSIjRkZGRkZGRkYiCiAgICAgICAgYW5kcm9pZDpwYXRoRGF0YT0iTTY2LDIwaDh2NDRoLTh6IiAvPgo8L3ZlY3Rvcj4K
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Nota musical simplificada: círculo blanco (cabeza de la nota) + tallo. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,54m-24,0a24,24 0,1,1 48,0a24,24 0,1,1 -48,0" />
+    <path
+        android:fillColor="#FF3D7BFF"
+        android:pathData="M54,54m-13,0a13,13 0,1,1 26,0a13,13 0,1,1 -26,0" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M66,20h8v44h-8z" />
+</vector>

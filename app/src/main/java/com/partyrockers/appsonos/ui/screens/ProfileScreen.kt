@@ -1,1 +1,239 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnNjcmVlbnMKCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24uY2xpY2thYmxlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LkNvbHVtbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5Sb3cKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuU3BhY2VyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LmZpbGxNYXhTaXplCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LmZpbGxNYXhXaWR0aAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5oZWlnaHQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQucGFkZGluZwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLnJlbWVtYmVyU2Nyb2xsU3RhdGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi52ZXJ0aWNhbFNjcm9sbAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5JY29ucwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuQWxhcm0KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkNoZXZyb25SaWdodAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuSW5wdXQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkxpZ2h0YnVsYgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuTG9naW4KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkxvZ291dAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuU3lzdGVtVXBkYXRlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5UaW1lcgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuVG91Y2hBcHAKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLldpZmkKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkFsZXJ0RGlhbG9nCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5JY29uCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5NYXRlcmlhbFRoZW1lCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5TbGlkZXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlN3aXRjaAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuVGV4dAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuVGV4dEJ1dHRvbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLkNvbXBvc2FibGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5nZXRWYWx1ZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLm11dGFibGVGbG9hdFN0YXRlT2YKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5tdXRhYmxlU3RhdGVPZgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLnJlbWVtYmVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuc2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuQWxpZ25tZW50CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLk1vZGlmaWVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLmdyYXBoaWNzLnZlY3Rvci5JbWFnZVZlY3RvcgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS51bml0LmRwCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnZpZXdtb2RlbC5QbGF5ZXJWaWV3TW9kZWwKCi8qKgogKiBQZXJmaWw6IGN1ZW50YSAoZWplbXBsbywgc2luIGxsYW1hZGEgcmVhbCBhIFNvbm9zKSwgTWkgc2lzdGVtYSB5CiAqIGFqdXN0ZXMgZGVsIGVxdWlwbyBjb21vIGVuIGxhIGFwcCBvcmlnaW5hbDogV2lGaSwgcmV0cmFzbyBkZSBhdWRpbwogKiBlbiBncnVwbywgZW50cmFkYSBkZSBsw61uZWEgeSBzdSBuaXZlbCwgTEVELCBib3RvbmVzIHTDoWN0aWxlcywKICogYWN0dWFsaXphY2lvbmVzIHkgYWxhcm1hcy4gVG9kbyBlcyBwbGFjZWhvbGRlciBlbiB2MTogbm8gc2UgYm9ycmEKICogbmkgc2UgY2FtYmlhIG5hZGEgZGVsIHNpc3RlbWEgcmVhbCBoYXN0YSBwcm9iYXIgY29uIGxhcyBib2NpbmFzLgogKi8KQENvbXBvc2FibGUKZnVuIFByb2ZpbGVTY3JlZW4odmlld01vZGVsOiBQbGF5ZXJWaWV3TW9kZWwsIG9uQ2xvc2U6ICgpIC0+IFVuaXQpIHsKICAgIHZhbCBzY3JvbGxTdGF0ZSA9IHJlbWVtYmVyU2Nyb2xsU3RhdGUoKQogICAgdmFyIHNpZ25lZEluIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoZmFsc2UpIH0KICAgIHZhciBncm91cERlbGF5TXMgYnkgcmVtZW1iZXIgeyBtdXRhYmxlRmxvYXRTdGF0ZU9mKDc1ZikgfQogICAgdmFyIGxpbmVJbkxldmVsIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZUZsb2F0U3RhdGVPZig1ZikgfQogICAgdmFyIGxlZE9uIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YodHJ1ZSkgfQogICAgdmFyIHRvdWNoQnV0dG9uc09uIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YodHJ1ZSkgfQogICAgdmFyIHNob3dTaWduT3V0IGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoZmFsc2UpIH0KICAgIHZhciBzaG93QmFja2VuZE5vdGUgYnkgcmVtZW1iZXIgeyBtdXRhYmxlU3RhdGVPZihmYWxzZSkgfQoKICAgIENvbHVtbigKICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyCiAgICAgICAgICAgIC5maWxsTWF4U2l6ZSgpCiAgICAgICAgICAgIC52ZXJ0aWNhbFNjcm9sbChzY3JvbGxTdGF0ZSkKICAgICAgICAgICAgLnBhZGRpbmcoMTYuZHApLAogICAgKSB7CiAgICAgICAgUm93KHZlcnRpY2FsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlclZlcnRpY2FsbHkpIHsKICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgIHRleHQgPSAiUGVyZmlsIiwKICAgICAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LnRpdGxlTGFyZ2UsCiAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLndlaWdodCgxZiksCiAgICAgICAgICAgICkKICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0gb25DbG9zZSkgeyBUZXh0KCJDZXJyYXIiKSB9CiAgICAgICAgfQoKICAgICAgICBUZXh0KHRleHQgPSAiQ3VlbnRhIiwgc3R5bGUgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkudGl0bGVNZWRpdW0pCiAgICAgICAgaWYgKHNpZ25lZEluKSB7CiAgICAgICAgICAgIFRleHQodGV4dCA9ICJVc3VhcmlvIGRlIGVqZW1wbG8iLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TGFyZ2UpCiAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICB0ZXh0ID0gImN1ZW50YUBlamVtcGxvLmNvbSIsCiAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TWVkaXVtLAogICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsCiAgICAgICAgICAgICkKICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0geyBzaG93U2lnbk91dCA9IHRydWUgfSkgewogICAgICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuTG9nb3V0LCBjb250ZW50RGVzY3JpcHRpb24gPSAiQ2VycmFyIHNlc2nDs24iKQogICAgICAgICAgICAgICAgVGV4dCgiQ2VycmFyIHNlc2nDs24iKQogICAgICAgICAgICB9CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgIHRleHQgPSAiTm8gaGFzIGluaWNpYWRvIHNlc2nDs24gKGVqZW1wbG8pLiIsCiAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TWVkaXVtLAogICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsCiAgICAgICAgICAgICkKICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0geyBzaWduZWRJbiA9IHRydWUgfSkgewogICAgICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuTG9naW4sIGNvbnRlbnREZXNjcmlwdGlvbiA9ICJJbmljaWFyIHNlc2nDs24iKQogICAgICAgICAgICAgICAgVGV4dCgiSW5pY2lhciBzZXNpw7NuIikKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDE2LmRwKSkKICAgICAgICBUZXh0KHRleHQgPSAiTWkgc2lzdGVtYSIsIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LnRpdGxlTWVkaXVtKQogICAgICAgIGZvciAoc3BlYWtlciBpbiB2aWV3TW9kZWwuc3BlYWtlcnMpIHsKICAgICAgICAgICAgU2V0dGluZ1JvdygKICAgICAgICAgICAgICAgIGljb24gPSBJY29ucy5GaWxsZWQuV2lmaSwKICAgICAgICAgICAgICAgIHRpdGxlID0gIiR7c3BlYWtlci5uYW1lfSDCtyAke3NwZWFrZXIubW9kZWx9IiwKICAgICAgICAgICAgICAgIHN1YnRpdGxlID0gc3BlYWtlci5pcCArIGlmIChzcGVha2VyID09IHZpZXdNb2RlbC5jdXJyZW50U3BlYWtlcikgIiDCtyBlbiB1c28iIGVsc2UgIiIsCiAgICAgICAgICAgICAgICBvbkNsaWNrID0geyB2aWV3TW9kZWwuc2VsZWN0U3BlYWtlcihzcGVha2VyKSB9LAogICAgICAgICAgICApCiAgICAgICAgfQogICAgICAgIFRleHRCdXR0b24ob25DbGljayA9IHsgdmlld01vZGVsLmRpc2NvdmVyU3BlYWtlcnMoKSB9KSB7CiAgICAgICAgICAgIFRleHQoIkJ1c2NhciBib2NpbmFzIGVuIGxhIFdpRmkiKQogICAgICAgIH0KICAgICAgICBUZXh0KAogICAgICAgICAgICB0ZXh0ID0gdmlld01vZGVsLnNvbm9zU3RhdHVzLAogICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5U21hbGwsCiAgICAgICAgICAgIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50LAogICAgICAgICkKCiAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDE2LmRwKSkKICAgICAgICBUZXh0KHRleHQgPSAiQWp1c3RlcyBkZWwgZXF1aXBvIiwgc3R5bGUgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkudGl0bGVNZWRpdW0pCgogICAgICAgIFNldHRpbmdSb3coCiAgICAgICAgICAgIGljb24gPSBJY29ucy5GaWxsZWQuV2lmaSwKICAgICAgICAgICAgdGl0bGUgPSAiV2lGaSIsCiAgICAgICAgICAgIHN1YnRpdGxlID0gIlJlZCBkZSBsYSBjYXNhIChlamVtcGxvKSIsCiAgICAgICAgICAgIG9uQ2xpY2sgPSB7IHNob3dCYWNrZW5kTm90ZSA9IHRydWUgfSwKICAgICAgICApCiAgICAgICAgVGV4dCgKICAgICAgICAgICAgdGV4dCA9ICJSZXRyYXNvIGRlIGF1ZGlvIGVuIGdydXBvOiAke2dyb3VwRGVsYXlNcy50b0ludCgpfSBtcyIsCiAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmJvZHlNZWRpdW0sCiAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIucGFkZGluZyh2ZXJ0aWNhbCA9IDQuZHApLAogICAgICAgICkKICAgICAgICBSb3codmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseSkgewogICAgICAgICAgICBJY29uKEljb25zLkZpbGxlZC5UaW1lciwgY29udGVudERlc2NyaXB0aW9uID0gIlJldHJhc28gZGUgYXVkaW8iKQogICAgICAgICAgICBTbGlkZXIoCiAgICAgICAgICAgICAgICB2YWx1ZSA9IGdyb3VwRGVsYXlNcywKICAgICAgICAgICAgICAgIG9uVmFsdWVDaGFuZ2UgPSB7IGdyb3VwRGVsYXlNcyA9IGl0IH0sCiAgICAgICAgICAgICAgICB2YWx1ZVJhbmdlID0gMGYuLjE1MGYsCiAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLndlaWdodCgxZikucGFkZGluZyhzdGFydCA9IDguZHApLAogICAgICAgICAgICApCiAgICAgICAgfQogICAgICAgIFNldHRpbmdSb3coCiAgICAgICAgICAgIGljb24gPSBJY29ucy5GaWxsZWQuSW5wdXQsCiAgICAgICAgICAgIHRpdGxlID0gIkVudHJhZGEgZGUgbMOtbmVhIiwKICAgICAgICAgICAgc3VidGl0bGUgPSAiTml2ZWw6ICR7bGluZUluTGV2ZWwudG9JbnQoKX0gZGUgMTAiLAogICAgICAgICAgICBvbkNsaWNrID0geyBzaG93QmFja2VuZE5vdGUgPSB0cnVlIH0sCiAgICAgICAgKQogICAgICAgIFNsaWRlcigKICAgICAgICAgICAgdmFsdWUgPSBsaW5lSW5MZXZlbCwKICAgICAgICAgICAgb25WYWx1ZUNoYW5nZSA9IHsgbGluZUluTGV2ZWwgPSBpdCB9LAogICAgICAgICAgICB2YWx1ZVJhbmdlID0gMGYuLjEwZiwKICAgICAgICApCiAgICAgICAgUm93KHZlcnRpY2FsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlclZlcnRpY2FsbHkpIHsKICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuTGlnaHRidWxiLCBjb250ZW50RGVzY3JpcHRpb24gPSAiTEVEIikKICAgICAgICAgICAgVGV4dCh0ZXh0ID0gIkxFRCBkZSBsYSBib2NpbmEiLCBtb2RpZmllciA9IE1vZGlmaWVyLndlaWdodCgxZikucGFkZGluZyhzdGFydCA9IDguZHApKQogICAgICAgICAgICBTd2l0Y2goY2hlY2tlZCA9IGxlZE9uLCBvbkNoZWNrZWRDaGFuZ2UgPSB7IGxlZE9uID0gaXQgfSkKICAgICAgICB9CiAgICAgICAgUm93KHZlcnRpY2FsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlclZlcnRpY2FsbHkpIHsKICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuVG91Y2hBcHAsIGNvbnRlbnREZXNjcmlwdGlvbiA9ICJCb3RvbmVzIHTDoWN0aWxlcyIpCiAgICAgICAgICAgIFRleHQodGV4dCA9ICJCb3RvbmVzIHTDoWN0aWxlcyIsIG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKS5wYWRkaW5nKHN0YXJ0ID0gOC5kcCkpCiAgICAgICAgICAgIFN3aXRjaChjaGVja2VkID0gdG91Y2hCdXR0b25zT24sIG9uQ2hlY2tlZENoYW5nZSA9IHsgdG91Y2hCdXR0b25zT24gPSBpdCB9KQogICAgICAgIH0KICAgICAgICBTZXR0aW5nUm93KAogICAgICAgICAgICBpY29uID0gSWNvbnMuRmlsbGVkLlN5c3RlbVVwZGF0ZSwKICAgICAgICAgICAgdGl0bGUgPSAiQWN0dWFsaXphY2lvbmVzIiwKICAgICAgICAgICAgc3VidGl0bGUgPSAiQnVzY2FyIGFjdHVhbGl6YWNpw7NuIGRlbCBzaXN0ZW1hIChlamVtcGxvKSIsCiAgICAgICAgICAgIG9uQ2xpY2sgPSB7IHNob3dCYWNrZW5kTm90ZSA9IHRydWUgfSwKICAgICAgICApCiAgICAgICAgU2V0dGluZ1JvdygKICAgICAgICAgICAgaWNvbiA9IEljb25zLkZpbGxlZC5BbGFybSwKICAgICAgICAgICAgdGl0bGUgPSAiQWxhcm1hcyIsCiAgICAgICAgICAgIHN1YnRpdGxlID0gIlNpbiBhbGFybWFzIChlamVtcGxvKSIsCiAgICAgICAgICAgIG9uQ2xpY2sgPSB7IHNob3dCYWNrZW5kTm90ZSA9IHRydWUgfSwKICAgICAgICApCgogICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCgxNi5kcCkpCiAgICAgICAgVGV4dCgKICAgICAgICAgICAgdGV4dCA9ICJCYWNrZW5kIHkgQVBLIiwKICAgICAgICAgICAgc3R5bGUgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkudGl0bGVNZWRpdW0sCiAgICAgICAgICAgIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvciwKICAgICAgICApCiAgICAgICAgVGV4dCgKICAgICAgICAgICAgdGV4dCA9ICJUb2RhdsOtYSBubyBoYXkgQVBLIGRlc2RlIGVzdGUgZGVtby4gRWwgYmFja2VuZCBVUG5QL1NPQVAgeSBsYSBBUEsgc2UgY29tcGlsYW4gY29uIEdpdEh1YiBBY3Rpb25zICh2ZXIgUkVBRE1FIGRlbCBwcm95ZWN0bykuIE5vIGJvcnJlcyBsYSBhcHAgZGUgU29ub3MgaGFzdGEgcHJvYmFyIGVzdGEgYXBwIGNvbiB0dXMgU1AxMDAvWlAxMDAgcmVhbGVzLiIsCiAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmJvZHlNZWRpdW0sCiAgICAgICAgKQogICAgfQoKICAgIGlmIChzaG93U2lnbk91dCkgewogICAgICAgIEFsZXJ0RGlhbG9nKAogICAgICAgICAgICBvbkRpc21pc3NSZXF1ZXN0ID0geyBzaG93U2lnbk91dCA9IGZhbHNlIH0sCiAgICAgICAgICAgIHRpdGxlID0geyBUZXh0KCJDZXJyYXIgc2VzacOzbiIpIH0sCiAgICAgICAgICAgIHRleHQgPSB7IFRleHQoIsK/U2VndXJvIHF1ZSBxdWllcmVzIGNlcnJhciBsYSBzZXNpw7NuIGRlIGVqZW1wbG8/IikgfSwKICAgICAgICAgICAgY29uZmlybUJ1dHRvbiA9IHsKICAgICAgICAgICAgICAgIFRleHRCdXR0b24ob25DbGljayA9IHsgc2lnbmVkSW4gPSBmYWxzZTsgc2hvd1NpZ25PdXQgPSBmYWxzZSB9KSB7IFRleHQoIkNlcnJhciBzZXNpw7NuIikgfQogICAgICAgICAgICB9LAogICAgICAgICAgICBkaXNtaXNzQnV0dG9uID0gewogICAgICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0geyBzaG93U2lnbk91dCA9IGZhbHNlIH0pIHsgVGV4dCgiQ2FuY2VsYXIiKSB9CiAgICAgICAgICAgIH0sCiAgICAgICAgKQogICAgfQogICAgaWYgKHNob3dCYWNrZW5kTm90ZSkgewogICAgICAgIEFsZXJ0RGlhbG9nKAogICAgICAgICAgICBvbkRpc21pc3NSZXF1ZXN0ID0geyBzaG93QmFja2VuZE5vdGUgPSBmYWxzZSB9LAogICAgICAgICAgICB0aXRsZSA9IHsgVGV4dCgiQWp1c3RlIGRlbCBlcXVpcG8iKSB9LAogICAgICAgICAgICB0ZXh0ID0geyBUZXh0KCJFc3RlIGFqdXN0ZSBlcyBkZSBlamVtcGxvIGVuIHYxLiBTZSBjb25lY3RhIGFsIGVxdWlwbyByZWFsIGN1YW5kbyBlbCBiYWNrZW5kIFVQblAgZXN0w6kgcHJvYmFkbyBjb24gbGFzIGJvY2luYXMuIikgfSwKICAgICAgICAgICAgY29uZmlybUJ1dHRvbiA9IHsKICAgICAgICAgICAgICAgIFRleHRCdXR0b24ob25DbGljayA9IHsgc2hvd0JhY2tlbmROb3RlID0gZmFsc2UgfSkgeyBUZXh0KCJFbnRlbmRpZG8iKSB9CiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIGRpc21pc3NCdXR0b24gPSB7fSwKICAgICAgICApCiAgICB9Cn0KCkBDb21wb3NhYmxlCnByaXZhdGUgZnVuIFNldHRpbmdSb3coCiAgICBpY29uOiBJbWFnZVZlY3RvciwKICAgIHRpdGxlOiBTdHJpbmcsCiAgICBzdWJ0aXRsZTogU3RyaW5nLAogICAgb25DbGljazogKCkgLT4gVW5pdCwKKSB7CiAgICBSb3coCiAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAuZmlsbE1heFdpZHRoKCkKICAgICAgICAgICAgLmNsaWNrYWJsZShvbkNsaWNrID0gb25DbGljaykKICAgICAgICAgICAgLnBhZGRpbmcodmVydGljYWwgPSAxMC5kcCksCiAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseSwKICAgICkgewogICAgICAgIEljb24oaWNvbiwgY29udGVudERlc2NyaXB0aW9uID0gdGl0bGUpCiAgICAgICAgQ29sdW1uKG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKS5wYWRkaW5nKHN0YXJ0ID0gMTIuZHApKSB7CiAgICAgICAgICAgIFRleHQodGV4dCA9IHRpdGxlLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TGFyZ2UpCiAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICB0ZXh0ID0gc3VidGl0bGUsCiAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TWVkaXVtLAogICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsCiAgICAgICAgICAgICkKICAgICAgICB9CiAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuQ2hldnJvblJpZ2h0LCBjb250ZW50RGVzY3JpcHRpb24gPSAiQWJyaXIgJHRpdGxlIikKICAgIH0KfQo=
+package com.partyrockers.appsonos.ui.screens
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Alarm
+import androidx.compose.material.icons.filled.ChevronRight
+import androidx.compose.material.icons.filled.Input
+import androidx.compose.material.icons.filled.Lightbulb
+import androidx.compose.material.icons.filled.Login
+import androidx.compose.material.icons.filled.Logout
+import androidx.compose.material.icons.filled.SystemUpdate
+import androidx.compose.material.icons.filled.Timer
+import androidx.compose.material.icons.filled.TouchApp
+import androidx.compose.material.icons.filled.Wifi
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Slider
+import androidx.compose.material3.Switch
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.unit.dp
+import com.partyrockers.appsonos.viewmodel.PlayerViewModel
+
+/**
+ * Perfil: cuenta (ejemplo, sin llamada real a Sonos), Mi sistema y
+ * ajustes del equipo como en la app original: WiFi, retraso de audio
+ * en grupo, entrada de línea y su nivel, LED, botones táctiles,
+ * actualizaciones y alarmas. Todo es placeholder en v1: no se borra
+ * ni se cambia nada del sistema real hasta probar con las bocinas.
+ */
+@Composable
+fun ProfileScreen(viewModel: PlayerViewModel, onClose: () -> Unit) {
+    val scrollState = rememberScrollState()
+    var signedIn by remember { mutableStateOf(false) }
+    var groupDelayMs by remember { mutableFloatStateOf(75f) }
+    var lineInLevel by remember { mutableFloatStateOf(5f) }
+    var ledOn by remember { mutableStateOf(true) }
+    var touchButtonsOn by remember { mutableStateOf(true) }
+    var showSignOut by remember { mutableStateOf(false) }
+    var showBackendNote by remember { mutableStateOf(false) }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scrollState)
+            .padding(16.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = "Perfil",
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.weight(1f),
+            )
+            TextButton(onClick = onClose) { Text("Cerrar") }
+        }
+
+        Text(text = "Cuenta", style = MaterialTheme.typography.titleMedium)
+        if (signedIn) {
+            Text(text = "Usuario de ejemplo", style = MaterialTheme.typography.bodyLarge)
+            Text(
+                text = "cuenta@ejemplo.com",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            TextButton(onClick = { showSignOut = true }) {
+                Icon(Icons.Filled.Logout, contentDescription = "Cerrar sesión")
+                Text("Cerrar sesión")
+            }
+        } else {
+            Text(
+                text = "No has iniciado sesión (ejemplo).",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            TextButton(onClick = { signedIn = true }) {
+                Icon(Icons.Filled.Login, contentDescription = "Iniciar sesión")
+                Text("Iniciar sesión")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = "Mi sistema", style = MaterialTheme.typography.titleMedium)
+        for (speaker in viewModel.speakers) {
+            SettingRow(
+                icon = Icons.Filled.Wifi,
+                title = "${speaker.name} · ${speaker.model}",
+                subtitle = speaker.ip + if (speaker == viewModel.currentSpeaker) " · en uso" else "",
+                onClick = { viewModel.selectSpeaker(speaker) },
+            )
+        }
+        TextButton(onClick = { viewModel.discoverSpeakers() }) {
+            Text("Buscar bocinas en la WiFi")
+        }
+        Text(
+            text = viewModel.sonosStatus,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = "Ajustes del equipo", style = MaterialTheme.typography.titleMedium)
+
+        SettingRow(
+            icon = Icons.Filled.Wifi,
+            title = "WiFi",
+            subtitle = "Red de la casa (ejemplo)",
+            onClick = { showBackendNote = true },
+        )
+        Text(
+            text = "Retraso de audio en grupo: ${groupDelayMs.toInt()} ms",
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.padding(vertical = 4.dp),
+        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(Icons.Filled.Timer, contentDescription = "Retraso de audio")
+            Slider(
+                value = groupDelayMs,
+                onValueChange = { groupDelayMs = it },
+                valueRange = 0f..150f,
+                modifier = Modifier.weight(1f).padding(start = 8.dp),
+            )
+        }
+        SettingRow(
+            icon = Icons.Filled.Input,
+            title = "Entrada de línea",
+            subtitle = "Nivel: ${lineInLevel.toInt()} de 10",
+            onClick = { showBackendNote = true },
+        )
+        Slider(
+            value = lineInLevel,
+            onValueChange = { lineInLevel = it },
+            valueRange = 0f..10f,
+        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(Icons.Filled.Lightbulb, contentDescription = "LED")
+            Text(text = "LED de la bocina", modifier = Modifier.weight(1f).padding(start = 8.dp))
+            Switch(checked = ledOn, onCheckedChange = { ledOn = it })
+        }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(Icons.Filled.TouchApp, contentDescription = "Botones táctiles")
+            Text(text = "Botones táctiles", modifier = Modifier.weight(1f).padding(start = 8.dp))
+            Switch(checked = touchButtonsOn, onCheckedChange = { touchButtonsOn = it })
+        }
+        SettingRow(
+            icon = Icons.Filled.SystemUpdate,
+            title = "Actualizaciones",
+            subtitle = "Buscar actualización del sistema (ejemplo)",
+            onClick = { showBackendNote = true },
+        )
+        SettingRow(
+            icon = Icons.Filled.Alarm,
+            title = "Alarmas",
+            subtitle = "Sin alarmas (ejemplo)",
+            onClick = { showBackendNote = true },
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            text = "Backend y APK",
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.error,
+        )
+        Text(
+            text = "Todavía no hay APK desde este demo. El backend UPnP/SOAP y la APK se compilan con GitHub Actions (ver README del proyecto). No borres la app de Sonos hasta probar esta app con tus SP100/ZP100 reales.",
+            style = MaterialTheme.typography.bodyMedium,
+        )
+    }
+
+    if (showSignOut) {
+        AlertDialog(
+            onDismissRequest = { showSignOut = false },
+            title = { Text("Cerrar sesión") },
+            text = { Text("¿Seguro que quieres cerrar la sesión de ejemplo?") },
+            confirmButton = {
+                TextButton(onClick = { signedIn = false; showSignOut = false }) { Text("Cerrar sesión") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showSignOut = false }) { Text("Cancelar") }
+            },
+        )
+    }
+    if (showBackendNote) {
+        AlertDialog(
+            onDismissRequest = { showBackendNote = false },
+            title = { Text("Ajuste del equipo") },
+            text = { Text("Este ajuste es de ejemplo en v1. Se conecta al equipo real cuando el backend UPnP esté probado con las bocinas.") },
+            confirmButton = {
+                TextButton(onClick = { showBackendNote = false }) { Text("Entendido") }
+            },
+            dismissButton = {},
+        )
+    }
+}
+
+@Composable
+private fun SettingRow(
+    icon: ImageVector,
+    title: String,
+    subtitle: String,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick)
+            .padding(vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Icon(icon, contentDescription = title)
+        Column(modifier = Modifier.weight(1f).padding(start = 12.dp)) {
+            Text(text = title, style = MaterialTheme.typography.bodyLarge)
+            Text(
+                text = subtitle,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Icon(Icons.Filled.ChevronRight, contentDescription = "Abrir $title")
+    }
+}

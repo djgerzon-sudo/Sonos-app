@@ -1,1 +1,36 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnRoZW1lCgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmlzU3lzdGVtSW5EYXJrVGhlbWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk1hdGVyaWFsVGhlbWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLmRhcmtDb2xvclNjaGVtZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLkNvbXBvc2FibGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuZ3JhcGhpY3MuQ29sb3IKCi8vIE1vZG8gZGFyayBnZW5lcmFsLCBjb21vIHBpZGnDsyBKb25hdGhhbjogbmVncm8sIGF6dWwsIGJsYW5jbywKLy8gZXNjYWxhcyBkZSBncmlzIHkgcG9jbyByb2pvIChzb2xvIHBhcmEgYXZpc29zKS4KcHJpdmF0ZSB2YWwgRGFya0NvbG9yU2NoZW1lID0gZGFya0NvbG9yU2NoZW1lKAogICAgcHJpbWFyeSA9IENvbG9yKDB4RkYzRDdCRkYpLCAvLyBhenVsCiAgICBzZWNvbmRhcnkgPSBDb2xvcigweEZGOEFBOEQ4KSwKICAgIHRlcnRpYXJ5ID0gQ29sb3IoMHhGRjVDNkI4MCksCiAgICBiYWNrZ3JvdW5kID0gQ29sb3IoMHhGRjBCMEUxNCksIC8vIG5lZ3JvCiAgICBzdXJmYWNlID0gQ29sb3IoMHhGRjE2MUEyMiksCiAgICBzdXJmYWNlVmFyaWFudCA9IENvbG9yKDB4RkYyMzI5MzYpLAogICAgb25QcmltYXJ5ID0gQ29sb3IuV2hpdGUsCiAgICBvblNlY29uZGFyeSA9IENvbG9yLldoaXRlLAogICAgb25CYWNrZ3JvdW5kID0gQ29sb3IuV2hpdGUsCiAgICBvblN1cmZhY2UgPSBDb2xvcigweEZGRThFQUYwKSwKICAgIG9uU3VyZmFjZVZhcmlhbnQgPSBDb2xvcigweEZGOUFBM0IyKSwgLy8gZ3JpcwogICAgZXJyb3IgPSBDb2xvcigweEZGRTU0ODREKSwgLy8gcm9qbywgc29sbyBhdmlzb3MKKQoKQENvbXBvc2FibGUKZnVuIEFwcFNvbm9zVGhlbWUoCiAgICBkYXJrVGhlbWU6IEJvb2xlYW4gPSBpc1N5c3RlbUluRGFya1RoZW1lKCksCiAgICBjb250ZW50OiBAQ29tcG9zYWJsZSAoKSAtPiBVbml0LAopIHsKICAgIC8vIExhIGFwcCBlcyBkYXJrIHNpZW1wcmUgZW4gdjEsIGNvbW8gcGlkacOzIEpvbmF0aGFuLgogICAgTWF0ZXJpYWxUaGVtZSgKICAgICAgICBjb2xvclNjaGVtZSA9IERhcmtDb2xvclNjaGVtZSwKICAgICAgICBjb250ZW50ID0gY29udGVudCwKICAgICkKfQo=
+package com.partyrockers.appsonos.ui.theme
+
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
+
+// Modo dark general, como pidió Jonathan: negro, azul, blanco,
+// escalas de gris y poco rojo (solo para avisos).
+private val DarkColorScheme = darkColorScheme(
+    primary = Color(0xFF3D7BFF), // azul
+    secondary = Color(0xFF8AA8D8),
+    tertiary = Color(0xFF5C6B80),
+    background = Color(0xFF0B0E14), // negro
+    surface = Color(0xFF161A22),
+    surfaceVariant = Color(0xFF232936),
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    onBackground = Color.White,
+    onSurface = Color(0xFFE8EAF0),
+    onSurfaceVariant = Color(0xFF9AA3B2), // gris
+    error = Color(0xFFE5484D), // rojo, solo avisos
+)
+
+@Composable
+fun AppSonosTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit,
+) {
+    // La app es dark siempre en v1, como pidió Jonathan.
+    MaterialTheme(
+        colorScheme = DarkColorScheme,
+        content = content,
+    )
+}

@@ -1,1 +1,114 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zCgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGUKaW1wb3J0IGFuZHJvaWR4LmFjdGl2aXR5LkNvbXBvbmVudEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5hY3Rpdml0eS5jb21wb3NlLnNldENvbnRlbnQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuQm94CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LnBhZGRpbmcKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuSWNvbnMKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkFjY291bnRDaXJjbGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkVxdWFsaXplcgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuRm9sZGVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5Ib21lCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5MaWJyYXJ5TXVzaWMKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLlF1ZXVlTXVzaWMKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb25CdXR0b24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk5hdmlnYXRpb25CYXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk5hdmlnYXRpb25CYXJJdGVtCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5TY2FmZm9sZAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuVGV4dAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuVG9wQXBwQmFyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy5FeHBlcmltZW50YWxNYXRlcmlhbDNBcGkKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5Db21wb3NhYmxlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuZ2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5tdXRhYmxlU3RhdGVPZgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLnJlbWVtYmVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuc2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuTW9kaWZpZXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuZ3JhcGhpY3MudmVjdG9yLkltYWdlVmVjdG9yCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUudmlld21vZGVsLmNvbXBvc2Uudmlld01vZGVsCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnNjcmVlbnMuRXFTY3JlZW4KaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MudWkuc2NyZWVucy5Gb2xkZXJzU2NyZWVuCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnNjcmVlbnMuSG9tZVNjcmVlbgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy51aS5zY3JlZW5zLkxpYnJhcnlTY3JlZW4KaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MudWkuc2NyZWVucy5QbGF5bGlzdHNTY3JlZW4KaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MudWkuc2NyZWVucy5Qcm9maWxlU2NyZWVuCmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnRoZW1lLkFwcFNvbm9zVGhlbWUKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3Mudmlld21vZGVsLlBsYXllclZpZXdNb2RlbAoKY2xhc3MgTWFpbkFjdGl2aXR5IDogQ29tcG9uZW50QWN0aXZpdHkoKSB7CiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIHNldENvbnRlbnQgewogICAgICAgICAgICBBcHBTb25vc1RoZW1lIHsKICAgICAgICAgICAgICAgIEFwcFNvbm9zQXBwKCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQoKcHJpdmF0ZSBlbnVtIGNsYXNzIFRhYih2YWwgbGFiZWw6IFN0cmluZywgdmFsIGljb246IEltYWdlVmVjdG9yKSB7CiAgICBJTklDSU8oIkluaWNpbyIsIEljb25zLkZpbGxlZC5Ib21lKSwKICAgIEJJQkxJT1RFQ0EoIkJpYmxpb3RlY2EiLCBJY29ucy5GaWxsZWQuTGlicmFyeU11c2ljKSwKICAgIENBUlBFVEFTKCJDYXJwZXRhcyIsIEljb25zLkZpbGxlZC5Gb2xkZXIpLAogICAgUExBWUxJU1RTKCJQbGF5bGlzdHMiLCBJY29ucy5GaWxsZWQuUXVldWVNdXNpYyksCiAgICBFUSgiRVEiLCBJY29ucy5GaWxsZWQuRXF1YWxpemVyKSwKfQoKLyoqCiAqIEFwcCBjb24gNSBwZXN0YcOxYXMgYWJham8gKHNpbiBwZXN0YcOxYSBkZSBMZXRyYXM6IGxhIGxldHJhIHNvbG8gc2UgdmUKICogZW4gSW5pY2lvLCBzb2JyZSBsYSBwb3J0YWRhLCB5IHNvbG8gc2kgbGEgcm9sYSB0aWVuZSBsZXRyYSkuCiAqIEVsIFBlcmZpbCBzZSBhYnJlIGNvbiBlbCBhdmF0YXIgZGUgYXJyaWJhIGEgbGEgZGVyZWNoYS4KICovCkBPcHRJbihFeHBlcmltZW50YWxNYXRlcmlhbDNBcGk6OmNsYXNzKQpAQ29tcG9zYWJsZQpmdW4gQXBwU29ub3NBcHAocGxheWVyVmlld01vZGVsOiBQbGF5ZXJWaWV3TW9kZWwgPSB2aWV3TW9kZWwoKSkgewogICAgdmFyIHNlbGVjdGVkVGFiIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoVGFiLklOSUNJTykgfQogICAgdmFyIHNob3dQcm9maWxlIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoZmFsc2UpIH0KCiAgICBTY2FmZm9sZCgKICAgICAgICB0b3BCYXIgPSB7CiAgICAgICAgICAgIFRvcEFwcEJhcigKICAgICAgICAgICAgICAgIHRpdGxlID0geyBUZXh0KCJBcHAgU29ub3MiKSB9LAogICAgICAgICAgICAgICAgYWN0aW9ucyA9IHsKICAgICAgICAgICAgICAgICAgICBJY29uQnV0dG9uKG9uQ2xpY2sgPSB7IHNob3dQcm9maWxlID0gdHJ1ZSB9KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRmlsbGVkLkFjY291bnRDaXJjbGUsIGNvbnRlbnREZXNjcmlwdGlvbiA9ICJQZXJmaWwiKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICkKICAgICAgICB9LAogICAgICAgIGJvdHRvbUJhciA9IHsKICAgICAgICAgICAgTmF2aWdhdGlvbkJhciB7CiAgICAgICAgICAgICAgICBmb3IgKHRhYiBpbiBUYWIudmFsdWVzKCkpIHsKICAgICAgICAgICAgICAgICAgICBOYXZpZ2F0aW9uQmFySXRlbSgKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWQgPSBzZWxlY3RlZFRhYiA9PSB0YWIgJiYgIXNob3dQcm9maWxlLAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrID0gewogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRUYWIgPSB0YWIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNob3dQcm9maWxlID0gZmFsc2UKICAgICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgICAgaWNvbiA9IHsgSWNvbih0YWIuaWNvbiwgY29udGVudERlc2NyaXB0aW9uID0gdGFiLmxhYmVsKSB9LAogICAgICAgICAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dCh0YWIubGFiZWwpIH0sCiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICkgeyBpbm5lclBhZGRpbmcgLT4KICAgICAgICBCb3gobW9kaWZpZXIgPSBNb2RpZmllci5wYWRkaW5nKGlubmVyUGFkZGluZykpIHsKICAgICAgICAgICAgaWYgKHNob3dQcm9maWxlKSB7CiAgICAgICAgICAgICAgICBQcm9maWxlU2NyZWVuKAogICAgICAgICAgICAgICAgICAgIHZpZXdNb2RlbCA9IHBsYXllclZpZXdNb2RlbCwKICAgICAgICAgICAgICAgICAgICBvbkNsb3NlID0geyBzaG93UHJvZmlsZSA9IGZhbHNlIH0sCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICB3aGVuIChzZWxlY3RlZFRhYikgewogICAgICAgICAgICAgICAgICAgIFRhYi5JTklDSU8gLT4gSG9tZVNjcmVlbih2aWV3TW9kZWwgPSBwbGF5ZXJWaWV3TW9kZWwpCiAgICAgICAgICAgICAgICAgICAgVGFiLkJJQkxJT1RFQ0EgLT4gTGlicmFyeVNjcmVlbih2aWV3TW9kZWwgPSBwbGF5ZXJWaWV3TW9kZWwpCiAgICAgICAgICAgICAgICAgICAgVGFiLkNBUlBFVEFTIC0+IEZvbGRlcnNTY3JlZW4odmlld01vZGVsID0gcGxheWVyVmlld01vZGVsKQogICAgICAgICAgICAgICAgICAgIFRhYi5QTEFZTElTVFMgLT4gUGxheWxpc3RzU2NyZWVuKHZpZXdNb2RlbCA9IHBsYXllclZpZXdNb2RlbCkKICAgICAgICAgICAgICAgICAgICBUYWIuRVEgLT4gRXFTY3JlZW4odmlld01vZGVsID0gcGxheWVyVmlld01vZGVsKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg==
+package com.partyrockers.appsonos
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.Equalizer
+import androidx.compose.material.icons.filled.Folder
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.LibraryMusic
+import androidx.compose.material.icons.filled.QueueMusic
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.partyrockers.appsonos.ui.screens.EqScreen
+import com.partyrockers.appsonos.ui.screens.FoldersScreen
+import com.partyrockers.appsonos.ui.screens.HomeScreen
+import com.partyrockers.appsonos.ui.screens.LibraryScreen
+import com.partyrockers.appsonos.ui.screens.PlaylistsScreen
+import com.partyrockers.appsonos.ui.screens.ProfileScreen
+import com.partyrockers.appsonos.ui.theme.AppSonosTheme
+import com.partyrockers.appsonos.viewmodel.PlayerViewModel
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            AppSonosTheme {
+                AppSonosApp()
+            }
+        }
+    }
+}
+
+private enum class Tab(val label: String, val icon: ImageVector) {
+    INICIO("Inicio", Icons.Filled.Home),
+    BIBLIOTECA("Biblioteca", Icons.Filled.LibraryMusic),
+    CARPETAS("Carpetas", Icons.Filled.Folder),
+    PLAYLISTS("Playlists", Icons.Filled.QueueMusic),
+    EQ("EQ", Icons.Filled.Equalizer),
+}
+
+/**
+ * App con 5 pestañas abajo (sin pestaña de Letras: la letra solo se ve
+ * en Inicio, sobre la portada, y solo si la rola tiene letra).
+ * El Perfil se abre con el avatar de arriba a la derecha.
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun AppSonosApp(playerViewModel: PlayerViewModel = viewModel()) {
+    var selectedTab by remember { mutableStateOf(Tab.INICIO) }
+    var showProfile by remember { mutableStateOf(false) }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("App Sonos") },
+                actions = {
+                    IconButton(onClick = { showProfile = true }) {
+                        Icon(Icons.Filled.AccountCircle, contentDescription = "Perfil")
+                    }
+                },
+            )
+        },
+        bottomBar = {
+            NavigationBar {
+                for (tab in Tab.values()) {
+                    NavigationBarItem(
+                        selected = selectedTab == tab && !showProfile,
+                        onClick = {
+                            selectedTab = tab
+                            showProfile = false
+                        },
+                        icon = { Icon(tab.icon, contentDescription = tab.label) },
+                        label = { Text(tab.label) },
+                    )
+                }
+            }
+        },
+    ) { innerPadding ->
+        Box(modifier = Modifier.padding(innerPadding)) {
+            if (showProfile) {
+                ProfileScreen(
+                    viewModel = playerViewModel,
+                    onClose = { showProfile = false },
+                )
+            } else {
+                when (selectedTab) {
+                    Tab.INICIO -> HomeScreen(viewModel = playerViewModel)
+                    Tab.BIBLIOTECA -> LibraryScreen(viewModel = playerViewModel)
+                    Tab.CARPETAS -> FoldersScreen(viewModel = playerViewModel)
+                    Tab.PLAYLISTS -> PlaylistsScreen(viewModel = playerViewModel)
+                    Tab.EQ -> EqScreen(viewModel = playerViewModel)
+                }
+            }
+        }
+    }
+}

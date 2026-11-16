@@ -1,1 +1,119 @@
-IyBBcHAgU29ub3Mg4oCUIHYxIChjw7NkaWdvIGZ1ZW50ZSBBbmRyb2lkKQoKQ29udHJvbGFkb3IgQW5kcm9pZCBwYXJhIGJvY2luYXMgU29ub3MgYW50aWd1YXMgU1AxMDAgeSBaUDEwMCwgY29uIHJlcHJvZHVjdG9yCnByb3BpbywgcGxheWxpc3RzLCBjYXJwZXRhcywgbGV0cmFzIGVuIEhvbWUsIEVRIGRlIDEyIGJhbmRhcywgY29tcHJlc29yIHkgcmV2ZXJiLgoKKipFc3RvIGVzIGPDs2RpZ28gZnVlbnRlLCBubyB1bmEgQVBLLioqIExhIEFQSyBzZSBjb21waWxhIGVuIEdpdEh1YiBBY3Rpb25zCihncmF0aXMpLCBzaWd1aWVuZG8gbG9zIHBhc29zIGRlIGFiYWpvLiBObyBzZSBjb21waWxhIGVuIGVsIGNoYXQuCgojIyBRdcOpIHRyYWUgdjEKCi0gNSBwZXN0YcOxYXM6IEluaWNpbywgQmlibGlvdGVjYSwgQ2FycGV0YXMsIFBsYXlsaXN0cywgRVEuIFBlcmZpbCBjb24gZWwgYXZhdGFyLgotIEluaWNpbzogcG9ydGFkYSBncmFuZGUsIHBsYXkvcGF1c2Evc2lndWllbnRlL2FudGVyaW9yLCB2b2x1bWVuLCBrYnBzLCB5IGxhCiAgbGV0cmEgcHJveWVjdGFkYSBzb2JyZSBsYSBwb3J0YWRhIFNPTE8gc2kgbGEgcm9sYSB0aWVuZSBsZXRyYSBkaXNwb25pYmxlLgogIFNpbiBhZ3J1cGFyIGJvY2luYXMgbmkgY2FtYmlhciBib2NpbmEgZW4gSW5pY2lvLgotIEJpYmxpb3RlY2E6IGLDunNxdWVkYSwgb3JkZW4gcG9yIHTDrXR1bG8gLyBhcnRpc3RhIC8gZHVyYWNpw7NuLCAiUmVjacOpbiBhZ3JlZ2Fkb3MiLgotIENhcnBldGFzOiBuYXZlZ2FyIHBvciBjYXJwZXRhcyB5IGFncmVnYXIgdW5hIGNhcnBldGEgY29tcGxldGEgYSB1bmEgcGxheWxpc3QuCi0gUGxheWxpc3RzOiBjcmVhciwgdmVyIGltcG9ydGFkYXMgKC5tM3UgLyAud3BsKSB5IHJlb3JkZW5hciByb2xhcyBjb24gZmxlY2hhcy4KLSBFUTogMTIgYmFuZGFzLCBwcmVzZXRzLCBWb2x1bWVuIHgyLCBjb21wcmVzb3IgeSByZXZlcmIgYXBhZ2Fkb3MgcG9yIGRlZmVjdG8uCi0gUGVyZmlsOiBjdWVudGEgZGUgZWplbXBsbywgTWkgc2lzdGVtYSwgV2lGaSwgcmV0cmFzbyBkZSBhdWRpbywgZW50cmFkYSBkZQogIGzDrW5lYSwgTEVELCBib3RvbmVzIHTDoWN0aWxlcywgYWN0dWFsaXphY2lvbmVzIHkgYWxhcm1hcyAoZWplbXBsbyBlbiB2MSkuCi0gQ29udHJvbCByZWFsIGRlIFNvbm9zOiBkZXNjdWJyaW1pZW50byBTU0RQLCBVUG5QL1NPQVAgYWwgcHVlcnRvIDE0MDAsCiAgQVZUcmFuc3BvcnQsIFJlbmRlcmluZ0NvbnRyb2wgeSBjb29yZGluYWRvciBkZSBncnVwbywgZW4gYHNvbm9zL2AuCiAgU2Vydmlkb3IgSFRUUCBsb2NhbCBwcm9waW8gKHNpbiBsaWJyZXLDrWEgZXh0ZXJuYSkgcGFyYSBzZXJ2aXJsZSBlbCBhdWRpbyBhIFNvbm9zLgotIE1vZG8gZGFyazogbmVncm8sIGF6dWwsIGJsYW5jbywgZ3Jpc2VzIHkgcG9jbyByb2pvLgoKIyMgVmVyc2lvbmVzIChubyBzdWJpcmxhcyBwb3Igc2VwYXJhZG8pCgotIEtvdGxpbiAxLjkuMjQsIEFHUCA4LjUuMiwgR3JhZGxlIDguNywgSmF2YSAxNywgY29tcGlsZVNkayAzNCwgdGFyZ2V0U2RrIDM0LAogIG1pblNkayAyNiwgQ29tcG9zZSBCT00gMjAyNC4wOS4wMCwgTWVkaWEzL0V4b1BsYXllciAxLjQuMS4KCiMjIFBhc28gMTogY3JlYXIgZWwgcmVwb3NpdG9yaW8gZW4gR2l0SHViCgoxLiBFbnRyYSBhIGh0dHBzOi8vZ2l0aHViLmNvbS9uZXcgKG5lY2VzaXRhcyBjdWVudGEgZGUgR2l0SHViLCBncmF0aXMpLgoyLiBOb21icmUgZGVsIHJlcG9zaXRvcmlvOiBgU29ub3MtYXBwYCAoZWwgcXVlIEpvbmF0aGFuIGNyZcOzKS4KMy4gRWxpZ2UgKipQdWJsaWMqKiAoYXPDrSBsb3MgbWludXRvcyBncmF0aXMgc29uIDIsMDAwIGFsIG1lczsgZW4gcHJpdmFkbyBzb24gNTAwKS4KICAgQ2FkYSBidWlsZCB0YXJkYSAzIGEgNSBtaW51dG9zLgo0LiBObyBtYXJxdWVzICJBZGQgYSBSRUFETUUgZmlsZSIuIENyZWEgZWwgcmVwb3NpdG9yaW8gdmFjw61vLgoKIyMgUGFzbyAyOiBzdWJpciBlc3RhIGNhcnBldGEKCjEuIEVuIHR1IGNvbXB1dGFkb3JhLCBhYnJlIHVuYSB0ZXJtaW5hbCBlbiBsYSBjYXJwZXRhIGBhbmRyb2lkL2AgZGUgZXN0ZSBwcm95ZWN0by4KMi4gQ29ycmUsIHVubyBwb3IgdW5vOgogICBgYGBiYXNoCiAgIGdpdCBpbml0CiAgIGdpdCBhZGQgLgogICBnaXQgY29tbWl0IC1tICJBcHAgU29ub3MgdjEiCiAgIGdpdCBicmFuY2ggLU0gbWFpbgogICBnaXQgcmVtb3RlIGFkZCBvcmlnaW4gaHR0cHM6Ly9naXRodWIuY29tL2RqZ2Vyem9uLXN1ZG8vU29ub3MtYXBwLmdpdAogICBnaXQgcHVzaCAtdSBvcmlnaW4gbWFpbgogICBgYGAKICAgQ2FtYmlhIGBUVV9VU1VBUklPYCBwb3IgdHUgdXN1YXJpbyBkZSBHaXRIdWIuCjMuIFNpIEdpdEh1YiB0ZSBwaWRlIHVzdWFyaW8geSBjb250cmFzZcOxYSwgdXNhIHVuIFBlcnNvbmFsIEFjY2VzcyBUb2tlbgogICAoU2V0dGluZ3MgPiBEZXZlbG9wZXIgc2V0dGluZ3MgPiBQZXJzb25hbCBhY2Nlc3MgdG9rZW5zKSwgbm8gdHUgY29udHJhc2XDsWEuCgojIyBQYXNvIDM6IGNvbXBpbGFyIGxhIEFQSyBlbiBHaXRIdWIgQWN0aW9ucwoKMS4gRW4gZWwgcmVwb3NpdG9yaW8sIGVudHJhIGEgbGEgcGVzdGHDsWEgKipBY3Rpb25zKiouCjIuIFZlcsOhcyBlbCB3b3JrZmxvdyAqKiJCdWlsZCBBUEsgKGRlYnVnKSIqKiBjb3JyaWVuZG8gc29sbyAoc2UgZGlzcGFyYSBjb24gZWwgcHVzaCkuCiAgIFNpIG5vLCBlbnRyYSBhbCB3b3JrZmxvdyB5IHB1bHNhICoqUnVuIHdvcmtmbG93KiouCjMuIEVzcGVyYSBhIHF1ZSB0ZXJtaW5lIGVuIHZlcmRlICgzIGEgNSBtaW51dG9zIGxhIHByaW1lcmEgdmV6KS4KNC4gU2kgc2FsZSBlbiByb2pvLCBlbnRyYSBhbCBydW4sIGFicmUgZWwgcGFzbyBxdWUgZmFsbMOzIHkgY29waWEgZWwgZXJyb3IuCgojIyBQYXNvIDQ6IGRlc2NhcmdhciBlIGluc3RhbGFyIGxhIEFQSyBlbiB0dSB0ZWzDqWZvbm8KCjEuIEVuIGVsIHJ1biB5YSB0ZXJtaW5hZG8sIGJhamEgaGFzdGEgKipBcnRpZmFjdHMqKiB5IGRlc2NhcmdhCiAgIGBhcHAtc29ub3MtZGVidWctYXBrYC4KMi4gRGVzY29tcHJpbWUgZWwgWklQOiBkZW50cm8gdmllbmUgYGFwcC1kZWJ1Zy5hcGtgLgozLiBQw6FzYWxhIGEgdHUgbW90byBnNTIgKHBvciBVU0IsIERyaXZlIG8gV2hhdHNBcHAgYSB0aSBtaXNtbykgeSDDoWJyZWxhLgo0LiBBbmRyb2lkIHRlIHBlZGlyw6EgcGVybWl0aXIgIkluc3RhbGFyIGFwcHMgZGVzY29ub2NpZGFzIiBwYXJhIGVzYSBhcHA6CiAgIGFjw6lwdGFsbyBzb2xvIHBhcmEgaW5zdGFsYXIgZXN0YSBBUEsuCjUuIExhIEFQSyBlcyAqKmRlYnVnKio6IHNlIGluc3RhbGEgeSBzZSBwcnVlYmEsIHBlcm8gbm8gZXMgcGFyYSBQbGF5IFN0b3JlLgoKIyMgUGFzbyA1OiBwcm9iYXIgY29uIHR1cyBib2NpbmFzIChzaW4gYm9ycmFyIG5hZGEgdG9kYXbDrWEpCgoxLiAqKk5vIGJvcnJlcyBsYSBhcHAgZGUgU29ub3MgdG9kYXbDrWEuKiogTGEgbmVjZXNpdGFzIHBhcmEgY29uZmlndXJhcgogICBXaUZpIHkgZWwgc2lzdGVtYS4KMi4gQWJyZSBBcHAgU29ub3MgZW4gZWwgdGVsw6lmb25vLCBlbnRyYSBhICoqUGVyZmlsID4gQnVzY2FyIGJvY2luYXMgZW4gbGEgV2lGaSoqLgozLiBUdSB0ZWzDqWZvbm8geSBsYXMgYm9jaW5hcyBkZWJlbiBlc3RhciBlbiBsYSBtaXNtYSBXaUZpLgo0LiBQcnVlYmEgcGxheS9wYXVzYSB5IHZvbHVtZW4gY29uIHVuYSBib2NpbmEuCjUuIFNpIGFsZ28gZmFsbGEsIGFub3RhIHF1w6kgYm9jaW5hLCBxdcOpIGJvdMOzbiB5IHF1w6kgbWVuc2FqZSBzYWxpw7MuCgojIyBMw61taXRlcyBjb25vY2lkb3MgZGUgdjEKCi0gTGFzIDEyIHJvbGFzIGRlIGxhIGJpYmxpb3RlY2Egc29uIGRlICoqZWplbXBsbyoqICh0w610dWxvcyBnZW7DqXJpY29zLCBzaW4KICBhcmNoaXZvcyBkZSBhdWRpbyBuaSBsZXRyYXMgcmVhbGVzKS4gTGEgbGVjdHVyYSBkZWwgYWxtYWNlbmFtaWVudG8KICAoTWVkaWFTdG9yZSkgZXMgdjIuCi0gRWwgRVEsIGNvbXByZXNvciB5IHJldmVyYiBlbiB2MSBtdWV2ZW4gbGEgVUkgeSBlbCB2b2x1bWVuOyBhcGxpY2FyIGVsCiAgZWZlY3RvIGFsIGF1ZGlvIGFudGVzIGRlIG1hbmRhcmxvIGEgU29ub3MgZXMgdHJhYmFqbyBkZSB2Mi4KLSBMb3MgYWp1c3RlcyBkZSBQZXJmaWwgKFdpRmksIHJldHJhc28sIGVudHJhZGEgZGUgbMOtbmVhLCBldGMuKSBzb24gZGUKICBlamVtcGxvIGhhc3RhIHByb2JhciBlbCBiYWNrZW5kIGNvbiBsYXMgYm9jaW5hcyByZWFsZXMuCi0gTG9zIGFydGVmYWN0b3MgZGUgR2l0SHViIEFjdGlvbnMgc2UgYm9ycmFuIGEgbG9zIDMwIGTDrWFzIGVuIGVzdGUgd29ya2Zsb3c6CiAgZGVzY2FyZ2EgbGEgQVBLIGN1YW5kbyBzZSBjb21waWxlLgoKTm90YTogZWwgYXJjaGl2byBiaW5hcmlvIGBncmFkbGUvd3JhcHBlci9ncmFkbGUtd3JhcHBlci5qYXJgIG5vIHNlIHN1YmUgcG9yIGxhIGhlcnJhbWllbnRhIGRlIEdpdEh1YiBkZSBQb2x5OyBlbCB3b3JrZmxvdyB1c2EgZWwgR3JhZGxlIDguNyBpbnN0YWxhZG8gcG9yIGBzZXR1cC1ncmFkbGVgIChgZ3JhZGxlIGFzc2VtYmxlRGVidWdgKSwgYXPDrSBxdWUgbm8gaGFjZSBmYWx0YS4KCiMjIEVzdHJ1Y3R1cmEgZGVsIHByb3llY3RvCgpgYGAKYW5kcm9pZC8K4pSc4pSA4pSAIFJFQURNRS5tZArilJzilIDilIAgc2V0dGluZ3MuZ3JhZGxlLmt0cyAvIGJ1aWxkLmdyYWRsZS5rdHMgLyBncmFkbGUucHJvcGVydGllcwrilJzilIDilIAgZ3JhZGxldyAvIGdyYWRsZXcuYmF0IC8gZ3JhZGxlL3dyYXBwZXIvCuKUnOKUgOKUgCAuZ2l0aHViL3dvcmtmbG93cy9idWlsZC1hcGsueW1sCuKUlOKUgOKUgCBhcHAvCiAgICDilJzilIDilIAgYnVpbGQuZ3JhZGxlLmt0cyAvIHByb2d1YXJkLXJ1bGVzLnBybwogICAg4pSU4pSA4pSAIHNyYy9tYWluLwogICAgICAgIOKUnOKUgOKUgCBBbmRyb2lkTWFuaWZlc3QueG1sCiAgICAgICAg4pSc4pSA4pSAIHJlcy8gKHZhbHVlcywgZHJhd2FibGUsIG1pcG1hcC1hbnlkcGktdjI2KQogICAgICAgIOKUlOKUgOKUgCBqYXZhL2NvbS9wYXJ0eXJvY2tlcnMvYXBwc29ub3MvCiAgICAgICAgICAgIOKUnOKUgOKUgCBNYWluQWN0aXZpdHkua3QgICAgICAgICAgKDUgcGVzdGHDsWFzICsgUGVyZmlsKQogICAgICAgICAgICDilJzilIDilIAgZGF0YS8gICAgICAgICAgICAgICAgICAgIChNb2RlbG9zLCBkYXRvcyBkZSBlamVtcGxvLCBQbGF5bGlzdFBhcnNlcikKICAgICAgICAgICAg4pSc4pSA4pSAIHBsYXllci8gICAgICAgICAgICAgICAgICAoTG9jYWxQbGF5ZXIgY29uIEV4b1BsYXllcikKICAgICAgICAgICAg4pSc4pSA4pSAIHNvbm9zLyAgICAgICAgICAgICAgICAgICAoU29hcENsaWVudCwgU3NkcERpc2NvdmVyeSwgU29ub3NDb250cm9sbGVyLCBMb2NhbEh0dHBTZXJ2ZXIpCiAgICAgICAgICAgIOKUnOKUgOKUgCB1aS90aGVtZS8gICAgICAgICAgICAgICAgKG1vZG8gZGFyaykKICAgICAgICAgICAg4pSc4pSA4pSAIHVpL3NjcmVlbnMvICAgICAgICAgICAgICAoSW5pY2lvLCBCaWJsaW90ZWNhLCBDYXJwZXRhcywgUGxheWxpc3RzLCBFUSwgUGVyZmlsKQogICAgICAgICAgICDilJzilIDilIAgdWkvY29tcG9uZW50cy8gICAgICAgICAgIChUcmFja1JvdykKICAgICAgICAgICAg4pSU4pSA4pSAIHZpZXdtb2RlbC8gICAgICAgICAgICAgICAoUGxheWVyVmlld01vZGVsKQogICAg4pSU4pSA4pSAIHNyYy90ZXN0L2phdmEvLi4uLyAgICAgICAgICAgICAgIChwcnVlYmFzIGRlIFBsYXlsaXN0UGFyc2VyIHkgVHJhY2spCmBgYAo=
+# App Sonos — v1 (código fuente Android)
+
+Controlador Android para bocinas Sonos antiguas SP100 y ZP100, con reproductor
+propio, playlists, carpetas, letras en Home, EQ de 12 bandas, compresor y reverb.
+
+**Esto es código fuente, no una APK.** La APK se compila en GitHub Actions
+(gratis), siguiendo los pasos de abajo. No se compila en el chat.
+
+## Qué trae v1
+
+- 5 pestañas: Inicio, Biblioteca, Carpetas, Playlists, EQ. Perfil con el avatar.
+- Inicio: portada grande, play/pausa/siguiente/anterior, volumen, kbps, y la
+  letra proyectada sobre la portada SOLO si la rola tiene letra disponible.
+  Sin agrupar bocinas ni cambiar bocina en Inicio.
+- Biblioteca: búsqueda, orden por título / artista / duración, "Recién agregados".
+- Carpetas: navegar por carpetas y agregar una carpeta completa a una playlist.
+- Playlists: crear, ver importadas (.m3u / .wpl) y reordenar rolas con flechas.
+- EQ: 12 bandas, presets, Volumen x2, compresor y reverb apagados por defecto.
+- Perfil: cuenta de ejemplo, Mi sistema, WiFi, retraso de audio, entrada de
+  línea, LED, botones táctiles, actualizaciones y alarmas (ejemplo en v1).
+- Control real de Sonos: descubrimiento SSDP, UPnP/SOAP al puerto 1400,
+  AVTransport, RenderingControl y coordinador de grupo, en `sonos/`.
+  Servidor HTTP local propio (sin librería externa) para servirle el audio a Sonos.
+- Modo dark: negro, azul, blanco, grises y poco rojo.
+
+## Versiones (no subirlas por separado)
+
+- Kotlin 1.9.24, AGP 8.5.2, Gradle 8.7, Java 17, compileSdk 34, targetSdk 34,
+  minSdk 26, Compose BOM 2024.09.00, Media3/ExoPlayer 1.4.1.
+
+## Paso 1: crear el repositorio en GitHub
+
+1. Entra a https://github.com/new (necesitas cuenta de GitHub, gratis).
+2. Nombre del repositorio: `Sonos-app` (el que Jonathan creó).
+3. Elige **Public** (así los minutos gratis son 2,000 al mes; en privado son 500).
+   Cada build tarda 3 a 5 minutos.
+4. No marques "Add a README file". Crea el repositorio vacío.
+
+## Paso 2: subir esta carpeta
+
+1. En tu computadora, abre una terminal en la carpeta `android/` de este proyecto.
+2. Corre, uno por uno:
+   ```bash
+   git init
+   git add .
+   git commit -m "App Sonos v1"
+   git branch -M main
+   git remote add origin https://github.com/djgerzon-sudo/Sonos-app.git
+   git push -u origin main
+   ```
+   Cambia `TU_USUARIO` por tu usuario de GitHub.
+3. Si GitHub te pide usuario y contraseña, usa un Personal Access Token
+   (Settings > Developer settings > Personal access tokens), no tu contraseña.
+
+## Paso 3: compilar la APK en GitHub Actions
+
+1. En el repositorio, entra a la pestaña **Actions**.
+2. Verás el workflow **"Build APK (debug)"** corriendo solo (se dispara con el push).
+   Si no, entra al workflow y pulsa **Run workflow**.
+3. Espera a que termine en verde (3 a 5 minutos la primera vez).
+4. Si sale en rojo, entra al run, abre el paso que falló y copia el error.
+
+## Paso 4: descargar e instalar la APK en tu teléfono
+
+1. En el run ya terminado, baja hasta **Artifacts** y descarga
+   `app-sonos-debug-apk`.
+2. Descomprime el ZIP: dentro viene `app-debug.apk`.
+3. Pásala a tu moto g52 (por USB, Drive o WhatsApp a ti mismo) y ábrela.
+4. Android te pedirá permitir "Instalar apps desconocidas" para esa app:
+   acéptalo solo para instalar esta APK.
+5. La APK es **debug**: se instala y se prueba, pero no es para Play Store.
+
+## Paso 5: probar con tus bocinas (sin borrar nada todavía)
+
+1. **No borres la app de Sonos todavía.** La necesitas para configurar
+   WiFi y el sistema.
+2. Abre App Sonos en el teléfono, entra a **Perfil > Buscar bocinas en la WiFi**.
+3. Tu teléfono y las bocinas deben estar en la misma WiFi.
+4. Prueba play/pausa y volumen con una bocina.
+5. Si algo falla, anota qué bocina, qué botón y qué mensaje salió.
+
+## Límites conocidos de v1
+
+- Las 12 rolas de la biblioteca son de **ejemplo** (títulos genéricos, sin
+  archivos de audio ni letras reales). La lectura del almacenamiento
+  (MediaStore) es v2.
+- El EQ, compresor y reverb en v1 mueven la UI y el volumen; aplicar el
+  efecto al audio antes de mandarlo a Sonos es trabajo de v2.
+- Los ajustes de Perfil (WiFi, retraso, entrada de línea, etc.) son de
+  ejemplo hasta probar el backend con las bocinas reales.
+- Los artefactos de GitHub Actions se borran a los 30 días en este workflow:
+  descarga la APK cuando se compile.
+
+Nota: el archivo binario `gradle/wrapper/gradle-wrapper.jar` no se sube por la herramienta de GitHub de Poly; el workflow usa el Gradle 8.7 instalado por `setup-gradle` (`gradle assembleDebug`), así que no hace falta.
+
+## Estructura del proyecto
+
+```
+android/
+├── README.md
+├── settings.gradle.kts / build.gradle.kts / gradle.properties
+├── gradlew / gradlew.bat / gradle/wrapper/
+├── .github/workflows/build-apk.yml
+└── app/
+    ├── build.gradle.kts / proguard-rules.pro
+    └── src/main/
+        ├── AndroidManifest.xml
+        ├── res/ (values, drawable, mipmap-anydpi-v26)
+        └── java/com/partyrockers/appsonos/
+            ├── MainActivity.kt          (5 pestañas + Perfil)
+            ├── data/                    (Modelos, datos de ejemplo, PlaylistParser)
+            ├── player/                  (LocalPlayer con ExoPlayer)
+            ├── sonos/                   (SoapClient, SsdpDiscovery, SonosController, LocalHttpServer)
+            ├── ui/theme/                (modo dark)
+            ├── ui/screens/              (Inicio, Biblioteca, Carpetas, Playlists, EQ, Perfil)
+            ├── ui/components/           (TrackRow)
+            └── viewmodel/               (PlayerViewModel)
+    └── src/test/java/.../               (pruebas de PlaylistParser y Track)
+```

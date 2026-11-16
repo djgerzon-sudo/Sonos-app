@@ -1,1 +1,73 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLmRhdGEKCi8qKgogKiBVbmEgcm9sYSBkZSBsYSBiaWJsaW90ZWNhLgogKiBAcGFyYW0gbG9jYWxQYXRoIHJ1dGEgZGVsIGFyY2hpdm8gZW4gZWwgdGVsw6lmb25vLCBvIG51bGwgZW4gbGFzIHJvbGFzIGRlIGVqZW1wbG8uCiAqIEBwYXJhbSBoYXNMeXJpY3MgdHJ1ZSBzb2xvIHNpIGhheSBsZXRyYSBkaXNwb25pYmxlIChpbmNydXN0YWRhLCAubHJjIG8gZGVzY2FyZ2FkYSkuCiAqIEBwYXJhbSBseXJpY3NMaW5lcyBsw61uZWFzIGRlIGVqZW1wbG8gZGUgbGEgbGV0cmEgKHNvbG8gZGVtbywgbm8gZXMgbGV0cmEgcmVhbCBkZQogKiAgIG5pbmd1bmEgY2FuY2nDs24pLiBFbiB2MSBsYXMgcm9sYXMgZGUgZWplbXBsbyBubyB0cmFlbiBsZXRyYSByZWFsLgogKiBAcGFyYW0ga2JwcyB2ZWxvY2lkYWQgYSBsYSBxdWUgc2UgZXN0w6EgcmVwcm9kdWNpZW5kbyAoZWplbXBsbyBlbiB2MSkuCiAqIEBwYXJhbSBhZGRlZERheXNBZ28gaGFjZSBjdcOhbnRvcyBkw61hcyBzZSBhZ3JlZ8OzIGFsIGFsbWFjZW5hbWllbnRvIChwYXJhICJSZWNpw6luIGFncmVnYWRvcyIpLgogKiBAcGFyYW0gZm9sZGVyIGNhcnBldGEgZG9uZGUgdml2ZSBlbCBhcmNoaXZvLCB0YWwgY29tbyBlc3TDoSBlbiBlbCB0ZWzDqWZvbm8uCiAqLwpkYXRhIGNsYXNzIFRyYWNrKAogICAgdmFsIGlkOiBTdHJpbmcsCiAgICB2YWwgdGl0bGU6IFN0cmluZywKICAgIHZhbCBhcnRpc3Q6IFN0cmluZywKICAgIHZhbCBhbGJ1bTogU3RyaW5nLAogICAgdmFsIGR1cmF0aW9uU2Vjb25kczogSW50LAogICAgdmFsIGticHM6IEludCA9IDMyMCwKICAgIHZhbCBoYXNMeXJpY3M6IEJvb2xlYW4gPSBmYWxzZSwKICAgIHZhbCBseXJpY3NMaW5lczogTGlzdDxTdHJpbmc+ID0gZW1wdHlMaXN0KCksCiAgICB2YWwgYWRkZWREYXlzQWdvOiBJbnQgPSAzMCwKICAgIHZhbCBmb2xkZXI6IFN0cmluZyA9ICJNw7pzaWNhIiwKICAgIHZhbCBsb2NhbFBhdGg6IFN0cmluZz8gPSBudWxsLAopIHsKICAgIHZhbCBkdXJhdGlvblRleHQ6IFN0cmluZwogICAgICAgIGdldCgpIHsKICAgICAgICAgICAgdmFsIG0gPSBkdXJhdGlvblNlY29uZHMgLyA2MAogICAgICAgICAgICB2YWwgcyA9IGR1cmF0aW9uU2Vjb25kcyAlIDYwCiAgICAgICAgICAgIHJldHVybiAiJWQ6JTAyZCIuZm9ybWF0KG0sIHMpCiAgICAgICAgfQp9CgpkYXRhIGNsYXNzIFBsYXlsaXN0KAogICAgdmFsIGlkOiBTdHJpbmcsCiAgICB2YWwgbmFtZTogU3RyaW5nLAogICAgdmFsIHNvdXJjZTogU3RyaW5nLCAvLyAiQXBwIFNvbm9zIiBvICJJbXBvcnRhZGEgKC5tM3UpIiAvICJJbXBvcnRhZGEgKC53cGwpIgogICAgdmFsIHRyYWNrSWRzOiBMaXN0PFN0cmluZz4sCikKCmRhdGEgY2xhc3MgTXVzaWNGb2xkZXIoCiAgICB2YWwgcGF0aDogU3RyaW5nLAogICAgdmFsIG5hbWU6IFN0cmluZywKICAgIHZhbCB0cmFja0NvdW50OiBJbnQsCikKCi8qKiBVbmEgYm9jaW5hIFNvbm9zIGVuY29udHJhZGEgZW4gbGEgcmVkIGxvY2FsLiAqLwpkYXRhIGNsYXNzIFNvbm9zU3BlYWtlcigKICAgIHZhbCB1dWlkOiBTdHJpbmcsCiAgICB2YWwgbmFtZTogU3RyaW5nLAogICAgdmFsIG1vZGVsOiBTdHJpbmcsIC8vIHAuIGVqLiAiU1AxMDAiIG8gIlpQMTAwIgogICAgdmFsIGlwOiBTdHJpbmcsCiAgICB2YWwgaXNDb29yZGluYXRvcjogQm9vbGVhbiA9IGZhbHNlLAopCgovKiogUHJlc2V0IGRlbCBlY3VhbGl6YWRvcjogMTIgdmFsb3JlcywgdW5vIHBvciBiYW5kYSwgZW4gZEIgKC0xMi4uKzEyKS4gKi8KZGF0YSBjbGFzcyBFcVByZXNldCh2YWwgbmFtZTogU3RyaW5nLCB2YWwgZ2FpbnNEYjogTGlzdDxGbG9hdD4pIHsKICAgIGluaXQgewogICAgICAgIHJlcXVpcmUoZ2FpbnNEYi5zaXplID09IDEyKSB7ICJVbiBwcmVzZXQgZGUgRVEgZGViZSB0ZW5lciAxMiBiYW5kYXMiIH0KICAgIH0KfQoKdmFsIEVRX0JBTkRfRlJFUVVFTkNJRVMgPSBsaXN0T2YoCiAgICAiNjAiLCAiMTIwIiwgIjI1MCIsICI1MDAiLCAiMWsiLCAiMmsiLCAiNGsiLCAiNmsiLCAiOGsiLCAiMTBrIiwgIjEyayIsICIxNmsiLAopCgp2YWwgRVFfUFJFU0VUUyA9IGxpc3RPZigKICAgIEVxUHJlc2V0KCJQbGFubyIsIExpc3QoMTIpIHsgMGYgfSksCiAgICBFcVByZXNldCgiR3JhdmVzIiwgbGlzdE9mKDhmLCA3ZiwgNWYsIDNmLCAxZiwgMGYsIDBmLCAwZiwgMGYsIDBmLCAwZiwgMGYpKSwKICAgIEVxUHJlc2V0KCJBZ3Vkb3MiLCBsaXN0T2YoMGYsIDBmLCAwZiwgMGYsIDBmLCAxZiwgM2YsIDVmLCA2ZiwgN2YsIDhmLCA4ZikpLAogICAgRXFQcmVzZXQoIlZvY2FsIiwgbGlzdE9mKC0yZiwgLTFmLCAwZiwgMmYsIDRmLCA1ZiwgNGYsIDJmLCAwZiwgMGYsIDBmLCAwZikpLAogICAgRXFQcmVzZXQoIkZpZXN0YSIsIGxpc3RPZig3ZiwgNmYsIDRmLCAyZiwgMGYsIDBmLCAxZiwgM2YsIDVmLCA2ZiwgN2YsIDZmKSksCikK
+package com.partyrockers.appsonos.data
+
+/**
+ * Una rola de la biblioteca.
+ * @param localPath ruta del archivo en el teléfono, o null en las rolas de ejemplo.
+ * @param hasLyrics true solo si hay letra disponible (incrustada, .lrc o descargada).
+ * @param lyricsLines líneas de ejemplo de la letra (solo demo, no es letra real de
+ *   ninguna canción). En v1 las rolas de ejemplo no traen letra real.
+ * @param kbps velocidad a la que se está reproduciendo (ejemplo en v1).
+ * @param addedDaysAgo hace cuántos días se agregó al almacenamiento (para "Recién agregados").
+ * @param folder carpeta donde vive el archivo, tal como está en el teléfono.
+ */
+data class Track(
+    val id: String,
+    val title: String,
+    val artist: String,
+    val album: String,
+    val durationSeconds: Int,
+    val kbps: Int = 320,
+    val hasLyrics: Boolean = false,
+    val lyricsLines: List<String> = emptyList(),
+    val addedDaysAgo: Int = 30,
+    val folder: String = "Música",
+    val localPath: String? = null,
+) {
+    val durationText: String
+        get() {
+            val m = durationSeconds / 60
+            val s = durationSeconds % 60
+            return "%d:%02d".format(m, s)
+        }
+}
+
+data class Playlist(
+    val id: String,
+    val name: String,
+    val source: String, // "App Sonos" o "Importada (.m3u)" / "Importada (.wpl)"
+    val trackIds: List<String>,
+)
+
+data class MusicFolder(
+    val path: String,
+    val name: String,
+    val trackCount: Int,
+)
+
+/** Una bocina Sonos encontrada en la red local. */
+data class SonosSpeaker(
+    val uuid: String,
+    val name: String,
+    val model: String, // p. ej. "SP100" o "ZP100"
+    val ip: String,
+    val isCoordinator: Boolean = false,
+)
+
+/** Preset del ecualizador: 12 valores, uno por banda, en dB (-12..+12). */
+data class EqPreset(val name: String, val gainsDb: List<Float>) {
+    init {
+        require(gainsDb.size == 12) { "Un preset de EQ debe tener 12 bandas" }
+    }
+}
+
+val EQ_BAND_FREQUENCIES = listOf(
+    "60", "120", "250", "500", "1k", "2k", "4k", "6k", "8k", "10k", "12k", "16k",
+)
+
+val EQ_PRESETS = listOf(
+    EqPreset("Plano", List(12) { 0f }),
+    EqPreset("Graves", listOf(8f, 7f, 5f, 3f, 1f, 0f, 0f, 0f, 0f, 0f, 0f, 0f)),
+    EqPreset("Agudos", listOf(0f, 0f, 0f, 0f, 0f, 1f, 3f, 5f, 6f, 7f, 8f, 8f)),
+    EqPreset("Vocal", listOf(-2f, -1f, 0f, 2f, 4f, 5f, 4f, 2f, 0f, 0f, 0f, 0f)),
+    EqPreset("Fiesta", listOf(7f, 6f, 4f, 2f, 0f, 0f, 1f, 3f, 5f, 6f, 7f, 6f)),
+)

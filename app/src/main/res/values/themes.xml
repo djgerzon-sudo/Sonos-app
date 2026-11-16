@@ -1,1 +1,9 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlcz4KICAgIDwhLS0gVGVtYSBiYXNlIG9zY3Vyby4gTG9zIGNvbG9yZXMgcmVhbGVzIHZpdmVuIGVuIHVpL3RoZW1lL1RoZW1lLmt0IChDb21wb3NlKS4gLS0+CiAgICA8c3R5bGUgbmFtZT0iVGhlbWUuQXBwU29ub3MiIHBhcmVudD0iYW5kcm9pZDpUaGVtZS5NYXRlcmlhbC5Ob0FjdGlvbkJhciI+CiAgICAgICAgPGl0ZW0gbmFtZT0iYW5kcm9pZDp3aW5kb3dCYWNrZ3JvdW5kIj5AY29sb3IvYmFja2dyb3VuZF9kYXJrPC9pdGVtPgogICAgICAgIDxpdGVtIG5hbWU9ImFuZHJvaWQ6c3RhdHVzQmFyQ29sb3IiPkBjb2xvci9iYWNrZ3JvdW5kX2Rhcms8L2l0ZW0+CiAgICAgICAgPGl0ZW0gbmFtZT0iYW5kcm9pZDpuYXZpZ2F0aW9uQmFyQ29sb3IiPkBjb2xvci9iYWNrZ3JvdW5kX2Rhcms8L2l0ZW0+CiAgICA8L3N0eWxlPgo8L3Jlc291cmNlcz4K
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base oscuro. Los colores reales viven en ui/theme/Theme.kt (Compose). -->
+    <style name="Theme.AppSonos" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+    </style>
+</resources>

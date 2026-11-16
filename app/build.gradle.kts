@@ -1,1 +1,79 @@
-cGx1Z2lucyB7CiAgICBpZCgiY29tLmFuZHJvaWQuYXBwbGljYXRpb24iKQogICAgaWQoIm9yZy5qZXRicmFpbnMua290bGluLmFuZHJvaWQiKQogICAgaWQoIm9yZy5qZXRicmFpbnMua290bGluLnBsdWdpbi5jb21wb3NlIikKfQoKYW5kcm9pZCB7CiAgICBuYW1lc3BhY2UgPSAiY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcyIKICAgIGNvbXBpbGVTZGsgPSAzNAoKICAgIGRlZmF1bHRDb25maWcgewogICAgICAgIGFwcGxpY2F0aW9uSWQgPSAiY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcyIKICAgICAgICBtaW5TZGsgPSAyNgogICAgICAgIHRhcmdldFNkayA9IDM0CiAgICAgICAgdmVyc2lvbkNvZGUgPSAxCiAgICAgICAgdmVyc2lvbk5hbWUgPSAiMS4wLjAiCgogICAgICAgIHRlc3RJbnN0cnVtZW50YXRpb25SdW5uZXIgPSAiYW5kcm9pZHgudGVzdC5ydW5uZXIuQW5kcm9pZEpVbml0UnVubmVyIgogICAgICAgIHZlY3RvckRyYXdhYmxlcyB7CiAgICAgICAgICAgIHVzZVN1cHBvcnRMaWJyYXJ5ID0gdHJ1ZQogICAgICAgIH0KICAgIH0KCiAgICBidWlsZFR5cGVzIHsKICAgICAgICByZWxlYXNlIHsKICAgICAgICAgICAgaXNNaW5pZnlFbmFibGVkID0gZmFsc2UKICAgICAgICAgICAgcHJvZ3VhcmRGaWxlcygKICAgICAgICAgICAgICAgIGdldERlZmF1bHRQcm9ndWFyZEZpbGUoInByb2d1YXJkLWFuZHJvaWQtb3B0aW1pemUudHh0IiksCiAgICAgICAgICAgICAgICAicHJvZ3VhcmQtcnVsZXMucHJvIgogICAgICAgICAgICApCiAgICAgICAgfQogICAgfQogICAgY29tcGlsZU9wdGlvbnMgewogICAgICAgIHNvdXJjZUNvbXBhdGliaWxpdHkgPSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICAgICAgdGFyZ2V0Q29tcGF0aWJpbGl0eSA9IEphdmFWZXJzaW9uLlZFUlNJT05fMTcKICAgIH0KICAgIGtvdGxpbk9wdGlvbnMgewogICAgICAgIGp2bVRhcmdldCA9ICIxNyIKICAgIH0KICAgIGJ1aWxkRmVhdHVyZXMgewogICAgICAgIGNvbXBvc2UgPSB0cnVlCiAgICB9CiAgICBjb21wb3NlT3B0aW9ucyB7CiAgICAgICAgLy8gRW1wYXJlamFkbyBjb24gS290bGluIDEuOS4yNCAobm8gc3ViaXIgc29sbyBlc3RlIG7Dum1lcm8pLgogICAgICAgIGtvdGxpbkNvbXBpbGVyRXh0ZW5zaW9uVmVyc2lvbiA9ICIxLjUuMTQiCiAgICB9CiAgICBwYWNrYWdpbmcgewogICAgICAgIHJlc291cmNlcyB7CiAgICAgICAgICAgIGV4Y2x1ZGVzICs9ICIvTUVUQS1JTkYve0FMMi4wLExHUEwyLjF9IgogICAgICAgIH0KICAgIH0KfQoKZGVwZW5kZW5jaWVzIHsKICAgIHZhbCBjb21wb3NlQm9tID0gcGxhdGZvcm0oImFuZHJvaWR4LmNvbXBvc2U6Y29tcG9zZS1ib206MjAyNC4wOS4wMCIpCiAgICBpbXBsZW1lbnRhdGlvbihjb21wb3NlQm9tKQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbihjb21wb3NlQm9tKQoKICAgIGltcGxlbWVudGF0aW9uKCJhbmRyb2lkeC5jb3JlOmNvcmUta3R4OjEuMTMuMSIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHgubGlmZWN5Y2xlOmxpZmVjeWNsZS1ydW50aW1lLWNvbXBvc2U6Mi44LjYiKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmxpZmVjeWNsZTpsaWZlY3ljbGUtdmlld21vZGVsLWNvbXBvc2U6Mi44LjYiKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmFjdGl2aXR5OmFjdGl2aXR5LWNvbXBvc2U6MS45LjIiKQogICAgaW1wbGVtZW50YXRpb24oIm9yZy5qZXRicmFpbnMua290bGlueDprb3RsaW54LWNvcm91dGluZXMtYW5kcm9pZDoxLjguMSIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29tcG9zZS51aTp1aSIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29tcG9zZS51aTp1aS1ncmFwaGljcyIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29tcG9zZS51aTp1aS10b29saW5nLXByZXZpZXciKQogICAgaW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzOm1hdGVyaWFsMyIpCiAgICBpbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDptYXRlcmlhbC1pY29ucy1leHRlbmRlZCIpCiAgICAvLyBNZWRpYTMgLyBFeG9QbGF5ZXIgcGFyYSByZXByb2R1Y2Npw7NuIGxvY2FsIGVuIGVsIHRlbMOpZm9uby4KICAgIGltcGxlbWVudGF0aW9uKCJhbmRyb2lkeC5tZWRpYTM6bWVkaWEzLWV4b3BsYXllcjoxLjQuMSIpCgogICAgZGVidWdJbXBsZW1lbnRhdGlvbigiYW5kcm9pZHguY29tcG9zZS51aTp1aS10b29saW5nIikKICAgIGRlYnVnSW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmNvbXBvc2UudWk6dWktdGVzdC1tYW5pZmVzdCIpCgogICAgdGVzdEltcGxlbWVudGF0aW9uKCJqdW5pdDpqdW5pdDo0LjEzLjIiKQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbigiYW5kcm9pZHgudGVzdC5leHQ6anVuaXQ6MS4yLjEiKQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbigiYW5kcm9pZHgudGVzdC5lc3ByZXNzbzplc3ByZXNzby1jb3JlOjMuNi4xIikKICAgIGFuZHJvaWRUZXN0SW1wbGVtZW50YXRpb24oImFuZHJvaWR4LmNvbXBvc2UudWk6dWktdGVzdC1qdW5pdDQiKQp9Cg==
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
+}
+
+android {
+    namespace = "com.partyrockers.appsonos"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.partyrockers.appsonos"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        // Emparejado con Kotlin 1.9.24 (no subir solo este número).
+        kotlinCompilerExtensionVersion = "1.5.14"
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+}
+
+dependencies {
+    val composeBom = platform("androidx.compose:compose-bom:2024.09.00")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.6")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
+    implementation("androidx.activity:activity-compose:1.9.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
+    // Media3 / ExoPlayer para reproducción local en el teléfono.
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+}

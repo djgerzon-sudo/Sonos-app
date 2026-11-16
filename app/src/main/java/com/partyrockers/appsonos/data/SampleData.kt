@@ -1,1 +1,107 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLmRhdGEKCi8qKgogKiBEYXRvcyBkZSBlamVtcGxvIHBhcmEgZWwgZGVtbyB2MS4KICogTG9zIHTDrXR1bG9zIHkgYXJ0aXN0YXMgc29uIGdlbsOpcmljb3MgeSBkZSBlamVtcGxvOyBubyBzb24gcm9sYXMgcmVhbGVzCiAqIHkgbm8gdHJhZW4gYXJjaGl2b3MgZGUgYXVkaW8gbmkgbGV0cmFzIHJlYWxlcy4KICogRW4gdjIgbGEgYmlibGlvdGVjYSBzZSBsbGVuYXLDoSBsZXllbmRvIGVsIGFsbWFjZW5hbWllbnRvIChNZWRpYVN0b3JlKS4KICovCm9iamVjdCBTYW1wbGVEYXRhIHsKCiAgICB2YWwgdHJhY2tzOiBMaXN0PFRyYWNrPiA9IGxpc3RPZigKICAgICAgICBUcmFjaygKICAgICAgICAgICAgaWQgPSAidDEiLCB0aXRsZSA9ICJSaXRtbyBkZSBCYXJyaW8iLCBhcnRpc3QgPSAiTG9zIGRlbCBOb3J0ZSIsCiAgICAgICAgICAgIGFsYnVtID0gIkNhbGxlIHkgU29uaWRvIiwgZHVyYXRpb25TZWNvbmRzID0gMjE0LCBrYnBzID0gMzIwLAogICAgICAgICAgICBoYXNMeXJpY3MgPSB0cnVlLAogICAgICAgICAgICBseXJpY3NMaW5lcyA9IGxpc3RPZigKICAgICAgICAgICAgICAgICJMw61uZWEgZGUgZWplbXBsbyB1bm8sIHBhcmEgcHJvYmFyIGxhIGxldHJhIGVuIEhvbWUuIiwKICAgICAgICAgICAgICAgICJMw61uZWEgZGUgZWplbXBsbyBkb3MsIHNvbG8gZXMgdW4gZGVtby4iLAogICAgICAgICAgICAgICAgIkzDrW5lYSBkZSBlamVtcGxvIHRyZXMsIGxhIGxldHJhIHJlYWwgdmEgYXF1w60gZW4gdjIuIiwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgYWRkZWREYXlzQWdvID0gMSwgZm9sZGVyID0gIk3DunNpY2EvUmFwIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0MiIsIHRpdGxlID0gIk5vY2hlIGVuIE1vbnRlcnJleSIsIGFydGlzdCA9ICJESiBFamVtcGxvIiwKICAgICAgICAgICAgYWxidW0gPSAiTm9jaGUgZW4gTW9udGVycmV5IiwgZHVyYXRpb25TZWNvbmRzID0gMTg3LCBrYnBzID0gMjU2LAogICAgICAgICAgICBoYXNMeXJpY3MgPSBmYWxzZSwgYWRkZWREYXlzQWdvID0gMiwgZm9sZGVyID0gIk3DunNpY2EvUmFwIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0MyIsIHRpdGxlID0gIkFtYW5lY2VyIFByZW5kaWRvIiwgYXJ0aXN0ID0gIkxvcyBkZWwgTm9ydGUiLAogICAgICAgICAgICBhbGJ1bSA9ICJDYWxsZSB5IFNvbmlkbyIsIGR1cmF0aW9uU2Vjb25kcyA9IDI0Mywga2JwcyA9IDMyMCwKICAgICAgICAgICAgaGFzTHlyaWNzID0gdHJ1ZSwKICAgICAgICAgICAgbHlyaWNzTGluZXMgPSBsaXN0T2YoCiAgICAgICAgICAgICAgICAiRWplbXBsbyBkZSBsZXRyYSBzaW5jcm9uaXphZGEgZW4gbGEgcG9ydGFkYS4iLAogICAgICAgICAgICAgICAgIlNlZ3VuZGEgbMOtbmVhIGRlIGVqZW1wbG8uIiwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgYWRkZWREYXlzQWdvID0gMCwgZm9sZGVyID0gIk3DunNpY2EvUmFwIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0NCIsIHRpdGxlID0gIkJham8gUXVlIFJldHVtYmEiLCBhcnRpc3QgPSAiU29uaWRvIFBlc2FkbyIsCiAgICAgICAgICAgIGFsYnVtID0gIkJham8gUGVzYWRvIiwgZHVyYXRpb25TZWNvbmRzID0gMjAxLCBrYnBzID0gMTkyLAogICAgICAgICAgICBoYXNMeXJpY3MgPSBmYWxzZSwgYWRkZWREYXlzQWdvID0gNSwgZm9sZGVyID0gIk3DunNpY2EvRmllc3RhIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0NSIsIHRpdGxlID0gIkNhbGxlIFNpbiBNaWVkbyIsIGFydGlzdCA9ICJNQyBFamVtcGxvIiwKICAgICAgICAgICAgYWxidW0gPSAiVmVyc29zIGRlIENhbGxlIiwgZHVyYXRpb25TZWNvbmRzID0gMTc2LCBrYnBzID0gMzIwLAogICAgICAgICAgICBoYXNMeXJpY3MgPSBmYWxzZSwgYWRkZWREYXlzQWdvID0gMTIsIGZvbGRlciA9ICJNw7pzaWNhL1JhcCIsCiAgICAgICAgKSwKICAgICAgICBUcmFjaygKICAgICAgICAgICAgaWQgPSAidDYiLCB0aXRsZSA9ICJGaWVzdGEgSGFzdGEgVGFyZGUiLCBhcnRpc3QgPSAiREogRWplbXBsbyIsCiAgICAgICAgICAgIGFsYnVtID0gIkZpZXN0YSIsIGR1cmF0aW9uU2Vjb25kcyA9IDIyOSwga2JwcyA9IDI1NiwKICAgICAgICAgICAgaGFzTHlyaWNzID0gZmFsc2UsIGFkZGVkRGF5c0FnbyA9IDIwLCBmb2xkZXIgPSAiTcO6c2ljYS9GaWVzdGEiLAogICAgICAgICksCiAgICAgICAgVHJhY2soCiAgICAgICAgICAgIGlkID0gInQ3IiwgdGl0bGUgPSAiVnVlbHZvIGEgRW1wZXphciIsIGFydGlzdCA9ICJTb25pZG8gUGVzYWRvIiwKICAgICAgICAgICAgYWxidW0gPSAiQmFqbyBQZXNhZG8iLCBkdXJhdGlvblNlY29uZHMgPSAxOTgsIGticHMgPSAzMjAsCiAgICAgICAgICAgIGhhc0x5cmljcyA9IHRydWUsCiAgICAgICAgICAgIGx5cmljc0xpbmVzID0gbGlzdE9mKCJMw61uZWEgZGUgZWplbXBsbyBwYXJhIGxhIHBvcnRhZGEgZGUgSG9tZS4iKSwKICAgICAgICAgICAgYWRkZWREYXlzQWdvID0gMywgZm9sZGVyID0gIk3DunNpY2EvRmllc3RhIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0OCIsIHRpdGxlID0gIlJpdG1vIHkgVGFtYm9yIiwgYXJ0aXN0ID0gIk1DIEVqZW1wbG8iLAogICAgICAgICAgICBhbGJ1bSA9ICJWZXJzb3MgZGUgQ2FsbGUiLCBkdXJhdGlvblNlY29uZHMgPSAyMjEsIGticHMgPSAxMjgsCiAgICAgICAgICAgIGhhc0x5cmljcyA9IGZhbHNlLCBhZGRlZERheXNBZ28gPSA0MCwgZm9sZGVyID0gIk3DunNpY2EvUmFwIiwKICAgICAgICApLAogICAgICAgIFRyYWNrKAogICAgICAgICAgICBpZCA9ICJ0OSIsIHRpdGxlID0gIkNpdWRhZCBkZSBOb2NoZSIsIGFydGlzdCA9ICJMb3MgZGVsIE5vcnRlIiwKICAgICAgICAgICAgYWxidW0gPSAiQ2FsbGUgeSBTb25pZG8iLCBkdXJhdGlvblNlY29uZHMgPSAyMDUsIGticHMgPSAzMjAsCiAgICAgICAgICAgIGhhc0x5cmljcyA9IGZhbHNlLCBhZGRlZERheXNBZ28gPSA4LCBmb2xkZXIgPSAiTcO6c2ljYS9SYXAiLAogICAgICAgICksCiAgICAgICAgVHJhY2soCiAgICAgICAgICAgIGlkID0gInQxMCIsIHRpdGxlID0gIlByZW5kZSBsYSBCb2NpbmEiLCBhcnRpc3QgPSAiREogRWplbXBsbyIsCiAgICAgICAgICAgIGFsYnVtID0gIkZpZXN0YSIsIGR1cmF0aW9uU2Vjb25kcyA9IDE5Miwga2JwcyA9IDI1NiwKICAgICAgICAgICAgaGFzTHlyaWNzID0gZmFsc2UsIGFkZGVkRGF5c0FnbyA9IDEsIGZvbGRlciA9ICJNw7pzaWNhL0ZpZXN0YSIsCiAgICAgICAgKSwKICAgICAgICBUcmFjaygKICAgICAgICAgICAgaWQgPSAidDExIiwgdGl0bGUgPSAiQ2FtaW5vIExhcmdvIiwgYXJ0aXN0ID0gIlNvbmlkbyBQZXNhZG8iLAogICAgICAgICAgICBhbGJ1bSA9ICJCYWpvIFBlc2FkbyIsIGR1cmF0aW9uU2Vjb25kcyA9IDI1NCwga2JwcyA9IDMyMCwKICAgICAgICAgICAgaGFzTHlyaWNzID0gZmFsc2UsIGFkZGVkRGF5c0FnbyA9IDYwLCBmb2xkZXIgPSAiTcO6c2ljYS9GaWVzdGEiLAogICAgICAgICksCiAgICAgICAgVHJhY2soCiAgICAgICAgICAgIGlkID0gInQxMiIsIHRpdGxlID0gIlNpbiBGcmVub3MiLCBhcnRpc3QgPSAiTUMgRWplbXBsbyIsCiAgICAgICAgICAgIGFsYnVtID0gIlZlcnNvcyBkZSBDYWxsZSIsIGR1cmF0aW9uU2Vjb25kcyA9IDE4Mywga2JwcyA9IDE5MiwKICAgICAgICAgICAgaGFzTHlyaWNzID0gZmFsc2UsIGFkZGVkRGF5c0FnbyA9IDE1LCBmb2xkZXIgPSAiTcO6c2ljYS9SYXAiLAogICAgICAgICksCiAgICApCgogICAgdmFsIGZvbGRlcnM6IExpc3Q8TXVzaWNGb2xkZXI+ID0gbGlzdE9mKAogICAgICAgIE11c2ljRm9sZGVyKCJNw7pzaWNhL1JhcCIsICJSYXAiLCA3KSwKICAgICAgICBNdXNpY0ZvbGRlcigiTcO6c2ljYS9GaWVzdGEiLCAiRmllc3RhIiwgNSksCiAgICAgICAgTXVzaWNGb2xkZXIoIk3DunNpY2EvRGVzY2FyZ2FzIiwgIkRlc2NhcmdhcyIsIDApLAogICAgKQoKICAgIHZhbCBwbGF5bGlzdHM6IExpc3Q8UGxheWxpc3Q+ID0gbGlzdE9mKAogICAgICAgIFBsYXlsaXN0KCJwMSIsICJQYXJhIEVudHJlbmFyIiwgIkFwcCBTb25vcyIsIGxpc3RPZigidDEiLCAidDMiLCAidDQiLCAidDEwIikpLAogICAgICAgIFBsYXlsaXN0KCJwMiIsICJGaWVzdGEgZW4gQ2FzYSIsICJBcHAgU29ub3MiLCBsaXN0T2YoInQ0IiwgInQ2IiwgInQxMCIsICJ0MTEiKSksCiAgICAgICAgUGxheWxpc3QoInAzIiwgIk1pcyBmYXZvcml0YXMgV01QIiwgIkltcG9ydGFkYSAoLndwbCkiLCBsaXN0T2YoInQyIiwgInQ1IiwgInQ4IikpLAogICAgICAgIFBsYXlsaXN0KCJwNCIsICJMaXN0YSB2aWVqYSIsICJJbXBvcnRhZGEgKC5tM3UpIiwgbGlzdE9mKCJ0OSIsICJ0MTIiLCAidDEiKSksCiAgICApCgogICAgdmFsIHNwZWFrZXJzOiBMaXN0PFNvbm9zU3BlYWtlcj4gPSBsaXN0T2YoCiAgICAgICAgU29ub3NTcGVha2VyKCJSSU5DT05fRUpFTVBMT19TQUxBIiwgIlNhbGEiLCAiU1AxMDAiLCAiMTkyLjE2OC4wLjEwMSIsIGlzQ29vcmRpbmF0b3IgPSB0cnVlKSwKICAgICAgICBTb25vc1NwZWFrZXIoIlJJTkNPTl9FSkVNUExPX0NPQ0lOQSIsICJDb2NpbmEiLCAiWlAxMDAiLCAiMTkyLjE2OC4wLjEwMiIpLAogICAgICAgIFNvbm9zU3BlYWtlcigiUklOQ09OX0VKRU1QTE9fUkVDQU1BUkEiLCAiUmVjw6FtYXJhIiwgIlNQMTAwIiwgIjE5Mi4xNjguMC4xMDMiKSwKICAgICkKCiAgICBmdW4gdHJhY2tCeUlkKGlkOiBTdHJpbmcpOiBUcmFjaz8gPSB0cmFja3MuZmluZCB7IGl0LmlkID09IGlkIH0KfQo=
+package com.partyrockers.appsonos.data
+
+/**
+ * Datos de ejemplo para el demo v1.
+ * Los títulos y artistas son genéricos y de ejemplo; no son rolas reales
+ * y no traen archivos de audio ni letras reales.
+ * En v2 la biblioteca se llenará leyendo el almacenamiento (MediaStore).
+ */
+object SampleData {
+
+    val tracks: List<Track> = listOf(
+        Track(
+            id = "t1", title = "Ritmo de Barrio", artist = "Los del Norte",
+            album = "Calle y Sonido", durationSeconds = 214, kbps = 320,
+            hasLyrics = true,
+            lyricsLines = listOf(
+                "Línea de ejemplo uno, para probar la letra en Home.",
+                "Línea de ejemplo dos, solo es un demo.",
+                "Línea de ejemplo tres, la letra real va aquí en v2.",
+            ),
+            addedDaysAgo = 1, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t2", title = "Noche en Monterrey", artist = "DJ Ejemplo",
+            album = "Noche en Monterrey", durationSeconds = 187, kbps = 256,
+            hasLyrics = false, addedDaysAgo = 2, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t3", title = "Amanecer Prendido", artist = "Los del Norte",
+            album = "Calle y Sonido", durationSeconds = 243, kbps = 320,
+            hasLyrics = true,
+            lyricsLines = listOf(
+                "Ejemplo de letra sincronizada en la portada.",
+                "Segunda línea de ejemplo.",
+            ),
+            addedDaysAgo = 0, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t4", title = "Bajo Que Retumba", artist = "Sonido Pesado",
+            album = "Bajo Pesado", durationSeconds = 201, kbps = 192,
+            hasLyrics = false, addedDaysAgo = 5, folder = "Música/Fiesta",
+        ),
+        Track(
+            id = "t5", title = "Calle Sin Miedo", artist = "MC Ejemplo",
+            album = "Versos de Calle", durationSeconds = 176, kbps = 320,
+            hasLyrics = false, addedDaysAgo = 12, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t6", title = "Fiesta Hasta Tarde", artist = "DJ Ejemplo",
+            album = "Fiesta", durationSeconds = 229, kbps = 256,
+            hasLyrics = false, addedDaysAgo = 20, folder = "Música/Fiesta",
+        ),
+        Track(
+            id = "t7", title = "Vuelvo a Empezar", artist = "Sonido Pesado",
+            album = "Bajo Pesado", durationSeconds = 198, kbps = 320,
+            hasLyrics = true,
+            lyricsLines = listOf("Línea de ejemplo para la portada de Home."),
+            addedDaysAgo = 3, folder = "Música/Fiesta",
+        ),
+        Track(
+            id = "t8", title = "Ritmo y Tambor", artist = "MC Ejemplo",
+            album = "Versos de Calle", durationSeconds = 221, kbps = 128,
+            hasLyrics = false, addedDaysAgo = 40, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t9", title = "Ciudad de Noche", artist = "Los del Norte",
+            album = "Calle y Sonido", durationSeconds = 205, kbps = 320,
+            hasLyrics = false, addedDaysAgo = 8, folder = "Música/Rap",
+        ),
+        Track(
+            id = "t10", title = "Prende la Bocina", artist = "DJ Ejemplo",
+            album = "Fiesta", durationSeconds = 192, kbps = 256,
+            hasLyrics = false, addedDaysAgo = 1, folder = "Música/Fiesta",
+        ),
+        Track(
+            id = "t11", title = "Camino Largo", artist = "Sonido Pesado",
+            album = "Bajo Pesado", durationSeconds = 254, kbps = 320,
+            hasLyrics = false, addedDaysAgo = 60, folder = "Música/Fiesta",
+        ),
+        Track(
+            id = "t12", title = "Sin Frenos", artist = "MC Ejemplo",
+            album = "Versos de Calle", durationSeconds = 183, kbps = 192,
+            hasLyrics = false, addedDaysAgo = 15, folder = "Música/Rap",
+        ),
+    )
+
+    val folders: List<MusicFolder> = listOf(
+        MusicFolder("Música/Rap", "Rap", 7),
+        MusicFolder("Música/Fiesta", "Fiesta", 5),
+        MusicFolder("Música/Descargas", "Descargas", 0),
+    )
+
+    val playlists: List<Playlist> = listOf(
+        Playlist("p1", "Para Entrenar", "App Sonos", listOf("t1", "t3", "t4", "t10")),
+        Playlist("p2", "Fiesta en Casa", "App Sonos", listOf("t4", "t6", "t10", "t11")),
+        Playlist("p3", "Mis favoritas WMP", "Importada (.wpl)", listOf("t2", "t5", "t8")),
+        Playlist("p4", "Lista vieja", "Importada (.m3u)", listOf("t9", "t12", "t1")),
+    )
+
+    val speakers: List<SonosSpeaker> = listOf(
+        SonosSpeaker("RINCON_EJEMPLO_SALA", "Sala", "SP100", "192.168.0.101", isCoordinator = true),
+        SonosSpeaker("RINCON_EJEMPLO_COCINA", "Cocina", "ZP100", "192.168.0.102"),
+        SonosSpeaker("RINCON_EJEMPLO_RECAMARA", "Recámara", "SP100", "192.168.0.103"),
+    )
+
+    fun trackById(id: String): Track? = tracks.find { it.id == id }
+}

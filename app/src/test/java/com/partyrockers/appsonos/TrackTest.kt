@@ -1,1 +1,20 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zCgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlRyYWNrCmltcG9ydCBvcmcuanVuaXQuQXNzZXJ0LmFzc2VydEVxdWFscwppbXBvcnQgb3JnLmp1bml0LlRlc3QKCmNsYXNzIFRyYWNrVGVzdCB7CgogICAgQFRlc3QKICAgIGZ1biBkdXJhdGlvblRleHRfZm9ybWF0c01pbnV0ZXNBbmRTZWNvbmRzKCkgewogICAgICAgIHZhbCB0cmFjayA9IFRyYWNrKGlkID0gIngiLCB0aXRsZSA9ICJUIiwgYXJ0aXN0ID0gIkEiLCBhbGJ1bSA9ICJCIiwgZHVyYXRpb25TZWNvbmRzID0gMjE0KQogICAgICAgIGFzc2VydEVxdWFscygiMzozNCIsIHRyYWNrLmR1cmF0aW9uVGV4dCkKICAgIH0KCiAgICBAVGVzdAogICAgZnVuIGR1cmF0aW9uVGV4dF9wYWRzU2luZ2xlRGlnaXRTZWNvbmRzKCkgewogICAgICAgIHZhbCB0cmFjayA9IFRyYWNrKGlkID0gIngiLCB0aXRsZSA9ICJUIiwgYXJ0aXN0ID0gIkEiLCBhbGJ1bSA9ICJCIiwgZHVyYXRpb25TZWNvbmRzID0gMTg3KQogICAgICAgIGFzc2VydEVxdWFscygiMzowNyIsIHRyYWNrLmR1cmF0aW9uVGV4dCkKICAgIH0KfQo=
+package com.partyrockers.appsonos
+
+import com.partyrockers.appsonos.data.Track
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class TrackTest {
+
+    @Test
+    fun durationText_formatsMinutesAndSeconds() {
+        val track = Track(id = "x", title = "T", artist = "A", album = "B", durationSeconds = 214)
+        assertEquals("3:34", track.durationText)
+    }
+
+    @Test
+    fun durationText_padsSingleDigitSeconds() {
+        val track = Track(id = "x", title = "T", artist = "A", album = "B", durationSeconds = 187)
+        assertEquals("3:07", track.durationText)
+    }
+}

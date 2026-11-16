@@ -1,1 +1,3 @@
-IyBBcHAgU29ub3Mg4oCUIHJlZ2xhcyBQcm9HdWFyZCBtw61uaW1hcyAobWluaWZ5RW5hYmxlZCBlc3TDoSBlbiBmYWxzZSBlbiB2MSkuCiMgU2UgZGVqYSBlbCBhcmNoaXZvIHBvcnF1ZSBidWlsZC5ncmFkbGUua3RzIGxvIHJlZmVyZW5jaWEgZW4gcmVsZWFzZS4KLWtlZXAgY2xhc3MgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy4qKiB7ICo7IH0K
+# App Sonos — reglas ProGuard mínimas (minifyEnabled está en false en v1).
+# Se deja el archivo porque build.gradle.kts lo referencia en release.
+-keep class com.partyrockers.appsonos.** { *; }

@@ -1,1 +1,140 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnNvbm9zCgppbXBvcnQgamF2YS5pby5CdWZmZXJlZFJlYWRlcgppbXBvcnQgamF2YS5pby5JbnB1dFN0cmVhbVJlYWRlcgppbXBvcnQgamF2YS5pby5PdXRwdXRTdHJlYW1Xcml0ZXIKaW1wb3J0IGphdmEubmV0Lkh0dHBVUkxDb25uZWN0aW9uCmltcG9ydCBqYXZhLm5ldC5VUkwKCi8qKgogKiBDbGllbnRlIFVQblAvU09BUCBtw61uaW1vIHBhcmEgYm9jaW5hcyBTb25vcyAocHVlcnRvIDE0MDApLgogKiBMYXMgYm9jaW5hcyB2aWVqYXMgU1AxMDAgLyBaUDEwMCBoYWJsYW4gZXN0ZSBwcm90b2NvbG8gZW4gbGEgcmVkIGxvY2FsLAogKiBzaW4gY3VlbnRhIGVuIGxhIG51YmU6IHRvZG8gZXMgSFRUUCBQT1NUIGNvbiB1biBzb2JyZSBTT0FQLgogKgogKiBTZXJ2aWNpb3MgcXVlIHVzYSB2MToKICogIC0gdXJuOnNjaGVtYXMtdXBucC1vcmc6c2VydmljZTpBVlRyYW5zcG9ydDoxCiAqICAgICAgUGxheSwgUGF1c2UsIFN0b3AsIE5leHQsIFByZXZpb3VzLCBTZXRBVlRyYW5zcG9ydFVSSQogKiAgLSB1cm46c2NoZW1hcy11cG5wLW9yZzpzZXJ2aWNlOlJlbmRlcmluZ0NvbnRyb2w6MQogKiAgICAgIFNldFZvbHVtZSwgR2V0Vm9sdW1lCiAqICAtIHVybjpzY2hlbWFzLXVwbnAtb3JnOnNlcnZpY2U6Wm9uZUdyb3VwVG9wb2xvZ3k6MQogKiAgICAgIEdldFpvbmVHcm91cFN0YXRlIChwYXJhIGVuY29udHJhciBhbCBjb29yZGluYWRvciBkZWwgZ3J1cG8pCiAqCiAqIFRvZGFzIGxhcyBsbGFtYWRhcyBzb24gYmxvcXVlYW50ZXM6IGxsYW1hcmxhcyBkZXNkZSBEaXNwYXRjaGVycy5JTy4KICovCm9iamVjdCBTb2FwQ2xpZW50IHsKCiAgICBwcml2YXRlIGNvbnN0IHZhbCBDT05ORUNUX1RJTUVPVVRfTVMgPSA1XzAwMAogICAgcHJpdmF0ZSBjb25zdCB2YWwgUkVBRF9USU1FT1VUX01TID0gNV8wMDAKCiAgICBwcml2YXRlIGZ1biBwb3N0KGlwOiBTdHJpbmcsIHNlcnZpY2VQYXRoOiBTdHJpbmcsIHNlcnZpY2VUeXBlOiBTdHJpbmcsIGFjdGlvbjogU3RyaW5nLCBib2R5QXJnczogU3RyaW5nKTogU3RyaW5nIHsKICAgICAgICB2YWwgdXJsID0gVVJMKCJodHRwOi8vJGlwOjE0MDAkc2VydmljZVBhdGgiKQogICAgICAgIHZhbCBlbnZlbG9wZSA9ICIiIjw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8+IiIiICsKICAgICAgICAgICAgIiIiPHM6RW52ZWxvcGUgeG1sbnM6cz0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iICIiIiArCiAgICAgICAgICAgICIiInM6ZW5jb2RpbmdTdHlsZT0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbmNvZGluZy8iPiIiIiArCiAgICAgICAgICAgICIiIjxzOkJvZHk+PHU6JGFjdGlvbiB4bWxuczp1PSIkc2VydmljZVR5cGUiPiRib2R5QXJnczwvdTokYWN0aW9uPjwvczpCb2R5PjwvczpFbnZlbG9wZT4iIiIKICAgICAgICB2YWwgY29ubmVjdGlvbiA9IHVybC5vcGVuQ29ubmVjdGlvbigpIGFzIEh0dHBVUkxDb25uZWN0aW9uCiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29ubmVjdGlvbi5yZXF1ZXN0TWV0aG9kID0gIlBPU1QiCiAgICAgICAgICAgIGNvbm5lY3Rpb24uY29ubmVjdFRpbWVvdXQgPSBDT05ORUNUX1RJTUVPVVRfTVMKICAgICAgICAgICAgY29ubmVjdGlvbi5yZWFkVGltZW91dCA9IFJFQURfVElNRU9VVF9NUwogICAgICAgICAgICBjb25uZWN0aW9uLmRvT3V0cHV0ID0gdHJ1ZQogICAgICAgICAgICBjb25uZWN0aW9uLnNldFJlcXVlc3RQcm9wZXJ0eSgiQ29udGVudC1UeXBlIiwgInRleHQveG1sOyBjaGFyc2V0PVwidXRmLThcIiIpCiAgICAgICAgICAgIGNvbm5lY3Rpb24uc2V0UmVxdWVzdFByb3BlcnR5KCJTT0FQQWN0aW9uIiwgIlwiJHNlcnZpY2VUeXBlIyRhY3Rpb25cIiIpCiAgICAgICAgICAgIGNvbm5lY3Rpb24uc2V0UmVxdWVzdFByb3BlcnR5KCJDb25uZWN0aW9uIiwgImNsb3NlIikKICAgICAgICAgICAgT3V0cHV0U3RyZWFtV3JpdGVyKGNvbm5lY3Rpb24ub3V0cHV0U3RyZWFtLCBDaGFyc2V0cy5VVEZfOCkudXNlIHsgaXQud3JpdGUoZW52ZWxvcGUpIH0KICAgICAgICAgICAgdmFsIHN0cmVhbSA9IGlmIChjb25uZWN0aW9uLnJlc3BvbnNlQ29kZSBpbiAyMDAuLjI5OSkgewogICAgICAgICAgICAgICAgY29ubmVjdGlvbi5pbnB1dFN0cmVhbQogICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgY29ubmVjdGlvbi5lcnJvclN0cmVhbQogICAgICAgICAgICB9CiAgICAgICAgICAgIHZhbCB0ZXh0ID0gc3RyZWFtPy5sZXQgewogICAgICAgICAgICAgICAgQnVmZmVyZWRSZWFkZXIoSW5wdXRTdHJlYW1SZWFkZXIoaXQsIENoYXJzZXRzLlVURl84KSkudXNlIHsgcmVhZGVyIC0+IHJlYWRlci5yZWFkVGV4dCgpIH0KICAgICAgICAgICAgfSA/OiAiIgogICAgICAgICAgICBpZiAoY29ubmVjdGlvbi5yZXNwb25zZUNvZGUgIWluIDIwMC4uMjk5KSB7CiAgICAgICAgICAgICAgICB0aHJvdyBJbGxlZ2FsU3RhdGVFeGNlcHRpb24oIlNPQVAgJGFjdGlvbiBmYWxsw7M6IEhUVFAgJHtjb25uZWN0aW9uLnJlc3BvbnNlQ29kZX06ICR0ZXh0IikKICAgICAgICAgICAgfQogICAgICAgICAgICByZXR1cm4gdGV4dAogICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgIGNvbm5lY3Rpb24uZGlzY29ubmVjdCgpCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGF2VHJhbnNwb3J0KGlwOiBTdHJpbmcsIGFjdGlvbjogU3RyaW5nLCBhcmdzOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIHBvc3QoaXAsICIvTWVkaWFSZW5kZXJlci9BVlRyYW5zcG9ydC9Db250cm9sIiwgInVybjpzY2hlbWFzLXVwbnAtb3JnOnNlcnZpY2U6QVZUcmFuc3BvcnQ6MSIsIGFjdGlvbiwgYXJncykKCiAgICBwcml2YXRlIGZ1biByZW5kZXJpbmdDb250cm9sKGlwOiBTdHJpbmcsIGFjdGlvbjogU3RyaW5nLCBhcmdzOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIHBvc3QoaXAsICIvTWVkaWFSZW5kZXJlci9SZW5kZXJpbmdDb250cm9sL0NvbnRyb2wiLCAidXJuOnNjaGVtYXMtdXBucC1vcmc6c2VydmljZTpSZW5kZXJpbmdDb250cm9sOjEiLCBhY3Rpb24sIGFyZ3MpCgogICAgZnVuIHBsYXkoaXA6IFN0cmluZyk6IFN0cmluZyA9CiAgICAgICAgYXZUcmFuc3BvcnQoaXAsICJQbGF5IiwgIjxJbnN0YW5jZUlEPjA8L0luc3RhbmNlSUQ+PFNwZWVkPjE8L1NwZWVkPiIpCgogICAgZnVuIHBhdXNlKGlwOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIGF2VHJhbnNwb3J0KGlwLCAiUGF1c2UiLCAiPEluc3RhbmNlSUQ+MDwvSW5zdGFuY2VJRD4iKQoKICAgIGZ1biBzdG9wKGlwOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIGF2VHJhbnNwb3J0KGlwLCAiU3RvcCIsICI8SW5zdGFuY2VJRD4wPC9JbnN0YW5jZUlEPiIpCgogICAgZnVuIG5leHQoaXA6IFN0cmluZyk6IFN0cmluZyA9CiAgICAgICAgYXZUcmFuc3BvcnQoaXAsICJOZXh0IiwgIjxJbnN0YW5jZUlEPjA8L0luc3RhbmNlSUQ+IikKCiAgICBmdW4gcHJldmlvdXMoaXA6IFN0cmluZyk6IFN0cmluZyA9CiAgICAgICAgYXZUcmFuc3BvcnQoaXAsICJQcmV2aW91cyIsICI8SW5zdGFuY2VJRD4wPC9JbnN0YW5jZUlEPiIpCgogICAgLyoqCiAgICAgKiBMZSBkaWNlIGEgbGEgYm9jaW5hIHF1ZSB0b3F1ZSB1bmEgVVJMIGRlIGF1ZGlvIChwLiBlai4gbGEgcXVlIHNpcnZlCiAgICAgKiBMb2NhbEh0dHBTZXJ2ZXIgY29uIHVuIGFyY2hpdm8gZGVsIHRlbMOpZm9ubykuCiAgICAgKiBbbWV0YWRhdGFdIGVzIERJREwtTGl0ZTsgdmFjw61vIGVzdMOhIHBlcm1pdGlkbyBwYXJhIHVuIG1wMyBkaXJlY3RvLgogICAgICovCiAgICBmdW4gc2V0QXZUcmFuc3BvcnRVcmkoaXA6IFN0cmluZywgdXJpOiBTdHJpbmcsIG1ldGFkYXRhOiBTdHJpbmcgPSAiIik6IFN0cmluZyB7CiAgICAgICAgdmFsIGVzY2FwZWRVcmkgPSBlc2NhcGVYbWwodXJpKQogICAgICAgIHZhbCBlc2NhcGVkTWV0YSA9IGVzY2FwZVhtbChtZXRhZGF0YSkKICAgICAgICByZXR1cm4gYXZUcmFuc3BvcnQoCiAgICAgICAgICAgIGlwLCAiU2V0QVZUcmFuc3BvcnRVUkkiLAogICAgICAgICAgICAiPEluc3RhbmNlSUQ+MDwvSW5zdGFuY2VJRD48Q3VycmVudFVSST4kZXNjYXBlZFVyaTwvQ3VycmVudFVSST4iICsKICAgICAgICAgICAgICAgICI8Q3VycmVudFVSSU1ldGFEYXRhPiRlc2NhcGVkTWV0YTwvQ3VycmVudFVSSU1ldGFEYXRhPiIsCiAgICAgICAgKQogICAgfQoKICAgIC8qKiBWb2x1bWVuIDAuLjEwMCBlbiBlbCBjYW5hbCBwcmluY2lwYWwgKCJNYXN0ZXIiKS4gKi8KICAgIGZ1biBzZXRWb2x1bWUoaXA6IFN0cmluZywgdm9sdW1lOiBJbnQpOiBTdHJpbmcgewogICAgICAgIHZhbCB2ID0gdm9sdW1lLmNvZXJjZUluKDAsIDEwMCkKICAgICAgICByZXR1cm4gcmVuZGVyaW5nQ29udHJvbCgKICAgICAgICAgICAgaXAsICJTZXRWb2x1bWUiLAogICAgICAgICAgICAiPEluc3RhbmNlSUQ+MDwvSW5zdGFuY2VJRD48Q2hhbm5lbD5NYXN0ZXI8L0NoYW5uZWw+PERlc2lyZWRWb2x1bWU+JHY8L0Rlc2lyZWRWb2x1bWU+IiwKICAgICAgICApCiAgICB9CgogICAgZnVuIGdldFpvbmVHcm91cFN0YXRlKGlwOiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIHBvc3QoCiAgICAgICAgICAgIGlwLAogICAgICAgICAgICAiL1pvbmVHcm91cFRvcG9sb2d5L0NvbnRyb2wiLAogICAgICAgICAgICAidXJuOnNjaGVtYXMtdXBucC1vcmc6c2VydmljZTpab25lR3JvdXBUb3BvbG9neToxIiwKICAgICAgICAgICAgIkdldFpvbmVHcm91cFN0YXRlIiwKICAgICAgICAgICAgIjxJbnN0YW5jZUlEPjA8L0luc3RhbmNlSUQ+IiwKICAgICAgICApCgogICAgLyoqIExlZSBsYSBkZXNjcmlwY2nDs24gZGVsIGRpc3Bvc2l0aXZvIChub21icmUsIG1vZGVsbywgVUROKSBwb3IgSFRUUCBHRVQuICovCiAgICBmdW4gZ2V0VGV4dCh1cmw6IFN0cmluZyk6IFN0cmluZyB7CiAgICAgICAgdmFsIGNvbm5lY3Rpb24gPSBVUkwodXJsKS5vcGVuQ29ubmVjdGlvbigpIGFzIEh0dHBVUkxDb25uZWN0aW9uCiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29ubmVjdGlvbi5jb25uZWN0VGltZW91dCA9IENPTk5FQ1RfVElNRU9VVF9NUwogICAgICAgICAgICBjb25uZWN0aW9uLnJlYWRUaW1lb3V0ID0gUkVBRF9USU1FT1VUX01TCiAgICAgICAgICAgIGNvbm5lY3Rpb24uc2V0UmVxdWVzdFByb3BlcnR5KCJDb25uZWN0aW9uIiwgImNsb3NlIikKICAgICAgICAgICAgaWYgKGNvbm5lY3Rpb24ucmVzcG9uc2VDb2RlICFpbiAyMDAuLjI5OSkgewogICAgICAgICAgICAgICAgdGhyb3cgSWxsZWdhbFN0YXRlRXhjZXB0aW9uKCJHRVQgJHVybCBmYWxsw7M6IEhUVFAgJHtjb25uZWN0aW9uLnJlc3BvbnNlQ29kZX0iKQogICAgICAgICAgICB9CiAgICAgICAgICAgIHJldHVybiBjb25uZWN0aW9uLmlucHV0U3RyZWFtLnVzZSB7IHN0cmVhbSAtPgogICAgICAgICAgICAgICAgQnVmZmVyZWRSZWFkZXIoSW5wdXRTdHJlYW1SZWFkZXIoc3RyZWFtLCBDaGFyc2V0cy5VVEZfOCkpLnVzZSB7IGl0LnJlYWRUZXh0KCkgfQogICAgICAgICAgICB9CiAgICAgICAgfSBmaW5hbGx5IHsKICAgICAgICAgICAgY29ubmVjdGlvbi5kaXNjb25uZWN0KCkKICAgICAgICB9CiAgICB9CgogICAgZnVuIGVzY2FwZVhtbCh0ZXh0OiBTdHJpbmcpOiBTdHJpbmcgPQogICAgICAgIHRleHQucmVwbGFjZSgiJiIsICImYW1wOyIpCiAgICAgICAgICAgIC5yZXBsYWNlKCI8IiwgIiZsdDsiKQogICAgICAgICAgICAucmVwbGFjZSgiPiIsICImZ3Q7IikKICAgICAgICAgICAgLnJlcGxhY2UoIlwiIiwgIiZxdW90OyIpCiAgICAgICAgICAgIC5yZXBsYWNlKCInIiwgIiZhcG9zOyIpCn0K
+package com.partyrockers.appsonos.sonos
+
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
+import java.net.HttpURLConnection
+import java.net.URL
+
+/**
+ * Cliente UPnP/SOAP mínimo para bocinas Sonos (puerto 1400).
+ * Las bocinas viejas SP100 / ZP100 hablan este protocolo en la red local,
+ * sin cuenta en la nube: todo es HTTP POST con un sobre SOAP.
+ *
+ * Servicios que usa v1:
+ *  - urn:schemas-upnp-org:service:AVTransport:1
+ *      Play, Pause, Stop, Next, Previous, SetAVTransportURI
+ *  - urn:schemas-upnp-org:service:RenderingControl:1
+ *      SetVolume, GetVolume
+ *  - urn:schemas-upnp-org:service:ZoneGroupTopology:1
+ *      GetZoneGroupState (para encontrar al coordinador del grupo)
+ *
+ * Todas las llamadas son bloqueantes: llamarlas desde Dispatchers.IO.
+ */
+object SoapClient {
+
+    private const val CONNECT_TIMEOUT_MS = 5_000
+    private const val READ_TIMEOUT_MS = 5_000
+
+    private fun post(ip: String, servicePath: String, serviceType: String, action: String, bodyArgs: String): String {
+        val url = URL("http://$ip:1400$servicePath")
+        val envelope = """<?xml version="1.0" encoding="utf-8"?>""" +
+            """<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" """ +
+            """s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">""" +
+            """<s:Body><u:$action xmlns:u="$serviceType">$bodyArgs</u:$action></s:Body></s:Envelope>"""
+        val connection = url.openConnection() as HttpURLConnection
+        try {
+            connection.requestMethod = "POST"
+            connection.connectTimeout = CONNECT_TIMEOUT_MS
+            connection.readTimeout = READ_TIMEOUT_MS
+            connection.doOutput = true
+            connection.setRequestProperty("Content-Type", "text/xml; charset=\"utf-8\"")
+            connection.setRequestProperty("SOAPAction", "\"$serviceType#$action\"")
+            connection.setRequestProperty("Connection", "close")
+            OutputStreamWriter(connection.outputStream, Charsets.UTF_8).use { it.write(envelope) }
+            val stream = if (connection.responseCode in 200..299) {
+                connection.inputStream
+            } else {
+                connection.errorStream
+            }
+            val text = stream?.let {
+                BufferedReader(InputStreamReader(it, Charsets.UTF_8)).use { reader -> reader.readText() }
+            } ?: ""
+            if (connection.responseCode !in 200..299) {
+                throw IllegalStateException("SOAP $action falló: HTTP ${connection.responseCode}: $text")
+            }
+            return text
+        } finally {
+            connection.disconnect()
+        }
+    }
+
+    private fun avTransport(ip: String, action: String, args: String): String =
+        post(ip, "/MediaRenderer/AVTransport/Control", "urn:schemas-upnp-org:service:AVTransport:1", action, args)
+
+    private fun renderingControl(ip: String, action: String, args: String): String =
+        post(ip, "/MediaRenderer/RenderingControl/Control", "urn:schemas-upnp-org:service:RenderingControl:1", action, args)
+
+    fun play(ip: String): String =
+        avTransport(ip, "Play", "<InstanceID>0</InstanceID><Speed>1</Speed>")
+
+    fun pause(ip: String): String =
+        avTransport(ip, "Pause", "<InstanceID>0</InstanceID>")
+
+    fun stop(ip: String): String =
+        avTransport(ip, "Stop", "<InstanceID>0</InstanceID>")
+
+    fun next(ip: String): String =
+        avTransport(ip, "Next", "<InstanceID>0</InstanceID>")
+
+    fun previous(ip: String): String =
+        avTransport(ip, "Previous", "<InstanceID>0</InstanceID>")
+
+    /**
+     * Le dice a la bocina que toque una URL de audio (p. ej. la que sirve
+     * LocalHttpServer con un archivo del teléfono).
+     * [metadata] es DIDL-Lite; vacío está permitido para un mp3 directo.
+     */
+    fun setAvTransportUri(ip: String, uri: String, metadata: String = ""): String {
+        val escapedUri = escapeXml(uri)
+        val escapedMeta = escapeXml(metadata)
+        return avTransport(
+            ip, "SetAVTransportURI",
+            "<InstanceID>0</InstanceID><CurrentURI>$escapedUri</CurrentURI>" +
+                "<CurrentURIMetaData>$escapedMeta</CurrentURIMetaData>",
+        )
+    }
+
+    /** Volumen 0..100 en el canal principal ("Master"). */
+    fun setVolume(ip: String, volume: Int): String {
+        val v = volume.coerceIn(0, 100)
+        return renderingControl(
+            ip, "SetVolume",
+            "<InstanceID>0</InstanceID><Channel>Master</Channel><DesiredVolume>$v</DesiredVolume>",
+        )
+    }
+
+    fun getZoneGroupState(ip: String): String =
+        post(
+            ip,
+            "/ZoneGroupTopology/Control",
+            "urn:schemas-upnp-org:service:ZoneGroupTopology:1",
+            "GetZoneGroupState",
+            "<InstanceID>0</InstanceID>",
+        )
+
+    /** Lee la descripción del dispositivo (nombre, modelo, UDN) por HTTP GET. */
+    fun getText(url: String): String {
+        val connection = URL(url).openConnection() as HttpURLConnection
+        try {
+            connection.connectTimeout = CONNECT_TIMEOUT_MS
+            connection.readTimeout = READ_TIMEOUT_MS
+            connection.setRequestProperty("Connection", "close")
+            if (connection.responseCode !in 200..299) {
+                throw IllegalStateException("GET $url falló: HTTP ${connection.responseCode}")
+            }
+            return connection.inputStream.use { stream ->
+                BufferedReader(InputStreamReader(stream, Charsets.UTF_8)).use { it.readText() }
+            }
+        } finally {
+            connection.disconnect()
+        }
+    }
+
+    fun escapeXml(text: String): String =
+        text.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("\"", "&quot;")
+            .replace("'", "&apos;")
+}

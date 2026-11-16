@@ -1,1 +1,34 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zCgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy5kYXRhLlBsYXlsaXN0UGFyc2VyCmltcG9ydCBvcmcuanVuaXQuQXNzZXJ0LmFzc2VydEVxdWFscwppbXBvcnQgb3JnLmp1bml0LlRlc3QKCmNsYXNzIFBsYXlsaXN0UGFyc2VyVGVzdCB7CgogICAgQFRlc3QKICAgIGZ1biBwYXJzZU0zdV9pZ25vcmVzQ29tbWVudHNBbmRCbGFua0xpbmVzKCkgewogICAgICAgIHZhbCB0ZXh0ID0gIiNFWFRNM1VcblxuL011c2ljYS9SYXAvcm9sYTEubXAzXG4jRVhUSU5GOjIxNCxBcnRpc3RhIC0gVGl0dWxvXG4vTXVzaWNhL1JhcC9yb2xhMi5tcDNcbiIKICAgICAgICBhc3NlcnRFcXVhbHMoCiAgICAgICAgICAgIGxpc3RPZigiL011c2ljYS9SYXAvcm9sYTEubXAzIiwgIi9NdXNpY2EvUmFwL3JvbGEyLm1wMyIpLAogICAgICAgICAgICBQbGF5bGlzdFBhcnNlci5wYXJzZU0zdSh0ZXh0KSwKICAgICAgICApCiAgICB9CgogICAgQFRlc3QKICAgIGZ1biBwYXJzZVBsc19vcmRlcnNCeUZpbGVOdW1iZXIoKSB7CiAgICAgICAgdmFsIHRleHQgPSAiW3BsYXlsaXN0XVxuRmlsZTI9L2IubXAzXG5GaWxlMT0vYS5tcDNcbk51bWJlck9mRW50cmllcz0yXG4iCiAgICAgICAgYXNzZXJ0RXF1YWxzKGxpc3RPZigiL2EubXAzIiwgIi9iLm1wMyIpLCBQbGF5bGlzdFBhcnNlci5wYXJzZVBscyh0ZXh0KSkKICAgIH0KCiAgICBAVGVzdAogICAgZnVuIHBhcnNlV3BsX2V4dHJhY3RzTWVkaWFTcmMoKSB7CiAgICAgICAgdmFsIHRleHQgPSAiIiI8P3dwbCB2ZXJzaW9uPSIxLjAiPz48c21pbD48Ym9keT48c2VxPjxtZWRpYSBzcmM9Ii9hLm1wMyIvPjxtZWRpYSBzcmM9Ii9iLm1wMyIvPjwvc2VxPjwvYm9keT48L3NtaWw+IiIiCiAgICAgICAgYXNzZXJ0RXF1YWxzKGxpc3RPZigiL2EubXAzIiwgIi9iLm1wMyIpLCBQbGF5bGlzdFBhcnNlci5wYXJzZVdwbCh0ZXh0KSkKICAgIH0KCiAgICBAVGVzdAogICAgZnVuIHBhcnNlX3Vua25vd25FeHRlbnNpb25fcmV0dXJuc0VtcHR5KCkgewogICAgICAgIGFzc2VydEVxdWFscyhlbXB0eUxpc3Q8U3RyaW5nPigpLCBQbGF5bGlzdFBhcnNlci5wYXJzZSgibGlzdGEudHh0IiwgImFsZ28iKSkKICAgIH0KfQo=
+package com.partyrockers.appsonos
+
+import com.partyrockers.appsonos.data.PlaylistParser
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class PlaylistParserTest {
+
+    @Test
+    fun parseM3u_ignoresCommentsAndBlankLines() {
+        val text = "#EXTM3U\n\n/Musica/Rap/rola1.mp3\n#EXTINF:214,Artista - Titulo\n/Musica/Rap/rola2.mp3\n"
+        assertEquals(
+            listOf("/Musica/Rap/rola1.mp3", "/Musica/Rap/rola2.mp3"),
+            PlaylistParser.parseM3u(text),
+        )
+    }
+
+    @Test
+    fun parsePls_ordersByFileNumber() {
+        val text = "[playlist]\nFile2=/b.mp3\nFile1=/a.mp3\nNumberOfEntries=2\n"
+        assertEquals(listOf("/a.mp3", "/b.mp3"), PlaylistParser.parsePls(text))
+    }
+
+    @Test
+    fun parseWpl_extractsMediaSrc() {
+        val text = """<?wpl version="1.0"?><smil><body><seq><media src="/a.mp3"/><media src="/b.mp3"/></seq></body></smil>"""
+        assertEquals(listOf("/a.mp3", "/b.mp3"), PlaylistParser.parseWpl(text))
+    }
+
+    @Test
+    fun parse_unknownExtension_returnsEmpty() {
+        assertEquals(emptyList<String>(), PlaylistParser.parse("lista.txt", "algo"))
+    }
+}

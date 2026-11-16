@@ -1,1 +1,134 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnVpLnNjcmVlbnMKCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24uY2xpY2thYmxlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LkNvbHVtbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5Sb3cKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFNpemUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuZmlsbE1heFdpZHRoCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF5b3V0LnBhZGRpbmcKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5LkxhenlDb2x1bW4KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXp5Lml0ZW1zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLkljb25zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5BZGQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkZvbGRlcgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuQWxlcnREaWFsb2cKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLkljb25CdXR0b24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLk1hdGVyaWFsVGhlbWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlRleHQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzLlRleHRCdXR0b24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5Db21wb3NhYmxlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuZ2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UucnVudGltZS5tdXRhYmxlU3RhdGVPZgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLnJlbWVtYmVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuc2V0VmFsdWUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuQWxpZ25tZW50CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLk1vZGlmaWVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnVuaXQuZHAKaW1wb3J0IGNvbS5wYXJ0eXJvY2tlcnMuYXBwc29ub3MuZGF0YS5NdXNpY0ZvbGRlcgppbXBvcnQgY29tLnBhcnR5cm9ja2Vycy5hcHBzb25vcy51aS5jb21wb25lbnRzLlRyYWNrUm93CmltcG9ydCBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLnZpZXdtb2RlbC5QbGF5ZXJWaWV3TW9kZWwKCi8qKgogKiBDYXJwZXRhczogc2UgbmF2ZWdhIHBvciBjYXJwZXRhcyB0YWwgY29tbyBlc3TDoW4gZW4gZWwgdGVsw6lmb25vLgogKiBEZXNkZSB1bmEgY2FycGV0YSBzZSBwdWVkZSBhZ3JlZ2FyIFRPREEgbGEgY2FycGV0YSBhIHVuYSBwbGF5bGlzdC4KICovCkBDb21wb3NhYmxlCmZ1biBGb2xkZXJzU2NyZWVuKHZpZXdNb2RlbDogUGxheWVyVmlld01vZGVsKSB7CiAgICB2YXIgb3BlbkZvbGRlciBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mPE11c2ljRm9sZGVyPz4obnVsbCkgfQogICAgdmFyIGZvbGRlclRvQWRkIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2Y8TXVzaWNGb2xkZXI/PihudWxsKSB9CgogICAgaWYgKG9wZW5Gb2xkZXIgPT0gbnVsbCkgewogICAgICAgIExhenlDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4U2l6ZSgpKSB7CiAgICAgICAgICAgIGl0ZW0gewogICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gIkNhcnBldGFzIiwKICAgICAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS50aXRsZUxhcmdlLAogICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIucGFkZGluZygxNi5kcCksCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgIH0KICAgICAgICAgICAgaXRlbXModmlld01vZGVsLmZvbGRlcnMsIGtleSA9IHsgaXQucGF0aCB9KSB7IGZvbGRlciAtPgogICAgICAgICAgICAgICAgUm93KAogICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgICAgICAgICAgLmZpbGxNYXhXaWR0aCgpCiAgICAgICAgICAgICAgICAgICAgICAgIC5jbGlja2FibGUgeyBvcGVuRm9sZGVyID0gZm9sZGVyIH0KICAgICAgICAgICAgICAgICAgICAgICAgLnBhZGRpbmcoaG9yaXpvbnRhbCA9IDE2LmRwLCB2ZXJ0aWNhbCA9IDE0LmRwKSwKICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5LAogICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuRm9sZGVyLCBjb250ZW50RGVzY3JpcHRpb24gPSAiQ2FycGV0YSAke2ZvbGRlci5uYW1lfSIpCiAgICAgICAgICAgICAgICAgICAgQ29sdW1uKG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKS5wYWRkaW5nKHN0YXJ0ID0gMTIuZHApKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQodGV4dCA9IGZvbGRlci5uYW1lLCBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TGFyZ2UpCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gIiR7Zm9sZGVyLnRyYWNrQ291bnR9IHJvbGFzIMK3ICR7Zm9sZGVyLnBhdGh9IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlID0gTWF0ZXJpYWxUaGVtZS50eXBvZ3JhcGh5LmJvZHlNZWRpdW0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCwKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBJY29uQnV0dG9uKG9uQ2xpY2sgPSB7IGZvbGRlclRvQWRkID0gZm9sZGVyIH0pIHsKICAgICAgICAgICAgICAgICAgICAgICAgSWNvbihJY29ucy5GaWxsZWQuQWRkLCBjb250ZW50RGVzY3JpcHRpb24gPSAiQWdyZWdhciBjYXJwZXRhIGNvbXBsZXRhIGEgcGxheWxpc3QiKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0gZWxzZSB7CiAgICAgICAgdmFsIGZvbGRlciA9IG9wZW5Gb2xkZXIhIQogICAgICAgIHZhbCB0cmFja3MgPSB2aWV3TW9kZWwuYWxsVHJhY2tzLmZpbHRlciB7IGl0LmZvbGRlciA9PSBmb2xkZXIucGF0aCB9CiAgICAgICAgQ29sdW1uKG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFNpemUoKSkgewogICAgICAgICAgICBUZXh0QnV0dG9uKG9uQ2xpY2sgPSB7IG9wZW5Gb2xkZXIgPSBudWxsIH0pIHsKICAgICAgICAgICAgICAgIFRleHQoIuKGkCBUb2RhcyBsYXMgY2FycGV0YXMiKQogICAgICAgICAgICB9CiAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICB0ZXh0ID0gZm9sZGVyLm5hbWUsCiAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS50aXRsZUxhcmdlLAogICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5wYWRkaW5nKGhvcml6b250YWwgPSAxNi5kcCksCiAgICAgICAgICAgICkKICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0geyBmb2xkZXJUb0FkZCA9IGZvbGRlciB9KSB7CiAgICAgICAgICAgICAgICBUZXh0KCJBZ3JlZ2FyIGNhcnBldGEgY29tcGxldGEgYSBwbGF5bGlzdCIpCiAgICAgICAgICAgIH0KICAgICAgICAgICAgTGF6eUNvbHVtbihtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCkpIHsKICAgICAgICAgICAgICAgIGl0ZW1zKHRyYWNrcywga2V5ID0geyBpdC5pZCB9KSB7IHRyYWNrIC0+CiAgICAgICAgICAgICAgICAgICAgVHJhY2tSb3codHJhY2sgPSB0cmFjaywgb25DbGljayA9IHsgdmlld01vZGVsLnBsYXlUcmFjayh0cmFjaykgfSkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICB2YWwgdGFyZ2V0ID0gZm9sZGVyVG9BZGQKICAgIGlmICh0YXJnZXQgIT0gbnVsbCkgewogICAgICAgIFBsYXlsaXN0UGlja2VyRGlhbG9nKAogICAgICAgICAgICBmb2xkZXJQYXRoID0gdGFyZ2V0LnBhdGgsCiAgICAgICAgICAgIHZpZXdNb2RlbCA9IHZpZXdNb2RlbCwKICAgICAgICAgICAgb25Eb25lID0geyBmb2xkZXJUb0FkZCA9IG51bGwgfSwKICAgICAgICApCiAgICB9Cn0KCkBDb21wb3NhYmxlCnByaXZhdGUgZnVuIFBsYXlsaXN0UGlja2VyRGlhbG9nKAogICAgZm9sZGVyUGF0aDogU3RyaW5nLAogICAgdmlld01vZGVsOiBQbGF5ZXJWaWV3TW9kZWwsCiAgICBvbkRvbmU6ICgpIC0+IFVuaXQsCikgewogICAgQWxlcnREaWFsb2coCiAgICAgICAgb25EaXNtaXNzUmVxdWVzdCA9IG9uRG9uZSwKICAgICAgICB0aXRsZSA9IHsgVGV4dCgiRWxpZ2UgcGxheWxpc3QiKSB9LAogICAgICAgIHRleHQgPSB7CiAgICAgICAgICAgIENvbHVtbiB7CiAgICAgICAgICAgICAgICBmb3IgKHBsYXlsaXN0IGluIHZpZXdNb2RlbC5wbGF5bGlzdHMpIHsKICAgICAgICAgICAgICAgICAgICBUZXh0QnV0dG9uKAogICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrID0gewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmlld01vZGVsLmFkZEZvbGRlclRvUGxheWxpc3QoZm9sZGVyUGF0aCwgcGxheWxpc3QuaWQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkRvbmUoKQogICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KHBsYXlsaXN0Lm5hbWUpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICBjb25maXJtQnV0dG9uID0ge30sCiAgICAgICAgZGlzbWlzc0J1dHRvbiA9IHsKICAgICAgICAgICAgVGV4dEJ1dHRvbihvbkNsaWNrID0gb25Eb25lKSB7IFRleHQoIkNhbmNlbGFyIikgfQogICAgICAgIH0sCiAgICApCn0K
+package com.partyrockers.appsonos.ui.screens
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Folder
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.partyrockers.appsonos.data.MusicFolder
+import com.partyrockers.appsonos.ui.components.TrackRow
+import com.partyrockers.appsonos.viewmodel.PlayerViewModel
+
+/**
+ * Carpetas: se navega por carpetas tal como están en el teléfono.
+ * Desde una carpeta se puede agregar TODA la carpeta a una playlist.
+ */
+@Composable
+fun FoldersScreen(viewModel: PlayerViewModel) {
+    var openFolder by remember { mutableStateOf<MusicFolder?>(null) }
+    var folderToAdd by remember { mutableStateOf<MusicFolder?>(null) }
+
+    if (openFolder == null) {
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            item {
+                Text(
+                    text = "Carpetas",
+                    style = MaterialTheme.typography.titleLarge,
+                    modifier = Modifier.padding(16.dp),
+                )
+            }
+            items(viewModel.folders, key = { it.path }) { folder ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { openFolder = folder }
+                        .padding(horizontal = 16.dp, vertical = 14.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Icon(Icons.Filled.Folder, contentDescription = "Carpeta ${folder.name}")
+                    Column(modifier = Modifier.weight(1f).padding(start = 12.dp)) {
+                        Text(text = folder.name, style = MaterialTheme.typography.bodyLarge)
+                        Text(
+                            text = "${folder.trackCount} rolas · ${folder.path}",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                    IconButton(onClick = { folderToAdd = folder }) {
+                        Icon(Icons.Filled.Add, contentDescription = "Agregar carpeta completa a playlist")
+                    }
+                }
+            }
+        }
+    } else {
+        val folder = openFolder!!
+        val tracks = viewModel.allTracks.filter { it.folder == folder.path }
+        Column(modifier = Modifier.fillMaxSize()) {
+            TextButton(onClick = { openFolder = null }) {
+                Text("← Todas las carpetas")
+            }
+            Text(
+                text = folder.name,
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.padding(horizontal = 16.dp),
+            )
+            TextButton(onClick = { folderToAdd = folder }) {
+                Text("Agregar carpeta completa a playlist")
+            }
+            LazyColumn(modifier = Modifier.fillMaxSize()) {
+                items(tracks, key = { it.id }) { track ->
+                    TrackRow(track = track, onClick = { viewModel.playTrack(track) })
+                }
+            }
+        }
+    }
+
+    val target = folderToAdd
+    if (target != null) {
+        PlaylistPickerDialog(
+            folderPath = target.path,
+            viewModel = viewModel,
+            onDone = { folderToAdd = null },
+        )
+    }
+}
+
+@Composable
+private fun PlaylistPickerDialog(
+    folderPath: String,
+    viewModel: PlayerViewModel,
+    onDone: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDone,
+        title = { Text("Elige playlist") },
+        text = {
+            Column {
+                for (playlist in viewModel.playlists) {
+                    TextButton(
+                        onClick = {
+                            viewModel.addFolderToPlaylist(folderPath, playlist.id)
+                            onDone()
+                        },
+                    ) {
+                        Text(playlist.name)
+                    }
+                }
+            }
+        },
+        confirmButton = {},
+        dismissButton = {
+            TextButton(onClick = onDone) { Text("Cancelar") }
+        },
+    )
+}

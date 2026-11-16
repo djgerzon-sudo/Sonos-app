@@ -1,1 +1,49 @@
-cGFja2FnZSBjb20ucGFydHlyb2NrZXJzLmFwcHNvbm9zLmRhdGEKCi8qKgogKiBMZWUgcGxheWxpc3RzIGRlIG90cm9zIHByb2dyYW1hcywgc2luIGRlcGVuZGVyIGRlIGVsbG9zLgogKiBGb3JtYXRvcyBxdWUgZW50aWVuZGUgdjE6CiAqICAtIC5tM3UgLyAubTN1ODogdW5hIHJ1dGEgbyBVUkwgcG9yIGzDrW5lYSwgbMOtbmVhcyBxdWUgZW1waWV6YW4gY29uICMgc2UgaWdub3Jhbi4KICogIC0gLnBsczogZm9ybWF0byBJTkkgY29uIEZpbGUxPS4uLiwgVGl0bGUxPS4uLiwgTGVuZ3RoMT0uLi4KICogIC0gLndwbDogWE1MIGRlIFdpbmRvd3MgTWVkaWEgUGxheWVyIGNvbiA8bWVkaWEgc3JjPSIuLi4iIC8+LgogKiBEZXZ1ZWx2ZSBzb2xvIGxhcyBydXRhcyAvIHTDrXR1bG9zIGVuY29udHJhZG9zLCBlbiBlbCBvcmRlbiBkZWwgYXJjaGl2by4KICogTm8gdG9jYSBsYSByZWQgbmkgZWwgYWxtYWNlbmFtaWVudG86IGVsIHF1ZSBsbGFtYSBsZSBwYXNhIGVsIHRleHRvIHlhIGxlw61kby4KICovCm9iamVjdCBQbGF5bGlzdFBhcnNlciB7CgogICAgZnVuIHBhcnNlTTN1KHRleHQ6IFN0cmluZyk6IExpc3Q8U3RyaW5nPiA9CiAgICAgICAgdGV4dC5saW5lU2VxdWVuY2UoKQogICAgICAgICAgICAubWFwIHsgaXQudHJpbSgpIH0KICAgICAgICAgICAgLmZpbHRlciB7IGl0LmlzTm90RW1wdHkoKSAmJiAhaXQuc3RhcnRzV2l0aCgiIyIpIH0KICAgICAgICAgICAgLnRvTGlzdCgpCgogICAgZnVuIHBhcnNlUGxzKHRleHQ6IFN0cmluZyk6IExpc3Q8U3RyaW5nPiB7CiAgICAgICAgdmFsIGVudHJpZXMgPSBtdXRhYmxlTGlzdE9mPFBhaXI8SW50LCBTdHJpbmc+PigpCiAgICAgICAgZm9yIChsaW5lIGluIHRleHQubGluZVNlcXVlbmNlKCkpIHsKICAgICAgICAgICAgdmFsIHRyaW1tZWQgPSBsaW5lLnRyaW0oKQogICAgICAgICAgICBpZiAoIXRyaW1tZWQuc3RhcnRzV2l0aCgiRmlsZSIsIGlnbm9yZUNhc2UgPSB0cnVlKSkgY29udGludWUKICAgICAgICAgICAgdmFsIGVxID0gdHJpbW1lZC5pbmRleE9mKCc9JykKICAgICAgICAgICAgaWYgKGVxIDwgMCkgY29udGludWUKICAgICAgICAgICAgdmFsIGtleSA9IHRyaW1tZWQuc3Vic3RyaW5nKDAsIGVxKQogICAgICAgICAgICB2YWwgbnVtYmVyID0ga2V5LnJlbW92ZVByZWZpeCgiRmlsZSIpLnJlbW92ZVByZWZpeCgiZmlsZSIpLnRvSW50T3JOdWxsKCkgPzogY29udGludWUKICAgICAgICAgICAgdmFsIHZhbHVlID0gdHJpbW1lZC5zdWJzdHJpbmcoZXEgKyAxKS50cmltKCkKICAgICAgICAgICAgaWYgKHZhbHVlLmlzTm90RW1wdHkoKSkgZW50cmllcy5hZGQobnVtYmVyIHRvIHZhbHVlKQogICAgICAgIH0KICAgICAgICByZXR1cm4gZW50cmllcy5zb3J0ZWRCeSB7IGl0LmZpcnN0IH0ubWFwIHsgaXQuc2Vjb25kIH0KICAgIH0KCiAgICBmdW4gcGFyc2VXcGwodGV4dDogU3RyaW5nKTogTGlzdDxTdHJpbmc+IHsKICAgICAgICAvLyA8bWVkaWEgc3JjPSJydXRhIiAvPiDigJQgc2UgZXh0cmFlIGNvbiB1bmEgZXhwcmVzacOzbiBzaW1wbGUsIHNpbiBwYXJzZXIgWE1MLgogICAgICAgIHZhbCByZWdleCA9IFJlZ2V4KCIiIjxtZWRpYVtePl0qXHNzcmNccyo9XHMqIihbXiJdKykiIiIiKQogICAgICAgIHJldHVybiByZWdleC5maW5kQWxsKHRleHQpLm1hcCB7IGl0Lmdyb3VwVmFsdWVzWzFdIH0udG9MaXN0KCkKICAgIH0KCiAgICAvKiogRGV0ZWN0YSBlbCBmb3JtYXRvIHBvciBsYSBleHRlbnNpw7NuIGRlbCBhcmNoaXZvIHkgbG8gcGFyc2VhLiAqLwogICAgZnVuIHBhcnNlKGZpbGVOYW1lOiBTdHJpbmcsIHRleHQ6IFN0cmluZyk6IExpc3Q8U3RyaW5nPiA9CiAgICAgICAgd2hlbiAoZmlsZU5hbWUuc3Vic3RyaW5nQWZ0ZXJMYXN0KCcuJywgIiIpLmxvd2VyY2FzZSgpKSB7CiAgICAgICAgICAgICJtM3UiLCAibTN1OCIgLT4gcGFyc2VNM3UodGV4dCkKICAgICAgICAgICAgInBscyIgLT4gcGFyc2VQbHModGV4dCkKICAgICAgICAgICAgIndwbCIgLT4gcGFyc2VXcGwodGV4dCkKICAgICAgICAgICAgZWxzZSAtPiBlbXB0eUxpc3QoKQogICAgICAgIH0KfQo=
+package com.partyrockers.appsonos.data
+
+/**
+ * Lee playlists de otros programas, sin depender de ellos.
+ * Formatos que entiende v1:
+ *  - .m3u / .m3u8: una ruta o URL por línea, líneas que empiezan con # se ignoran.
+ *  - .pls: formato INI con File1=..., Title1=..., Length1=...
+ *  - .wpl: XML de Windows Media Player con <media src="..." />.
+ * Devuelve solo las rutas / títulos encontrados, en el orden del archivo.
+ * No toca la red ni el almacenamiento: el que llama le pasa el texto ya leído.
+ */
+object PlaylistParser {
+
+    fun parseM3u(text: String): List<String> =
+        text.lineSequence()
+            .map { it.trim() }
+            .filter { it.isNotEmpty() && !it.startsWith("#") }
+            .toList()
+
+    fun parsePls(text: String): List<String> {
+        val entries = mutableListOf<Pair<Int, String>>()
+        for (line in text.lineSequence()) {
+            val trimmed = line.trim()
+            if (!trimmed.startsWith("File", ignoreCase = true)) continue
+            val eq = trimmed.indexOf('=')
+            if (eq < 0) continue
+            val key = trimmed.substring(0, eq)
+            val number = key.removePrefix("File").removePrefix("file").toIntOrNull() ?: continue
+            val value = trimmed.substring(eq + 1).trim()
+            if (value.isNotEmpty()) entries.add(number to value)
+        }
+        return entries.sortedBy { it.first }.map { it.second }
+    }
+
+    fun parseWpl(text: String): List<String> {
+        // <media src="ruta" /> — se extrae con una expresión simple, sin parser XML.
+        val regex = Regex("""<media[^>]*\ssrc\s*=\s*"([^"]+)"""")
+        return regex.findAll(text).map { it.groupValues[1] }.toList()
+    }
+
+    /** Detecta el formato por la extensión del archivo y lo parsea. */
+    fun parse(fileName: String, text: String): List<String> =
+        when (fileName.substringAfterLast('.', "").lowercase()) {
+            "m3u", "m3u8" -> parseM3u(text)
+            "pls" -> parsePls(text)
+            "wpl" -> parseWpl(text)
+            else -> emptyList()
+        }
+}
