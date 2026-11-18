@@ -222,18 +222,27 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     fun discoverSpeakers() {
         sonosStatus = "Buscando bocinas en la WiFi…"
         viewModelScope.launch {
-            val found = sonos.discoverSpeakers()
-            if (found.isNotEmpty()) {
-                speakers = found
-                currentSpeaker = found[0]
-                sonos.selectSpeaker(found[0])
-                sonosConnected = true
-                sonosStatus = "Conectado: ${found.size} bocina(s) encontrada(s)"
-            } else {
+            try {
+                val found = sonos.discoverSpeakers()
+                if (found.isNotEmpty()) {
+                    speakers = found
+                    currentSpeaker = found[0]
+                    sonos.selectSpeaker(found[0])
+                    sonosConnected = true
+                    sonosStatus = "Conexión verificada: ${found.size} bocina(s) Sonos"
+                } else {
+                    speakers = emptyList()
+                    currentSpeaker = null
+                    sonos.selectSpeaker(null)
+                    sonosConnected = false
+                    sonosStatus = "No se encontró una bocina Sonos accesible por SSDP y SOAP"
+                }
+            } catch (error: Exception) {
                 speakers = emptyList()
                 currentSpeaker = null
+                sonos.selectSpeaker(null)
                 sonosConnected = false
-                sonosStatus = "No se encontró ninguna bocina"
+                sonosStatus = "Falló la búsqueda: ${error.message ?: "error de red"}"
             }
         }
     }
