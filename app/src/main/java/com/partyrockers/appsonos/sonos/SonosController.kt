@@ -19,7 +19,7 @@ class SonosController(private val appContext: android.content.Context) {
     var currentSpeaker: SonosSpeaker? = null
         private set
 
-    fun selectSpeaker(speaker: SonosSpeaker) {
+    fun selectSpeaker(speaker: SonosSpeaker?) {
         currentSpeaker = speaker
     }
 
