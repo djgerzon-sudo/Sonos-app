@@ -25,7 +25,7 @@ class SonosController(private val appContext: android.content.Context) {
 
     suspend fun discoverSpeakers(timeoutMs: Int = 3_000): List<SonosSpeaker> =
         withContext(Dispatchers.IO) {
-            SsdpDiscovery.discover(getApplicationContext(), timeoutMs).filter { speaker ->
+            SsdpDiscovery.discover(appContext, timeoutMs).filter { speaker ->
                 // Encontrar la descripción UPnP no basta: exigimos respuesta SOAP real.
                 runCatching { SoapClient.getZoneGroupState(speaker.ip) }.isSuccess
             }
