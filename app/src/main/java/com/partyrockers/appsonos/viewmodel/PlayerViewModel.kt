@@ -24,7 +24,7 @@ enum class SortOrder { TITLE, ARTIST, DURATION }
 class PlayerViewModel(application: Application) : AndroidViewModel(application) {
 
     private val localPlayer = LocalPlayer(application)
-    private val sonos = SonosController()
+    private val sonos = SonosController(application)
     private val httpServer = LocalHttpServer()
 
     // --- Biblioteca y cola ---
