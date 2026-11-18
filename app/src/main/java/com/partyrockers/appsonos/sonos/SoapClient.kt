@@ -27,7 +27,7 @@ object SoapClient {
             connection.connectTimeout = CONNECT_TIMEOUT_MS
             connection.readTimeout = READ_TIMEOUT_MS
             connection.doOutput = true
-            connection.setRequestProperty("Content-Type", "text/xml; charset="utf-8"")
+            connection.setRequestProperty("Content-Type", "text/xml; charset=utf-8")
             connection.setRequestProperty("SOAPAction", "\"$serviceType#$action\"")
             connection.setRequestProperty("Connection", "close")
             OutputStreamWriter(connection.outputStream, Charsets.UTF_8).use { it.write(envelope) }
