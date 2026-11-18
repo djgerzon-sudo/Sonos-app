@@ -14,7 +14,7 @@ import kotlinx.coroutines.withContext
  *
  * Todas las funciones suspenden y hacen red en Dispatchers.IO.
  */
-class SonosController {
+class SonosController(private val appContext: android.content.Context) {
 
     var currentSpeaker: SonosSpeaker? = null
         private set
@@ -24,7 +24,12 @@ class SonosController {
     }
 
     suspend fun discoverSpeakers(timeoutMs: Int = 3_000): List<SonosSpeaker> =
-        withContext(Dispatchers.IO) { SsdpDiscovery.discover(timeoutMs) }
+        withContext(Dispatchers.IO) {
+            SsdpDiscovery.discover(getApplicationContext(), timeoutMs).filter { speaker ->
+                // Encontrar la descripción UPnP no basta: exigimos respuesta SOAP real.
+                runCatching { SoapClient.getZoneGroupState(speaker.ip) }.isSuccess
+            }
+        }
 
     /**
      * Resuelve la IP del coordinador del grupo al que pertenece [speaker].
