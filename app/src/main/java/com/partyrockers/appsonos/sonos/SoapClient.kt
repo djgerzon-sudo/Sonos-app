@@ -7,19 +7,8 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 /**
- * Cliente UPnP/SOAP mínimo para bocinas Sonos (puerto 1400).
- * Las bocinas viejas SP100 / ZP100 hablan este protocolo en la red local,
- * sin cuenta en la nube: todo es HTTP POST con un sobre SOAP.
- *
- * Servicios que usa v1:
- *  - urn:schemas-upnp-org:service:AVTransport:1
- *      Play, Pause, Stop, Next, Previous, SetAVTransportURI
- *  - urn:schemas-upnp-org:service:RenderingControl:1
- *      SetVolume, GetVolume
- *  - urn:schemas-upnp-org:service:ZoneGroupTopology:1
- *      GetZoneGroupState (para encontrar al coordinador del grupo)
- *
- * Todas las llamadas son bloqueantes: llamarlas desde Dispatchers.IO.
+ * Cliente UPnP/SOAP mínimo para Sonos en la red local (puerto 1400).
+ * Todas las llamadas son bloqueantes: ejecutarlas desde Dispatchers.IO.
  */
 object SoapClient {
 
@@ -38,22 +27,19 @@ object SoapClient {
             connection.connectTimeout = CONNECT_TIMEOUT_MS
             connection.readTimeout = READ_TIMEOUT_MS
             connection.doOutput = true
-            connection.setRequestProperty("Content-Type", "text/xml; charset=\"utf-8\"")
+            connection.setRequestProperty("Content-Type", "text/xml; charset="utf-8"")
             connection.setRequestProperty("SOAPAction", "\"$serviceType#$action\"")
             connection.setRequestProperty("Connection", "close")
             OutputStreamWriter(connection.outputStream, Charsets.UTF_8).use { it.write(envelope) }
-            val stream = if (connection.responseCode in 200..299) {
-                connection.inputStream
-            } else {
-                connection.errorStream
-            }
-            val text = stream?.let {
+            val code = connection.responseCode
+            val stream = if (code in 200..299) connection.inputStream else connection.errorStream
+            val response = stream?.let {
                 BufferedReader(InputStreamReader(it, Charsets.UTF_8)).use { reader -> reader.readText() }
             } ?: ""
-            if (connection.responseCode !in 200..299) {
-                throw IllegalStateException("SOAP $action falló: HTTP ${connection.responseCode}: $text")
+            if (code !in 200..299) {
+                throw IllegalStateException("SOAP $action falló: HTTP $code: $response")
             }
-            return text
+            return response
         } finally {
             connection.disconnect()
         }
@@ -80,22 +66,14 @@ object SoapClient {
     fun previous(ip: String): String =
         avTransport(ip, "Previous", "<InstanceID>0</InstanceID>")
 
-    /**
-     * Le dice a la bocina que toque una URL de audio (p. ej. la que sirve
-     * LocalHttpServer con un archivo del teléfono).
-     * [metadata] es DIDL-Lite; vacío está permitido para un mp3 directo.
-     */
     fun setAvTransportUri(ip: String, uri: String, metadata: String = ""): String {
-        val escapedUri = escapeXml(uri)
-        val escapedMeta = escapeXml(metadata)
         return avTransport(
             ip, "SetAVTransportURI",
-            "<InstanceID>0</InstanceID><CurrentURI>$escapedUri</CurrentURI>" +
-                "<CurrentURIMetaData>$escapedMeta</CurrentURIMetaData>",
+            "<InstanceID>0</InstanceID><CurrentURI>${escapeXml(uri)}</CurrentURI>" +
+                "<CurrentURIMetaData>${escapeXml(metadata)}</CurrentURIMetaData>",
         )
     }
 
-    /** Volumen 0..100 en el canal principal ("Master"). */
     fun setVolume(ip: String, volume: Int): String {
         val v = volume.coerceIn(0, 100)
         return renderingControl(
@@ -104,24 +82,25 @@ object SoapClient {
         )
     }
 
+    /** GetZoneGroupState no recibe argumentos según la acción UPnP. */
     fun getZoneGroupState(ip: String): String =
         post(
             ip,
             "/ZoneGroupTopology/Control",
             "urn:schemas-upnp-org:service:ZoneGroupTopology:1",
             "GetZoneGroupState",
-            "<InstanceID>0</InstanceID>",
+            "",
         )
 
-    /** Lee la descripción del dispositivo (nombre, modelo, UDN) por HTTP GET. */
     fun getText(url: String): String {
         val connection = URL(url).openConnection() as HttpURLConnection
         try {
             connection.connectTimeout = CONNECT_TIMEOUT_MS
             connection.readTimeout = READ_TIMEOUT_MS
             connection.setRequestProperty("Connection", "close")
-            if (connection.responseCode !in 200..299) {
-                throw IllegalStateException("GET $url falló: HTTP ${connection.responseCode}")
+            val code = connection.responseCode
+            if (code !in 200..299) {
+                throw IllegalStateException("GET descripción falló: HTTP $code")
             }
             return connection.inputStream.use { stream ->
                 BufferedReader(InputStreamReader(stream, Charsets.UTF_8)).use { it.readText() }
