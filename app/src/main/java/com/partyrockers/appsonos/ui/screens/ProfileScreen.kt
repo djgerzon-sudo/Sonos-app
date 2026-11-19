@@ -67,7 +67,11 @@ fun ProfileScreen(viewModel: PlayerViewModel, onClose: () -> Unit) {
             SettingRow(
                 icon = Icons.Filled.Wifi,
                 title = "${speaker.name} · ${speaker.model}",
-                subtitle = speaker.ip + if (speaker == viewModel.currentSpeaker) " · en uso" else "",
+                subtitle = speaker.ip + if (speaker == viewModel.currentSpeaker) {
+                    " · en uso · conectada"
+                } else {
+                    ""
+                },
                 onClick = { viewModel.selectSpeaker(speaker) },
             )
         }
@@ -79,6 +83,19 @@ fun ProfileScreen(viewModel: PlayerViewModel, onClose: () -> Unit) {
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
+        TextButton(
+            onClick = { viewModel.testConnection() },
+            enabled = !viewModel.isTestingConnection,
+        ) {
+            Text(if (viewModel.isTestingConnection) "Probando conexión…" else "Probar conexión")
+        }
+        if (viewModel.connectionTestResult.isNotBlank()) {
+            Text(
+                text = viewModel.connectionTestResult,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
 
         Spacer(modifier = Modifier.height(16.dp))
         Text(text = "Ajustes del equipo", style = MaterialTheme.typography.titleMedium)

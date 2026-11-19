@@ -1,6 +1,7 @@
 package com.partyrockers.appsonos.viewmodel
 
 import android.app.Application
+import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
@@ -9,6 +10,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.partyrockers.appsonos.data.EqPreset
+import com.partyrockers.appsonos.data.MediaStoreScanner
 import com.partyrockers.appsonos.data.MusicFolder
 import com.partyrockers.appsonos.data.Playlist
 import com.partyrockers.appsonos.data.SonosSpeaker
@@ -16,8 +18,11 @@ import com.partyrockers.appsonos.data.Track
 import com.partyrockers.appsonos.player.LocalPlayer
 import com.partyrockers.appsonos.sonos.LocalHttpServer
 import com.partyrockers.appsonos.sonos.SonosController
+import com.partyrockers.appsonos.sonos.SoapClient
 import java.io.File
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 enum class SortOrder { TITLE, ARTIST, DURATION }
 
@@ -65,6 +70,29 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     var sonosConnected by mutableStateOf(false)
         private set
     var sonosStatus by mutableStateOf("Aún sin bocina. Toca \"Buscar bocinas en la WiFi\".")
+        private set
+
+    // --- Escaneo de música real del teléfono ---
+    private val prefs = application.getSharedPreferences("app_sonos_prefs", Context.MODE_PRIVATE)
+
+    /** Rolas escaneadas (todas, antes de aplicar carpetas excluidas). */
+    private var scannedTracks by mutableStateOf<List<Track>>(emptyList())
+
+    /** Rutas de carpetas que el usuario excluyó. Se guardan en SharedPreferences. */
+    var excludedFolders by mutableStateOf(
+        prefs.getStringSet("excluded_folders", emptySet())?.toSet() ?: emptySet(),
+    )
+        private set
+
+    var scanState by mutableStateOf("Aún sin escanear. Toca \"Escanear almacenamiento\".")
+        private set
+    var isScanning by mutableStateOf(false)
+        private set
+
+    // --- Prueba manual de conexión con la bocina ---
+    var connectionTestResult by mutableStateOf("")
+        private set
+    var isTestingConnection by mutableStateOf(false)
         private set
 
     // --- EQ y efectos (apagados por defecto; compresor y reverb pesan más) ---
@@ -120,6 +148,10 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     fun playTrack(track: Track) {
         currentTrack = track
         isPlaying = true
+        // La cola es la biblioteca visible: así Siguiente/Anterior avanzan.
+        if (queue.none { it.id == track.id }) {
+            queue = visibleTracks
+        }
         // 1) Suena en el teléfono si hay archivo local.
         if (track.localPath != null) {
             localPlayer.playLocalFile(track.localPath)
@@ -217,6 +249,8 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     fun selectSpeaker(speaker: SonosSpeaker) {
         currentSpeaker = speaker
         sonos.selectSpeaker(speaker)
+        sonosConnected = true
+        sonosStatus = "Conectada a ${speaker.name} (${speaker.ip})"
     }
 
     fun discoverSpeakers() {
@@ -244,6 +278,85 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
                 sonosConnected = false
                 sonosStatus = "Falló la búsqueda: ${error.message ?: "error de red"}"
             }
+        }
+    }
+
+    // --- Escaneo de música y carpetas ---
+
+    fun isFolderExcluded(path: String): Boolean = path in excludedFolders
+
+    fun setFolderExcluded(path: String, excluded: Boolean) {
+        excludedFolders = if (excluded) {
+            excludedFolders + path
+        } else {
+            excludedFolders - path
+        }
+        prefs.edit().putStringSet("excluded_folders", excludedFolders).apply()
+        applyFolderFilter()
+    }
+
+    /** Biblioteca y carpetas según las carpetas que el usuario dejó incluidas. */
+    private fun applyFolderFilter() {
+        allTracks = scannedTracks.filter { it.folder !in excludedFolders }
+        folders = scannedTracks
+            .groupBy { it.folder }
+            .map { (path, tracks) ->
+                MusicFolder(
+                    path = path,
+                    name = path.substringAfterLast("/").ifBlank { path },
+                    trackCount = tracks.size,
+                )
+            }
+            .sortedBy { it.name.lowercase() }
+    }
+
+    /** Lee la música real del teléfono. Se llama solo tras dar el permiso. */
+    fun scanLibrary() {
+        if (isScanning) return
+        isScanning = true
+        scanState = "Escaneando…"
+        viewModelScope.launch {
+            val found = withContext(Dispatchers.IO) {
+                MediaStoreScanner.scan(getApplication())
+            }
+            scannedTracks = found
+            applyFolderFilter()
+            scanState = if (found.isEmpty()) {
+                "No se encontró música en el almacenamiento"
+            } else {
+                "Se encontraron ${found.size} rolas en ${folders.size} carpetas"
+            }
+            isScanning = false
+        }
+    }
+
+    fun onScanPermissionDenied() {
+        scanState = "Sin permiso no puedo leer tu música. Toca Escanear de nuevo para permitirlo."
+    }
+
+    // --- Prueba manual de conexión teléfono-bocina ---
+
+    fun testConnection() {
+        val speaker = currentSpeaker
+        if (speaker == null) {
+            connectionTestResult = "Primero busca bocinas en la WiFi"
+            return
+        }
+        if (isTestingConnection) return
+        isTestingConnection = true
+        connectionTestResult = "Probando conexión…"
+        viewModelScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                try {
+                    SoapClient.getText("http://${speaker.ip}:1400/xml/device_description.xml")
+                    SoapClient.getZoneGroupState(speaker.ip)
+                    "Conexión OK: ${speaker.model} responde en ${speaker.ip}"
+                } catch (_: Exception) {
+                    "Sin respuesta de ${speaker.ip}: revisa que la bocina esté encendida y en la misma WiFi"
+                }
+            }
+            connectionTestResult = result
+            isTestingConnection = false
         }
     }
 

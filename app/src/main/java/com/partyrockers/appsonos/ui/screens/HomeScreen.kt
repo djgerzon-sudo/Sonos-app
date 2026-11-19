@@ -145,7 +145,11 @@ fun HomeScreen(viewModel: PlayerViewModel) {
             textAlign = TextAlign.Center,
         )
         Text(
-            text = if (track != null) "${track.kbps} kbps · ${track.durationText}" else "Aún sin archivo",
+            text = if (track != null) {
+                if (track.kbps > 0) "${track.kbps} kbps · ${track.durationText}" else track.durationText
+            } else {
+                "Aún sin archivo"
+            },
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.primary,
         )

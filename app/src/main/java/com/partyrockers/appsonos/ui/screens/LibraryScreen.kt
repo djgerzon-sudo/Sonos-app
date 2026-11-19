@@ -1,14 +1,22 @@
 package com.partyrockers.appsonos.ui.screens
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.Button
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -16,7 +24,9 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import com.partyrockers.appsonos.ui.components.TrackRow
 import com.partyrockers.appsonos.viewmodel.PlayerViewModel
 import com.partyrockers.appsonos.viewmodel.SortOrder
@@ -24,7 +34,41 @@ import com.partyrockers.appsonos.viewmodel.SortOrder
 /** Biblioteca: búsqueda, orden por título / artista / duración y Recién agregados. */
 @Composable
 fun LibraryScreen(viewModel: PlayerViewModel) {
+    val context = LocalContext.current
+    val audioPermission = if (Build.VERSION.SDK_INT >= 33) {
+        Manifest.permission.READ_MEDIA_AUDIO
+    } else {
+        Manifest.permission.READ_EXTERNAL_STORAGE
+    }
+    val permissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        if (granted) viewModel.scanLibrary() else viewModel.onScanPermissionDenied()
+    }
     Column(modifier = Modifier.fillMaxSize()) {
+        Row(modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+            Button(
+                onClick = {
+                    if (ContextCompat.checkSelfPermission(context, audioPermission) ==
+                        PackageManager.PERMISSION_GRANTED
+                    ) {
+                        viewModel.scanLibrary()
+                    } else {
+                        permissionLauncher.launch(audioPermission)
+                    }
+                },
+                enabled = !viewModel.isScanning,
+            ) {
+                Text(if (viewModel.isScanning) "Escaneando…" else "Escanear almacenamiento")
+            }
+        }
+        Text(
+            text = viewModel.scanState,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(horizontal = 16.dp),
+        )
+        Spacer(modifier = Modifier.height(8.dp))
         OutlinedTextField(
             value = viewModel.searchQuery,
             onValueChange = { viewModel.updateSearchQuery(it) },

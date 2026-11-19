@@ -1,5 +1,10 @@
 package com.partyrockers.appsonos.ui.screens
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -12,9 +17,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -24,7 +31,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import com.partyrockers.appsonos.data.MusicFolder
 import com.partyrockers.appsonos.ui.components.TrackRow
 import com.partyrockers.appsonos.viewmodel.PlayerViewModel
@@ -37,6 +46,17 @@ import com.partyrockers.appsonos.viewmodel.PlayerViewModel
 fun FoldersScreen(viewModel: PlayerViewModel) {
     var openFolder by remember { mutableStateOf<MusicFolder?>(null) }
     var folderToAdd by remember { mutableStateOf<MusicFolder?>(null) }
+    val context = LocalContext.current
+    val audioPermission = if (Build.VERSION.SDK_INT >= 33) {
+        Manifest.permission.READ_MEDIA_AUDIO
+    } else {
+        Manifest.permission.READ_EXTERNAL_STORAGE
+    }
+    val permissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        if (granted) viewModel.scanLibrary() else viewModel.onScanPermissionDenied()
+    }
 
     if (openFolder == null) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
@@ -45,6 +65,36 @@ fun FoldersScreen(viewModel: PlayerViewModel) {
                     text = "Carpetas",
                     style = MaterialTheme.typography.titleLarge,
                     modifier = Modifier.padding(16.dp),
+                )
+            }
+            item {
+                Row(modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+                    Button(
+                        onClick = {
+                            if (ContextCompat.checkSelfPermission(context, audioPermission) ==
+                                PackageManager.PERMISSION_GRANTED
+                            ) {
+                                viewModel.scanLibrary()
+                            } else {
+                                permissionLauncher.launch(audioPermission)
+                            }
+                        },
+                        enabled = !viewModel.isScanning,
+                    ) {
+                        Text(if (viewModel.isScanning) "Escaneando…" else "Escanear almacenamiento")
+                    }
+                }
+                Text(
+                    text = viewModel.scanState,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+                Text(
+                    text = "Apaga una carpeta para excluirla de la biblioteca.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 )
             }
             if (viewModel.folders.isEmpty()) {
@@ -76,6 +126,12 @@ fun FoldersScreen(viewModel: PlayerViewModel) {
                     IconButton(onClick = { folderToAdd = folder }) {
                         Icon(Icons.Filled.Add, contentDescription = "Agregar carpeta completa a playlist")
                     }
+                    Switch(
+                        checked = !viewModel.isFolderExcluded(folder.path),
+                        onCheckedChange = { included ->
+                            viewModel.setFolderExcluded(folder.path, !included)
+                        },
+                    )
                 }
             }
         }
