@@ -32,7 +32,10 @@ class BalanceAudioProcessor : BaseAudioProcessor() {
         return inputAudioFormat
     }
 
-    override fun onQueueInput(inputBuffer: ByteBuffer) {
+    // Media3 1.4.1: BaseAudioProcessor NO implementa queueInput (es abstracto en la
+    // interfaz AudioProcessor) y NO existe onQueueInput (eso era ExoPlayer 2.x).
+    // La subclase debe implementar queueInput(ByteBuffer) directamente.
+    override fun queueInput(inputBuffer: ByteBuffer) {
         val remaining = inputBuffer.remaining()
         if (remaining == 0) return
         val b = balance

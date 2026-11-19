@@ -2,19 +2,42 @@ package com.partyrockers.appsonos.player
 
 import android.content.Context
 import androidx.media3.common.MediaItem
+import androidx.media3.common.audio.AudioProcessor
+import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.audio.AudioSink
+import androidx.media3.exoplayer.audio.DefaultAudioSink
 
 /**
  * Reproductor local del teléfono (Media3 / ExoPlayer).
  * Solo suena cuando la rola tiene un archivo local ([localPath]).
  * Sin archivo no hay audio: la UI no simula reproducción.
+ *
+ * El balance L/R se aplica con [BalanceAudioProcessor]. En Media3 1.4.1
+ * ExoPlayer.Builder NO tiene setAudioProcessors: los procesadores van por
+ * DefaultAudioSink.Builder.setAudioProcessors, y el sink se inyecta con una
+ * DefaultRenderersFactory que sobrescribe buildAudioSink.
  */
 class LocalPlayer(context: Context) {
 
     private val balanceProcessor = BalanceAudioProcessor()
 
+    private val renderersFactory = object : DefaultRenderersFactory(context.applicationContext) {
+        override fun buildAudioSink(
+            context: Context,
+            enableFloatOutput: Boolean,
+            enableAudioTrackPlaybackParams: Boolean,
+        ): AudioSink? {
+            return DefaultAudioSink.Builder(context)
+                .setEnableFloatOutput(enableFloatOutput)
+                .setEnableAudioTrackPlaybackParams(enableAudioTrackPlaybackParams)
+                .setAudioProcessors(arrayOf<AudioProcessor>(balanceProcessor))
+                .build()
+        }
+    }
+
     private val player: ExoPlayer = ExoPlayer.Builder(context.applicationContext)
-        .setAudioProcessors(balanceProcessor)
+        .setRenderersFactory(renderersFactory)
         .build()
 
     var isPlaying: Boolean = false
