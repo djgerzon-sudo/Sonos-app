@@ -76,6 +76,41 @@ fun EqScreen(viewModel: PlayerViewModel) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
+        Text(text = "Balance", style = MaterialTheme.typography.titleMedium)
+        Text(
+            text = "Izquierda y derecha. Sí funciona: en la bocina y en el teléfono.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = "Izq",
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.padding(end = 8.dp),
+            )
+            Slider(
+                value = viewModel.balance.toFloat(),
+                onValueChange = { viewModel.previewBalance(it.toInt()) },
+                onValueChangeFinished = { viewModel.setBalance(viewModel.balance) },
+                valueRange = -100f..100f,
+                modifier = Modifier.weight(1f),
+            )
+            Text(
+                text = "Der",
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.padding(start = 8.dp),
+            )
+        }
+        Text(
+            text = when {
+                viewModel.balance == 0 -> "Centro"
+                viewModel.balance < 0 -> "Izquierda ${-viewModel.balance}"
+                else -> "Derecha ${viewModel.balance}"
+            },
+            style = MaterialTheme.typography.bodyMedium,
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
         Text(text = "Volumen", style = MaterialTheme.typography.titleMedium)
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
@@ -135,7 +170,7 @@ fun EqScreen(viewModel: PlayerViewModel) {
         }
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "El EQ, el compresor y el reverb aún no se aplican al audio de la bocina.",
+            text = "El EQ, el compresor y el reverb aún no se aplican al audio (ni en la bocina ni en el teléfono): por ahora solo se guardan los valores. El balance sí funciona.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )

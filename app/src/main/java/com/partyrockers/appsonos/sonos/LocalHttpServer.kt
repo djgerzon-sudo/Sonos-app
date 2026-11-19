@@ -56,7 +56,9 @@ class LocalHttpServer {
     fun urlFor(file: File): String? {
         if (!running) return null
         val key = synchronized(files) {
-            val name = "f${counter++}.mp3"
+            // La extensión real importa: Sonos la usa como pista del formato.
+            val ext = file.extension.lowercase().ifBlank { "mp3" }
+            val name = "f${counter++}.$ext"
             files[name] = file
             name
         }
@@ -82,9 +84,20 @@ class LocalHttpServer {
             client.use { socket ->
                 val input = socket.getInputStream()
                 val output = socket.getOutputStream()
-                val requestLine = input.bufferedReader(Charsets.UTF_8).readLine() ?: return
+                val reader = input.bufferedReader(Charsets.UTF_8)
+                val requestLine = reader.readLine() ?: return
                 // "GET /f0.mp3 HTTP/1.1"
                 val path = requestLine.split(" ").getOrNull(1)?.removePrefix("/") ?: return
+                // Leer todas las cabeceras: Sonos pide Range para buscar
+                // y para buferizar el inicio sin bajar todo el archivo.
+                var rangeHeader: String? = null
+                while (true) {
+                    val line = reader.readLine() ?: break
+                    if (line.isBlank()) break
+                    if (line.startsWith("Range:", ignoreCase = true)) {
+                        rangeHeader = line.substringAfter(":").trim()
+                    }
+                }
                 val file = synchronized(files) { files[path] }
                 if (file == null || !file.exists()) {
                     val body = "Not found".toByteArray(Charsets.UTF_8)
@@ -99,19 +112,92 @@ class LocalHttpServer {
                     "flac" -> "audio/flac"
                     "wav" -> "audio/wav"
                     "ogg" -> "audio/ogg"
+                    "m4a" -> "audio/mp4"
                     else -> "audio/mpeg"
                 }
-                val header = "HTTP/1.1 200 OK\r\nContent-Type: $contentType\r\n" +
-                    "Content-Length: ${file.length()}\r\nConnection: close\r\n\r\n"
-                output.write(header.toByteArray(Charsets.UTF_8))
-                BufferedInputStream(FileInputStream(file)).use { stream ->
-                    stream.copyTo(output)
+                val fileLength = file.length()
+                when (val range = parseRange(rangeHeader, fileLength)) {
+                    is RangeResult.Invalid -> {
+                        val header = "HTTP/1.1 416 Range Not Satisfiable\r\n" +
+                            "Content-Range: bytes */$fileLength\r\nContent-Length: 0\r\n" +
+                            "Connection: close\r\n\r\n"
+                        output.write(header.toByteArray(Charsets.UTF_8))
+                        return
+                    }
+                    is RangeResult.Range -> {
+                        val length = range.end - range.start + 1
+                        val header = "HTTP/1.1 206 Partial Content\r\nContent-Type: $contentType\r\n" +
+                            "Accept-Ranges: bytes\r\n" +
+                            "Content-Range: bytes ${range.start}-${range.end}/$fileLength\r\n" +
+                            "Content-Length: $length\r\nConnection: close\r\n\r\n"
+                        output.write(header.toByteArray(Charsets.UTF_8))
+                        FileInputStream(file).use { stream ->
+                            var skipped = 0L
+                            while (skipped < range.start) {
+                                val justSkipped = stream.skip(range.start - skipped)
+                                if (justSkipped <= 0) break
+                                skipped += justSkipped
+                            }
+                            val buffer = ByteArray(8192)
+                            var remaining = length
+                            while (remaining > 0) {
+                                val read = stream.read(
+                                    buffer,
+                                    0,
+                                    minOf(buffer.size.toLong(), remaining).toInt(),
+                                )
+                                if (read <= 0) break
+                                output.write(buffer, 0, read)
+                                remaining -= read
+                            }
+                        }
+                    }
+                    is RangeResult.NoRange -> {
+                        val header = "HTTP/1.1 200 OK\r\nContent-Type: $contentType\r\n" +
+                            "Accept-Ranges: bytes\r\nContent-Length: $fileLength\r\n" +
+                            "Connection: close\r\n\r\n"
+                        output.write(header.toByteArray(Charsets.UTF_8))
+                        BufferedInputStream(FileInputStream(file)).use { stream ->
+                            stream.copyTo(output)
+                        }
+                    }
                 }
                 output.flush()
             }
         } catch (_: Exception) {
             // Un cliente que se desconecta a mitad del stream no debe tumbar el servidor.
         }
+    }
+
+    private sealed interface RangeResult {
+        data object NoRange : RangeResult
+        data object Invalid : RangeResult
+        data class Range(val start: Long, val end: Long) : RangeResult
+    }
+
+    /**
+     * Parsea "bytes=INICIO-FIN", "bytes=INICIO-" o "bytes=-ULTIMOS".
+     * Sin cabecera devuelve NoRange; si el rango no se puede cumplir, Invalid.
+     */
+    private fun parseRange(rangeHeader: String?, fileLength: Long): RangeResult {
+        if (rangeHeader == null) return RangeResult.NoRange
+        val value = rangeHeader.removePrefix("bytes=").trim()
+        if (value.startsWith("-")) {
+            val suffix = value.removePrefix("-").toLongOrNull() ?: return RangeResult.Invalid
+            if (suffix <= 0) return RangeResult.Invalid
+            val start = (fileLength - suffix).coerceAtLeast(0)
+            return RangeResult.Range(start, fileLength - 1)
+        }
+        val parts = value.split("-")
+        if (parts.size != 2) return RangeResult.Invalid
+        val start = parts[0].toLongOrNull() ?: return RangeResult.Invalid
+        val end = if (parts[1].isBlank()) {
+            fileLength - 1
+        } else {
+            parts[1].toLongOrNull() ?: return RangeResult.Invalid
+        }
+        if (start < 0 || start >= fileLength || end < start) return RangeResult.Invalid
+        return RangeResult.Range(start, minOf(end, fileLength - 1))
     }
 
     /** Primera IPv4 local que no sea loopback (la de la WiFi). */

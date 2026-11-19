@@ -74,11 +74,11 @@ object SoapClient {
         )
     }
 
-    fun setVolume(ip: String, volume: Int): String {
+    fun setVolume(ip: String, volume: Int, channel: String = "Master"): String {
         val v = volume.coerceIn(0, 100)
         return renderingControl(
             ip, "SetVolume",
-            "<InstanceID>0</InstanceID><Channel>Master</Channel><DesiredVolume>$v</DesiredVolume>",
+            "<InstanceID>0</InstanceID><Channel>$channel</Channel><DesiredVolume>$v</DesiredVolume>",
         )
     }
 

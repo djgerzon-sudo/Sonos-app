@@ -4,6 +4,7 @@ import com.partyrockers.appsonos.data.SonosSpeaker
 import com.partyrockers.appsonos.data.Track
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlin.math.roundToInt
 
 /**
  * Capa de control de Sonos para la app.
@@ -96,6 +97,33 @@ class SonosController(private val appContext: android.content.Context) {
         val speaker = currentSpeaker ?: return false
         return try {
             withContext(Dispatchers.IO) { SoapClient.setVolume(speaker.ip, volume) }
+            true
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    /**
+     * Balance -100 (todo izquierda) .. 0 (centro) .. +100 (todo derecha).
+     * Sonos NO tiene acción SetBalance en su RenderingControl: el balance se
+     * hace con SetVolume en los canales LF y RF, como fracción del volumen
+     * maestro (así lo implementan los controladores que leen el SCPD real de
+     * la bocina). Se manda el maestro primero y luego LF/RF, para que el
+     * balance no se pierda al cambiar el volumen.
+     * Si la bocina no acepta los canales LF/RF devuelve false sin tumbar nada.
+     */
+    suspend fun setBalance(balance: Int, masterVolume: Int): Boolean {
+        val speaker = currentSpeaker ?: return false
+        val b = balance.coerceIn(-100, 100)
+        val master = masterVolume.coerceIn(0, 100)
+        val lf = (master * if (b <= 0) 1f else (100 - b) / 100f).roundToInt().coerceIn(0, 100)
+        val rf = (master * if (b >= 0) 1f else (100 + b) / 100f).roundToInt().coerceIn(0, 100)
+        return try {
+            withContext(Dispatchers.IO) {
+                SoapClient.setVolume(speaker.ip, master, "Master")
+                SoapClient.setVolume(speaker.ip, lf, "LF")
+                SoapClient.setVolume(speaker.ip, rf, "RF")
+            }
             true
         } catch (_: Exception) {
             false

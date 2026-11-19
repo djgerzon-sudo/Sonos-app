@@ -75,6 +75,28 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     // --- Escaneo de música real del teléfono ---
     private val prefs = application.getSharedPreferences("app_sonos_prefs", Context.MODE_PRIVATE)
 
+    // --- Sonido en el teléfono ---
+    // Si la rola también suena en el altavoz del teléfono.
+    // Regla por defecto: apagado cuando hay Sonos conectado (el teléfono es
+    // solo control y servidor), encendido cuando no hay bocina. El usuario
+    // puede cambiarlo con el interruptor; una vez que lo toca, su elección
+    // manda y ya no se cambia solo al conectar o desconectar la bocina.
+    private var phoneSoundManual: Boolean = prefs.getBoolean("phone_sound_manual", false)
+
+    var phoneSoundOn by mutableStateOf(
+        if (phoneSoundManual) {
+            prefs.getBoolean("phone_sound_on", true)
+        } else {
+            true // Al arrancar no hay bocina conectada: suena en el teléfono.
+        },
+    )
+        private set
+
+    // --- Balance izquierda/derecha ---
+    // -100 (todo izquierda) .. 0 (centro) .. +100 (todo derecha). Guardado.
+    var balance by mutableIntStateOf(prefs.getInt("balance", 0))
+        private set
+
     /** Rolas escaneadas (todas, antes de aplicar carpetas excluidas). */
     private var scannedTracks by mutableStateOf<List<Track>>(emptyList())
 
@@ -152,11 +174,17 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         if (queue.none { it.id == track.id }) {
             queue = visibleTracks
         }
-        // 1) Suena en el teléfono si hay archivo local.
-        if (track.localPath != null) {
+        // Solo suena en el teléfono si el interruptor está encendido.
+        // Con Sonos conectado va apagado por defecto: si no, la rola suena
+        // dos veces, en el teléfono al instante y en la bocina ~5 s después
+        // (lo que tarda la bocina en buferizar el stream), y se oye horrible.
+        if (phoneSoundOn && track.localPath != null) {
+            applyLocalAudioSettings()
             localPlayer.playLocalFile(track.localPath)
+        } else {
+            localPlayer.stop()
         }
-        // 2) Se manda a Sonos por HTTP si hay bocina conectada.
+        // Se manda a Sonos por HTTP si hay bocina conectada.
         viewModelScope.launch {
             val path = track.localPath
             if (sonosConnected && path != null) {
@@ -171,11 +199,14 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         val track = currentTrack ?: return
         if (isPlaying) {
             isPlaying = false
-            localPlayer.pause()
+            if (phoneSoundOn) localPlayer.pause()
             viewModelScope.launch { sonos.pause() }
         } else {
             isPlaying = true
-            if (track.localPath != null) localPlayer.resume()
+            if (phoneSoundOn && track.localPath != null) {
+                applyLocalAudioSettings()
+                if (localPlayer.hasMedia) localPlayer.resume() else localPlayer.playLocalFile(track.localPath)
+            }
             viewModelScope.launch { sonos.play() }
         }
     }
@@ -189,8 +220,9 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         }
         val index = queue.indexOf(current)
         val next = queue.getOrNull(index + 1) ?: queue.firstOrNull() ?: return
+        // playTrack ya manda la rola a Sonos; no se le manda Next aparte:
+        // la cola de la bocina solo tiene la rola que le servimos.
         playTrack(next)
-        viewModelScope.launch { sonos.next() }
     }
 
     fun previousTrack() {
@@ -203,20 +235,79 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         val index = queue.indexOf(current)
         val prev = if (index > 0) queue[index - 1] else queue.lastOrNull() ?: return
         playTrack(prev)
-        viewModelScope.launch { sonos.previous() }
     }
 
     fun updateVolume(value: Int) {
         volume = value.coerceIn(0, 100)
+        if (phoneSoundOn) localPlayer.setVolume(volume / 100f)
         // El volumen que se manda a Sonos es el efectivo, sin pasar de 100.
         val toSonos = effectiveVolume.coerceIn(0, 100)
-        viewModelScope.launch { sonos.setVolume(toSonos) }
+        viewModelScope.launch {
+            sonos.setVolume(toSonos)
+            // Al cambiar el volumen maestro hay que reponer el balance,
+            // que vive en los canales LF/RF de la bocina.
+            if (balance != 0) sonos.setBalance(balance, toSonos)
+        }
     }
 
     fun updateVolumeX2(on: Boolean) {
         volumeX2 = on
         val toSonos = effectiveVolume.coerceIn(0, 100)
-        viewModelScope.launch { sonos.setVolume(toSonos) }
+        viewModelScope.launch {
+            sonos.setVolume(toSonos)
+            if (balance != 0) sonos.setBalance(balance, toSonos)
+        }
+    }
+
+    // --- Sonido en el teléfono y balance ---
+
+    /** Volumen y balance actuales aplicados al reproductor local. */
+    private fun applyLocalAudioSettings() {
+        localPlayer.setVolume(volume / 100f)
+        localPlayer.setBalance(balance)
+    }
+
+    /** Manda el balance guardado a la bocina, si hay una conectada. */
+    private fun applyBalanceToSonos() {
+        if (!sonosConnected) return
+        val toSonos = effectiveVolume.coerceIn(0, 100)
+        viewModelScope.launch { sonos.setBalance(balance, toSonos) }
+    }
+
+    /** Interruptor "Sonido en el teléfono". La elección del usuario se guarda y manda. */
+    fun setPhoneSoundOn(on: Boolean) {
+        phoneSoundManual = true
+        phoneSoundOn = on
+        prefs.edit()
+            .putBoolean("phone_sound_manual", true)
+            .putBoolean("phone_sound_on", on)
+            .apply()
+        if (!on) {
+            localPlayer.stop()
+        } else {
+            val track = currentTrack
+            if (isPlaying && track?.localPath != null) {
+                // Empieza desde el inicio en el teléfono: la bocina sigue
+                // donde iba, no hay forma de saber en qué segundo va sin
+                // preguntarle su posición (no implementado).
+                applyLocalAudioSettings()
+                if (localPlayer.hasMedia) localPlayer.resume() else localPlayer.playLocalFile(track.localPath)
+            }
+        }
+    }
+
+    /** Mientras se arrastra el slider: solo cambia el sonido local, sin mandar SOAP. */
+    fun previewBalance(value: Int) {
+        balance = value.coerceIn(-100, 100)
+        localPlayer.setBalance(balance)
+    }
+
+    /** Al soltar el slider: guarda el balance y lo manda a la bocina. */
+    fun setBalance(value: Int) {
+        balance = value.coerceIn(-100, 100)
+        prefs.edit().putInt("balance", balance).apply()
+        localPlayer.setBalance(balance)
+        applyBalanceToSonos()
     }
 
     // --- EQ y efectos ---
@@ -251,6 +342,11 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         sonos.selectSpeaker(speaker)
         sonosConnected = true
         sonosStatus = "Conectada a ${speaker.name} (${speaker.ip})"
+        // Con bocina, el teléfono deja de sonar por defecto (si el usuario
+        // no tocó el interruptor): si no, la rola suena dos veces.
+        if (!phoneSoundManual) phoneSoundOn = false
+        if (!phoneSoundOn) localPlayer.stop()
+        applyBalanceToSonos()
     }
 
     fun discoverSpeakers() {
@@ -264,12 +360,16 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
                     sonos.selectSpeaker(found[0])
                     sonosConnected = true
                     sonosStatus = "Conexión verificada: ${found.size} bocina(s) Sonos"
+                    if (!phoneSoundManual) phoneSoundOn = false
+                    if (!phoneSoundOn) localPlayer.stop()
+                    applyBalanceToSonos()
                 } else {
                     speakers = emptyList()
                     currentSpeaker = null
                     sonos.selectSpeaker(null)
                     sonosConnected = false
                     sonosStatus = "No se encontró una bocina Sonos accesible por SSDP y SOAP"
+                    if (!phoneSoundManual) phoneSoundOn = true
                 }
             } catch (error: Exception) {
                 speakers = emptyList()
@@ -277,6 +377,7 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
                 sonos.selectSpeaker(null)
                 sonosConnected = false
                 sonosStatus = "Falló la búsqueda: ${error.message ?: "error de red"}"
+                if (!phoneSoundManual) phoneSoundOn = true
             }
         }
     }

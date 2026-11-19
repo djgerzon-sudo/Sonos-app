@@ -11,10 +11,23 @@ import androidx.media3.exoplayer.ExoPlayer
  */
 class LocalPlayer(context: Context) {
 
-    private val player: ExoPlayer = ExoPlayer.Builder(context.applicationContext).build()
+    private val balanceProcessor = BalanceAudioProcessor()
+
+    private val player: ExoPlayer = ExoPlayer.Builder(context.applicationContext)
+        .setAudioProcessors(balanceProcessor)
+        .build()
 
     var isPlaying: Boolean = false
         private set
+
+    /** True si hay una rola cargada (aunque esté en pausa o parada). */
+    val hasMedia: Boolean
+        get() = player.mediaItemCount > 0
+
+    /** Balance -100 (izquierda) .. 0 (centro) .. +100 (derecha). Se aplica en caliente. */
+    fun setBalance(balance: Int) {
+        balanceProcessor.balance = balance
+    }
 
     fun playLocalFile(localPath: String): Boolean {
         return try {

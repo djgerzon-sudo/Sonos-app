@@ -27,6 +27,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -193,6 +194,28 @@ fun HomeScreen(viewModel: PlayerViewModel) {
                 text = "Volumen x2 activado: salida efectiva ${viewModel.effectiveVolume}%",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.primary,
+            )
+        }
+        Spacer(modifier = Modifier.height(8.dp))
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Sonido en el teléfono",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                Text(
+                    text = if (viewModel.sonosConnected) {
+                        "Apagado con bocina: si no, la rola suena dos veces."
+                    } else {
+                        "Sin bocina conectada: la música suena aquí."
+                    },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            Switch(
+                checked = viewModel.phoneSoundOn,
+                onCheckedChange = { viewModel.setPhoneSoundOn(it) },
             )
         }
         Spacer(modifier = Modifier.height(16.dp))
